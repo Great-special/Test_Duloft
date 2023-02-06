@@ -1,0 +1,68 @@
+
+{% load humanize %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h3>Payment Breakdown</h3>
+
+        <h4>Rent per year: N {{data.amount |floatformat:2 |intcomma }}</h4>
+        <h4>Commission: N {{data.commission|floatformat:2 |intcomma }}</h4>
+        {% comment %} <h4>Transaction Fee: N {{data.trans_fee |floatformat:2 |intcomma }}</h4> {% endcomment %}
+        <h4>Total Amount Payable: N {{data.final_amount |floatformat:2 |intcomma }}</h4>
+        <h4>email: {{data.email}}</h4>
+    
+         
+        <button onclick="payWithPaystack()" id="dj-paystack-button" >Pay Now!</button>
+        
+        <script src="https://js.paystack.co/v1/inline.js"></script> 
+              
+        <script>
+            {% comment %} const makePayment = document.getElementById('dj-paystack-button');
+            makePayment.addEventListener("submit", payWithPaystack, false); {% endcomment %}
+
+            function payWithPaystack(){
+                let currency = "NGN";
+                let plan = "";
+                let ref = "{{data.ref}}";
+                let obj = {
+                    key: "{{Public_key}}",
+                    email:"{{data.email}}",
+                    amount: "{{data.validate_amount}}",
+                    ref: ref,
+                    callback: function(response){
+                        window.location.href = "{% url 'verify-payment' data.ref %}";
+                    }
+                }
+
+                if (Boolean(currency)){
+                    obj.currency = currency.toUpperCase();
+                }
+
+                
+                if (Boolean(plan)){
+                    obj.plan = plan;
+                }
+
+                var handler = PaystackPop.setup(obj);
+                handler.openIframe();
+            }
+        </script>
+    </body>
+</html>
