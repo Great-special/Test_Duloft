@@ -134,6 +134,3 @@ def autoTransfer():
 
 # if name in acc_name: # acc_name.find(name)
 #     print('yes!!!')
-inp = float(20.00)
-ans = inp * 0.1
-print(ans)

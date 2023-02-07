@@ -5,10 +5,10 @@ from django.conf import settings
 
 # from payment_manager.paystack import PayStack
 
-from .models import User, LandLordProfile
+from .models import User, LandLordProfile, LandLordPaymentDetails
 from .forms import UserForm, LoginForm, LandLordCreationForm, LandLordPaymentDetailsform
 
-
+from houses.models import HouseModel, FlatModel, SpaceModel
 
 # Paystack = settings.PAYSTACK
 
@@ -60,13 +60,39 @@ def landlordpaymentdetail(request):
             # else:
             #     print('invaild ')
     else:
-        payment_details_form = LandLordPaymentDetailsform
+        payment_details_form = LandLordPaymentDetailsform()
     
     context = {'payment_details_form': payment_details_form}    
     return render(request, 'add_payment_details.html', context)
             
             
-            
+def userdetailsView(request):
+    user_profile = User.objects.get(username=request.user)
+    return render(request, 'user_details.html', {'user_profile': user_profile})
+
+
+def landlordDashboardView(request):
+    user_profile = User.objects.get(username=request.user)
+    # using reverse relationship to fetch house, payment, transfer/transaction
+    buildings = user_profile.housemodel_set.all()
+    pending = user_profile.recipient.all()
+    received = user_profile.transactiondetail_set.all()
+    referrals = user_profile.referrals.all()
+    paymentdetail = user_profile.paymentdetail
+    
+    
+    context = {
+        'user_detail': user_profile,
+        'buildings': buildings,
+        'transactions': {
+            'pendings': pending,
+            'received': received,
+        },
+        'referrals': referrals,
+        'payment_detail': paymentdetail
+    }
+    return render(request, 'landlord_dashboard.html', context=context)
+    
             
 
 def landlordprofile(request):
@@ -105,7 +131,9 @@ def landlordprofile(request):
          
     context = {'form': form}
     return render(request, 'add_landlord_profile.html', context)
-            
+
+
+       
 def register(request, *args, **kwargs):
     try:
         ref_code = str(kwargs.get('ref_code'))
@@ -131,6 +159,8 @@ def register(request, *args, **kwargs):
         'form': form,
     }
     return render(request, 'register.html', context)
+
+
 
 
 def login_view(request):

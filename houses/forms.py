@@ -28,8 +28,10 @@ class HouseModelForm(forms.ModelForm):
             except (ValueError, TypeError):
                 pass
         elif self.instance.pk:
+            state = self.instance.state.name
+            # print(state)
             self.fields['state'].queryset = self.instance.country.region_set
-            self.fields['city'].queryset = self.instance.state.subregion_set
+            self.fields['city'].queryset = SubRegion.objects.filter(region__name=state).order_by('name')
     
     
     class Meta:
