@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Listing Grid View -->
+<section class="our-listing bgc-f7 pb30-991">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			<div class="col-md-12 col-lg-12">
+				<div class="row">
+					{% for flat in flats %}
+						<div class="col-md-6 col-lg-6">
+							<div class="properti_city home6">
+								<div class="thumb">
+									<img class="img-fluid w100" src="{{flat.sittingroom.url}}" alt="fp21.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+											<li class="list-inline-item"><a href="page-listing-grid-v2.html#">For Rent</a></li>
+											<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Featured</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="overlay">
+									<div class="details">
+										<a class="fp_price" href="page-listing-grid-v2.html#">N {{flat.price}}<small>/yr</small></a>
+										<a href="{% url 'flat-detail' flat.id %}"><h4>{{flat}}</h4></a>
+										<ul class="prop_details mb0">
+											<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Beds: {{flat.accommodation_type}}</a></li>
+											<li class="list-inline-item"><a href="page-listing-grid-v2.html#">LOB:  {{flat.floor}} {% if "floor" in flat.floor %}  {% else %}  floor {% endif %} - {{flat.side}} side</a></li>
+										</ul>
+										<ul class="prop_details mb0">
+											<li class="list-inline-item"><button type="button"> <a href={% url 'initiate-payment' house_id flat.id %}> Rent! </a> </button></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
+
+

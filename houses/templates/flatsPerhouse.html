@@ -1,40 +1,53 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        {% for flat in flats %}
-        <div>
-           <img class="thumbnail" src="{{flat.bedroom.url}}" alt="">
-           <a href="{% url 'flat-detail' flat.id %}"><p>BedRoom</p></a>
-           {% comment %} <img class="thumbnail" src="{{flat.kitchen.url}}" alt="">
-           <p>Kitchen</p>
-           <img class="thumbnail" src="{{flat.sittingroom.url}}" alt="">
-           <p>Sitting Room</p>
-           <img class="thumbnail" src="{{flat.convience.url}}" alt="">
-           <p>Convience</p> {% endcomment %}
+{% extends 'base.html' %}
 
-           <h5>No Of Rooms: {{flat.Rooms_No}} </h5>
-           <h5>Location On Building: {{flat.floor}} {% if "floor" in flat.floor %}  {% else %}  floor {% endif %} - {{flat.side}} side</h5>
-           <p>Price:  <strong>N {{flat.price}}</strong> </p>
+{% load humanize %}
 
-           <button type="button"> <a href={% url 'initiate-payment' house_id flat.id %}> Rent! </a> </button>
+{% block content %}
 
-        </div>
-        {% endfor %}
-        <script src="" async defer></script>
-    </body>
-</html>
+<!-- Listing Grid View -->
+<section class="our-listing bgc-f7 pb30-991">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			<div class="col-md-12 col-lg-12">
+				<div class="row">
+					{% for flat in flats %}
+						<a href="{% url 'flat-detail' flat.id %}"> 
+							<div class="col-md-6 col-lg-6">
+								<div class="properti_city home6">
+									<div class="thumb">
+										<img class="img-fluid w100" src="{{flat.sittingroom.url}}" alt="fp21.jpg">
+										<div class="thmb_cntnt">
+											<ul class="tag mb0">
+												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">For Rent</a></li>
+												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Featured</a></li>
+											</ul>
+										</div>
+									</div>
+									
+									<div class="overlay">
+										<div class="details">
+											<a class="fp_price" href="page-listing-grid-v2.html#">N {{flat.price | intcomma}}<small>/yr</small></a>
+											<a href="{% url 'flat-detail' flat.id %}"><h4>{{flat}}</h4></a>
+											<ul class="prop_details mb0">
+												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Beds: {{flat.accommodation_type}}</a></li>
+												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Available: {% if flat.taken %} No {% else %}  Yes  {% endif %}</a></li>
+											</ul>
+											<ul class="">
+												<li class="list-inline-item"><button class="btn btn-block btn-thm" type="button"> <a href={% url 'initiate-payment' house_id flat.id %}> Rent! </a> </button></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
+
+

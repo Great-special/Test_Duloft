@@ -115,10 +115,14 @@ class SpaceModelForm(forms.ModelForm):
         }
         
         
-class LookUpForm(forms.Form):
-    location = forms.CharField(max_length=150, widget=forms.TextInput(attrs={'class' : 'form-control', 'placeholder' : 'Enter the area you want to live'}))
-    building_type = forms.ChoiceField(choices=BUILDING_TYPES, widget=forms.Select(attrs={'class' : 'form-control'}))
-    accommodation_type = forms.ChoiceField(choices=ACCOMMODATION_TYPES, widget=forms.Select(attrs={'class' : 'form-control'}))
-    min_price = forms.FloatField(widget=forms.NumberInput(attrs={'class' : 'form-control', 'placeholder' : '25000'}))
-    max_price = forms.FloatField(widget=forms.NumberInput(attrs={'class' : 'form-control', 'placeholder' : '100000'}))
+class LookUpForm(forms.Form):  
+    location = forms.CharField(max_length=150, widget=forms.TextInput(attrs={'class' : 'list-inline-item form-control', 'placeholder' : 'Enter the area you want to live'}))
+    building_type = forms.ChoiceField(choices=BUILDING_TYPES, label='Property Type', widget=forms.Select(attrs={'class' : 'list-inline-item form-control'}))
+    accommodation_type = forms.ChoiceField(choices=ACCOMMODATION_TYPES, widget=forms.Select(attrs={'class' : 'list-inline-item form-control'}))
+    min_price = forms.FloatField(widget=forms.NumberInput(attrs={'class' : 'form-control list-inline-item', 'placeholder' : '25000'}))
+    max_price = forms.FloatField(widget=forms.NumberInput(attrs={'class' : 'form-control list-inline-item', 'placeholder' : '100000'}))
 
+
+class location_searchform(forms.Form):  
+    location = forms.CharField(max_length=150, widget=forms.TextInput(
+        attrs={'class' : 'list-inline-item form-control', 'placeholder' : 'Enter the area you want to live'}))

@@ -10,5 +10,7 @@ urlpatterns = [
     path('add-profile/', views.landlordprofile, name='landlordprofile'),
     path('add-payment-details/', views.landlordpaymentdetail, name='paymentdetail'),
     path('', views.userdetailsView, name='userprofile'),
-    path('dashboard/', views.landlordDashboardView, name='landlord-dashboard')
+    
+    path('dashboard/', views.landlordDashboardView, name='landlord-dashboard'),
+    path('dashboard/my-properties/', views.get_buildings_by_landlord, name='my-properties-dashboard'),
 ]

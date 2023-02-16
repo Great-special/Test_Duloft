@@ -12,7 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    </head>
+      </head>
     <body>
       <div class="container">
         <form method="post"  enctype='multipart/form-data' id="houseform" data-cities-url="{% url 'ajax_load_cities' %}"
@@ -26,41 +26,41 @@
 
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-        <script>
-            $("#id_state").change(function () {
-                const url = $("#houseform").attr("data-cities-url");  
-                const state = $(this).val();  
-          
-                $.ajax({                      
-                  url: url,                    
-                  data: {
-                    'state': state,       
-                  },
-                  success: function (data) {  
-                    console.log(data);
-                    $("#id_city").html(data);  
-                  }
-                });
-          
-            });
-
-            $("#id_country").change(function () {
-              var url = $("#houseform").attr("data-states-url");  
-              var countryId = $(this).val();  
+      <script>
+          $("#id_state").change(function () {
+              const url = $("#houseform").attr("data-cities-url");  
+              const state = $(this).val();  
         
               $.ajax({                      
                 url: url,                    
                 data: {
-                  'country': countryId,       
+                  'state': state,       
                 },
                 success: function (data) {  
-                    console.log(data);
-                  $("#id_state").html(data);
+                  console.log(data);
+                  $("#id_city").html(data);  
                 }
               });
         
-            });
+          });
 
-        </script>
+          $("#id_country").change(function () {
+            var url = $("#houseform").attr("data-states-url");  
+            var countryId = $(this).val();  
+      
+            $.ajax({                      
+              url: url,                    
+              data: {
+                'country': countryId,       
+              },
+              success: function (data) {  
+                  console.log(data);
+                $("#id_state").html(data);
+              }
+            });
+      
+          });
+
+      </script>
 
 </html>

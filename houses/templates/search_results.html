@@ -1,43 +1,103 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+{% extends 'base.html' %}
 
 {% load humanize %}
+{% load static %}
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Search Results</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        {% if results %}
+{% block content %}
+<section class="our-listing bgc-f7 pb30-991">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+                
+				<div class="breadcrumb_content style2 mt30-767 mb30-767">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+						<li class="breadcrumb-item active text-thm" aria-current="page">Simple Listing – Grid View</li>
+					</ol>
+					<h2 class="breadcrumb_title">Results</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-lg-12">
+                {% if results %}
+                    <div class="row">
+                        <div class="grid_list_search_result">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-5">
+                                <div class="left_area tac-xsd">
+                                    <p>{{results.count}} Search results</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        {% for result in results %}
+                        <div class="col-md-4 col-lg-4">
+                            <div class="feat_property home7">
+                                <div class="thumb">
+                                    <img class="img-whp" src="{{result.house.exterior_image.url}}" alt="fp1.jpg">
+                                    <div class="thmb_cntnt">
+                                        <ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">For Rent</a></li>
+                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">Featured</a></li>
+                                        </ul>
+                                        <ul class="icon mb0">
+                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><span class="flaticon-transfer-1"></span></a></li>
+                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><span class="flaticon-heart"></span></a></li>
+                                        </ul>
+                                        <a class="fp_price" href="page-listing-grid-v3.html#">N {{result.price | intcomma}}<small>/yr</small></a>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div class="tc_content">
+                                        <p class="text-thm"><a href="{% url 'flat-detail' result.id %}">{{result.floor}} - {{result.side}}</a></p>
+                                        <h4><a href="{% url 'house-detail' result.house.id %}">{{result.house.name}}</a></h4>
+                                        <p><span class="flaticon-placeholder"></span> <a href="{% url 'house-detail' result.house.id %}">{{result.house.address}}</a></p>
+                                        <ul class="prop_details mb0">
+                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Beds: 4</a></li>
+                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Baths: 2</a></li>
+                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Sq Ft: 5280</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fp_footer">
+                                        <ul class="fp_meta float-left mb0">
+                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><img src="images/property/pposter1.png" alt="pposter1.png"></a></li>
+                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">Ali Tufan</a></li>
+                                        </ul>
+                                        <div class="fp_pdate float-right">4 years ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+				    </div>
+                    
+                {% else %}
 
-        <ul>
-            {% for result in results %}
+                    <p> No results </p>
 
-            <h3> House Name: <a href="{% url 'house-detail' result.house.id %}">{{result.house.name}}</a></h3>
-            <h4> Address: <a href="{% url 'house-detail' result.house.id %}">{{result.house.address}}</a></h4>
-            <img src="{{result.house.exterior_image.url}}">
-            <h5> Accommodation: <a href="{% url 'flat-detail' result.id %}">{{result.floor}} - {{result.side}}</a></h5>
-            <h5> Price: N {{result.price | intcomma}}</h5>
-            {% endfor %}
-        </ul>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock content %}
+<!-- Listing Grid View -->
 
-        {% else %}
-        
-            <p> No results </p>
 
-        {% endif %}
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+
+  
+
+    <ul>
+        {% for result in results %}
+
+        <h3> House Name: <a href="{% url 'house-detail' result.house.id %}">{{result.house.name}}</a></h3>
+        <h4> Address: <a href="{% url 'house-detail' result.house.id %}">{{result.house.address}}</a></h4>
+        <img src="{{result.house.exterior_image.url}}">
+        <h5> Accommodation: <a href="{% url 'flat-detail' result.id %}">{{result.floor}} - {{result.side}}</a></h5>
+        <h5> Price: N {{result.price | intcomma}}</h5>
+        {% endfor %}
+    </ul>
+
+

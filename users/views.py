@@ -71,6 +71,12 @@ def userdetailsView(request):
     return render(request, 'user_details.html', {'user_profile': user_profile})
 
 
+def get_buildings_by_landlord(request):
+    if request.user.is_landlord:
+        buildings = HouseModel.objects.filter(landlord=request.user)
+        return render( request, 'page-my-properties.html', {'properties':buildings})
+
+
 def landlordDashboardView(request):
     user_profile = User.objects.get(username=request.user)
     # using reverse relationship to fetch house, payment, transfer/transaction
@@ -158,7 +164,7 @@ def register(request, *args, **kwargs):
     context = {
         'form': form,
     }
-    return render(request, 'register.html', context)
+    return render(request, 'page-register.html', context)
 
 
 
@@ -188,7 +194,7 @@ def login_view(request):
         'form': form,
     }
     
-    return render(request, 'login.html', context)
+    return render(request, 'page-login.html', context)
 
 
 def logout_view(request):

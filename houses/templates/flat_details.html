@@ -1,37 +1,441 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
+{% extends 'base.html' %}
 
 {% load humanize %}
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <img class="thumbnail" src="{{flat.sittingroom.url}}" alt="">
-        <img class="thumbnail" src="{{flat.bedroom.url}}" alt="">
-        
-        <h4>Building: {{flat.house}}</h4>
-        <h5>Location: {{flat.house.address}}</h5>
-        <h5>Floor: {{flat.floor}}</h5>
-        <h5>Side: {{flat.side}}</h5>
-        <p> Price:  <strong>N {{flat.price |intcomma}}</strong> </p>
-        <h5>Available: {% if flat.taken %} No {% else %}  Yes  {% endif %}</h5>
+{% block content %}
+<section class="listing-title-area">
+    <div class="container">
+        <div class="row mb30">
+            <div class="col-lg-7 col-xl-8">
+                <div class="single_property_title mt30-767">
+                    <h2>{{flat.house.name}} | {{flat}} Wing</h2>
+                    <p>{{flat.house.address}}</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+                <div class="single_property_social_share">
+                    <div class="price float-left fn-400">
+                        <h2>N {{flat.price | intcomma }}<small>/yr</small></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7 col-lg-7">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="spls_style_two mb30-520">
+                            <a class="popup-img" href="{{flat.sittingroom.url}}"><img class="img-fluid w100" src="{{flat.sittingroom.url}}" alt="1.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-lg-5">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="spls_style_two mb30">
+                            <a class="popup-img" href="{{flat.bedroom.url}}"><img class="img-fluid w100" src="{{flat.bedroom.url}}" alt="2.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="spls_style_two mb30">
+                            <a class="popup-img" href="{{flat.kitchen.url}}"><img class="img-fluid w100" src="{{flat.kitchen.url}}" alt="3.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="spls_style_two mb30">
+                            <a class="popup-img" href="{{flat.convience.url}}"><img class="img-fluid w100" src="{{flat.convience.url}}" alt="4.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="spls_style_two mb30">
+                            <a class="popup-img" href="images/property/5.jpg"><img class="img-fluid w100" src="images/property/5.jpg" alt="5.jpg"></a>
+                        </div>
+                    </div>
 
-        <button type="button"> <a href={% url 'initiate-payment' flat.house.id flat.id %}> Rent! </a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <script src="" async defer></script>
-    </body>
-</html>
+
+
+<section class="our-agent-single bgc-f7 pb30-991">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="listing_single_description">
+                            <div class="lsd_list">
+                                <ul class="mb0">
+                                    <li class="list-inline-item"><a href="">{{flat.accommodation_type}}</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="mb30">Description</h4>
+                            <p class="mb25">
+                                {{flat.house.name}} is located at {{flat.house.address}}. 
+                                {% if flat.house.newly_built and flat.house.water and flat.house.electricity %}
+                                Newly built house with water and electricity availble. 
+                                {% elif house.water and house.electricity and not house.newly_built %}
+                                With water and electricity availble.
+                                {% endif %}
+                                You need to see the views to believe them.
+                            </p>
+
+                            <p class="mb25">
+                                This apartment is located at the {{flat.side}} side wing of the {{flat.floor}}.  
+                                
+                            </p>
+                        </div>
+                        <button type="button" class="btn btn-block btn-thm"> 
+                            <a href={% url 'initiate-payment' flat.house.id flat.id %}>
+                                Rent! 
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="additional_details">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4 class="mb15">Property Details</h4>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <ul class="list-inline-item">
+                                        <li><p>Property ID :</p></li> <!-- house id plus flat id -->
+                                        <li><p>Price Per Year :</p></li>
+                                        <li><p>Floor :</p></li>
+                                        <li><p>Available :</p></li>
+                                    </ul>
+                                    <ul class="list-inline-item">
+                                        <li><p><span>DU{{flat.house.id}}L{{flat.id}}</span></p></li>
+                                        <li><p><span>N {{flat.price | intcomma}}</span></p></li>
+                                        <li><p><span>{{flat.floor}}</span></p></li>
+                                        <li><p><span>{% if flat.taken %} No {% else %}  Yes  {% endif %}</span></p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <ul class="list-inline-item">
+                                        <li><p>Bedrooms :</p></li>
+                                        <li><p>Bathrooms :</p></li>
+                                        <li><p>Side :</p></li>
+                                        <li><p>Garage Size :</p></li>
+                                    </ul>
+                                    <ul class="list-inline-item">
+                                        <li><p><span>{{flat.accommodation_type}}</span></p></li>
+                                        <li><p><span>4</span></p></li>
+                                        <li><p><span>{{flat.side}}</span></p></li>
+                                        <li><p><span>200 SqFt</span></p></li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-12">
+                        <div class="additional_details">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4 class="mb15">Additional details</h4>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <ul class="list-inline-item">
+                                        <li><p>Deposit :</p></li>
+                                        <li><p>Pool Size :</p></li>
+                                        <li><p>Additional Rooms :</p></li>
+                                    </ul>
+                                    <ul class="list-inline-item">
+                                        <li><p><span>20%</span></p></li>
+                                        <li><p><span>300 Sqft</span></p></li>
+                                        <li><p><span>Guest Bath</span></p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-6">
+                                    <ul class="list-inline-item">
+                                        <li><p>Last remodel year :</p></li>
+                                        <li><p>Amenities :</p></li>
+                                        <li><p>Equipment :</p></li>
+                                    </ul>
+                                    <ul class="list-inline-item">
+                                        <li><p><span>1987</span></p></li>
+                                        <li><p><span>Clubhouse</span></p></li>
+                                        <li><p><span>Grill - Gas</span></p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="property_attachment_area">
+                            <h4 class="mb30">Property Attachments</h4>
+                            <div class="iba_container style2">
+                                <div class="icon_box_area style2">
+                                    <div class="score"><span class="flaticon-document text-thm fz30"></span></div>
+                                    <div class="details">
+                                        <h5><span class="flaticon-download text-thm pr10"></span> Demo Word Document</h5>
+                                    </div>
+                                </div>
+                                <div class="icon_box_area style2">
+                                    <div class="score"><span class="flaticon-pdf text-thm fz30"></span></div>
+                                    <div class="details">
+                                        <h5><span class="flaticon-download text-thm pr10"></span> Demo pdf Document</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="application_statics mt30">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4 class="mb10">Features</h4>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                    <ul class="order_list list-inline-item">
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Air Conditioning</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Barbeque</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Dryer</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Gym</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Laundry</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                    <ul class="order_list list-inline-item">
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Lawn</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Microwave</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Outdoor Shower</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Refrigerator</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Sauna</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                    <ul class="order_list list-inline-item">
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Swimming Pool</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>TV Cable</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Washer</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>WiFi</a></li>
+                                        <li><a href="page-listing-single-v4.html#"><span class="flaticon-tick"></span>Window Coverings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="application_statics mt30">
+                            <h4 class="mb30">Location <small class="float-right">1421 San Pedro St, Los Angeles, CA 90015</small></h4>
+                            <div class="property_video p0">
+                                <div class="thumb">
+                                    <div class="h400" id="map-canvas"></div>
+                                    <div class="overlay_icon">
+                                        <a href="page-listing-single-v4.html#"><img class="map_img_icon" src="images/header-logo.png" alt="header-logo.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="shop_single_tab_content style2 mt30">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="page-listing-single-v4.html#description" role="tab" aria-controls="description" aria-selected="true">Property video</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="listing-tab" data-toggle="tab" href="page-listing-single-v4.html#listing" role="tab" aria-controls="listing" aria-selected="false">Virtual Tour</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent2">
+                                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                    <div class="property_video">
+                                        <div class="thumb">
+                                            <img class="pro_img img-fluid w100" src="images/background/7.jpg" alt="7.jpg">
+                                            <div class="overlay_icon">
+                                                <a class="video_popup_btn red popup-youtube" href="https://www.youtube.com/watch?v=oqNZOOWF8qM"><span class="flaticon-play"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199" id="listing" role="tabpanel" aria-labelledby="listing-tab">
+                                    <div class="property_video">
+                                        <div class="thumb">
+                                            <img class="pro_img img-fluid w100" src="images/background/7.jpg" alt="7.jpg">
+                                            <div class="overlay_icon">
+                                                <a class="video_popup_btn red popup-youtube" href="https://www.youtube.com/watch?v=oqNZOOWF8qM"><span class="flaticon-play"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="product_single_content">
+                            <div class="mbp_pagination_comments mt30">
+                                <ul class="total_reivew_view">
+                                    <li class="list-inline-item sub_titles">896 Reviews</li>
+                                    <li class="list-inline-item">
+                                        <ul class="star_list">
+                                            <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                            <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                            <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                            <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                            <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-inline-item avrg_review">( 4.5 out of 5 )</li>
+                                    <li class="list-inline-item write_review">Write a Review</li>
+                                </ul>
+                                <div class="mbp_first media">
+                                    <img src="images/testimonial/1.png" class="mr-3" alt="1.png">
+                                    <div class="media-body">
+                                        <h4 class="sub_title mt-0">Diana Cooper
+                                            <div class="sspd_review dif">
+                                                <ul class="ml10">
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"></li>
+                                                </ul>
+                                            </div>
+                                        </h4>
+                                        <a class="sspd_postdate fz14" href="page-listing-single-v4.html#">December 28, 2020</a>
+                                        <p class="mt10">Beautiful home, very picturesque and close to everything in jtree! A little warm for a hot weekend, but would love to come back during the cooler seasons!</p>
+                                    </div>
+                                </div>
+                                <div class="custom_hr"></div>
+                                <div class="mbp_first media">
+                                    <img src="images/testimonial/2.png" class="mr-3" alt="2.png">
+                                    <div class="media-body">
+                                        <h4 class="sub_title mt-0">Ali Tufan
+                                            <div class="sspd_review dif">
+                                                <ul class="ml10">
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"><a href="page-listing-single-v4.html#"><i class="fa fa-star"></i></a></li>
+                                                    <li class="list-inline-item"></li>
+                                                </ul>
+                                            </div>
+                                        </h4>
+                                        <a class="sspd_postdate fz14" href="page-listing-single-v4.html#">December 28, 2020</a>
+                                        <p class="mt10">Beautiful home, very picturesque and close to everything in jtree! A little warm for a hot weekend, but would love to come back during the cooler seasons!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="mt30 mb30">Similar Properties</h4>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feat_property">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="tag mb0">
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#">For Rent</a></li>
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#">Featured</a></li>
+                                    </ul>
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                    <a class="fp_price" href="page-listing-single-v4.html#">$13,000<small>/mo</small></a>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <p class="text-thm">Apartment</p>
+                                    <h4>Renovated Apartment</h4>
+                                    <p><span class="flaticon-placeholder"></span> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#">Beds: 4</a></li>
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#">Baths: 2</a></li>
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#">Sq Ft: 5280</a></li>
+                                    </ul>
+                                </div>
+                                <div class="fp_footer">
+                                    <ul class="fp_meta float-left mb0">
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#"><img src="images/property/pposter1.png" alt="pposter1.png"></a></li>
+                                        <li class="list-inline-item"><a href="page-listing-single-v4.html#">Ali Tufan</a></li>
+                                    </ul>
+                                    <div class="fp_pdate float-right">4 years ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-xl-4">
+                <div class="sidebar_listing_list">
+                    <div class="sidebar_advanced_search_widget">
+                        <div class="sl_creator">
+                            <h4 class="mb25">Listed By</h4>
+                            <div class="media">
+                                <img class="mr-3" src="images/team/lc1.png" alt="lc1.png">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb0">Samul Williams</h5>
+                                    <p class="mb0">(123)456-7890</p>
+                                    <p class="mb0">info@findhouse.com</p>
+                                    <a class="text-thm" href="page-listing-single-v4.html#">View My Listing</a>
+                                  </div>
+                            </div>
+                        </div>
+                        <ul class="sasw_list mb0">
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Your Name">
+                                </div>
+                            </li>
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="exampleInputName2" placeholder="Phone">
+                                </div>
+                            </li>
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+                                </div>
+                            </li>
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <textarea id="form_message" name="form_message" class="form-control required" rows="5" required="required" placeholder="I'm interest in [ Listing Single ]"></textarea>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_option_button">
+                                    <button type="submit" class="btn btn-block btn-thm">Search</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
+
+<img class="thumbnail" src="{{flat.sittingroom.url}}" alt="">
+<img class="thumbnail" src="{{flat.bedroom.url}}" alt="">
+
+<h4>Building: {{flat.house}}</h4>
+<h5>Location: {{flat.house.address}}</h5>
+<h5>Floor: {{flat.floor}}</h5>
+<h5>Side: {{flat.side}}</h5>
+<p> Price:  <strong>N {{flat.price |intcomma}}</strong> </p>
+<h5>Available: {% if flat.taken %} No {% else %}  Yes  {% endif %}</h5>
+
+<button type="button"> <a href={% url 'initiate-payment' flat.house.id flat.id %}> Rent! </a> </button>
