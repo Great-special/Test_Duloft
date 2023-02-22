@@ -6,7 +6,7 @@ from django.conf import settings
 # from payment_manager.paystack import PayStack
 
 from .models import User, LandLordProfile, LandLordPaymentDetails
-from .forms import UserForm, LoginForm, LandLordCreationForm, LandLordPaymentDetailsform
+from .forms import UserForm, UserUpdateForm, LoginForm, LandLordCreationForm, LandLordPaymentDetailsform
 
 from houses.models import HouseModel, FlatModel, SpaceModel
 
@@ -68,7 +68,7 @@ def landlordpaymentdetail(request):
             
 def userdetailsView(request):
     user_profile = User.objects.get(username=request.user)
-    return render(request, 'user_details.html', {'user_profile': user_profile})
+    return render(request, 'page-my-profile.html', {'user_detail': user_profile})
 
 
 def get_buildings_by_landlord(request):
@@ -97,7 +97,7 @@ def landlordDashboardView(request):
         'referrals': referrals,
         'payment_detail': paymentdetail
     }
-    return render(request, 'landlord_dashboard.html', context=context)
+    return render(request, 'page-dashboard.html', context=context)
     
             
 
@@ -139,6 +139,20 @@ def landlordprofile(request):
     return render(request, 'add_landlord_profile.html', context)
 
 
+def update_landlord_profile(request, pk):
+    instance = LandLordProfile.objects.get(user_profile__id = pk)
+    form = LandLordCreationForm(instance=instance)
+    
+    if request.method == 'POST':
+        form = LandLordCreationForm(request.POST, request.FILES, instance=instance)
+        if form.is_valid():
+            form.save()
+            
+    context = {'form': form}
+    return render(request, 'add_landlord_profile.html', context)
+
+
+
        
 def register(request, *args, **kwargs):
     try:
@@ -167,8 +181,19 @@ def register(request, *args, **kwargs):
     return render(request, 'page-register.html', context)
 
 
-
-
+def update_view(request, pk):
+    user_obj = User.objects.get(pk=pk)
+    form = UserUpdateForm(instance=user_obj)
+    
+    if request.method == "POST":
+        form = UserUpdateForm(request.POST, instance=user_obj)
+        if form.is_valid():
+            form.save()
+    
+    return render(request, 'edit-user.html', {'form': form})       
+            
+            
+        
 def login_view(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)

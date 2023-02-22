@@ -45,8 +45,8 @@ class HouseModelForm(forms.ModelForm):
             'total_number_of_accommodation_space',
             'available_number_accommodation_space',
             'house_price', 'electricity',
-            'water', 'newly_built', 'sale',
-            'exterior_image', 'c_of_o', 'd_of_a', 'tenant_agreement'
+            'water', 'newly_built', 'sale', 'exterior_image',
+            'exterior_image_side1', 'exterior_image_side2', 'c_of_o', 'd_of_a', 'tenant_agreement'
         ]
         
         widgets = {
@@ -65,7 +65,8 @@ class HouseModelForm(forms.ModelForm):
             'newly_built': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
             'sale': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
             'exterior_image': forms.FileInput(attrs={'class': 'form-control'}),
-          
+            'exterior_image_side1': forms.FileInput(attrs={'class': 'form-control'}),
+            'exterior_image_side2': forms.FileInput(attrs={'class': 'form-control'}),
             'c_of_o' : forms.FileInput(attrs={'class': 'form-control'}),
             'd_of_a': forms.FileInput(attrs={'class': 'form-control'}),
             'tenant_agreement': forms.FileInput(attrs={'class': 'form-control'}),

@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from .models import User, LandLordProfile, LandLordPaymentDetails
 # from django.contrib.auth.models import User
 
@@ -29,6 +29,12 @@ class LandLordCreationForm(forms.ModelForm):
         model = LandLordProfile
         fields = ['national_id_number', 'national_id_image', 'profile_photo']
         
+        widgets = {
+            'national_id_number': forms.TextInput(attrs={'class': 'form-control'}),
+            'national_id_image' : forms.FileInput(attrs={'class': 'form-control'}),
+            'profile_photo' : forms.FileInput(attrs={'class': 'form-control'}),
+        }
+        
 
 class LoginForm(forms.Form):
     username = forms.CharField(max_length=220, widget=forms.TextInput(attrs={'class': 'form-control'}))
@@ -56,3 +62,16 @@ class UserForm(UserCreationForm):
         }
             
         
+class UserUpdateForm(UserChangeForm):
+    
+    class Meta:
+        model = User
+        fields = ['first_name', 'sur_name', 'username', 'email', 'phone_no']
+
+        widgets = {
+            'first_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'sur_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'username': forms.TextInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control'}),  
+            'phone_no': forms.NumberInput(attrs={'class': 'form-control'}),
+        }

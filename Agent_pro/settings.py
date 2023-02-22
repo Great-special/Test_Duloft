@@ -159,7 +159,7 @@ PAY_SECRET_KEY = config('PAYS_SECRET_KEY')
 
 
 CITIES_LIGHT_TRANSLATION_LANGUAGES = ['fr', 'en']
-CITIES_LIGHT_INCLUDE_COUNTRIES = ['FR', 'NG']
+# CITIES_LIGHT_INCLUDE_COUNTRIES = ['FR', 'NG', 'EN']
 CITIES_LIGHT_INCLUDE_CITY_TYPES = ['PPL', 'PPLA', 'PPLA2', 'PPLA3', 'PPLA4', 'PPLC', 'PPLF', 'PPLG', 'PPLL', 'PPLR', 'PPLS', 'STLMT',]
 
-CITIES_LIGHT_CITY_SOURCES = ['http://www.geonames.org/data-sources.html',]
+# CITIES_LIGHT_CITY_SOURCES = ['http://www.geonames.org/data-sources.html']

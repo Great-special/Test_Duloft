@@ -1,0 +1,11 @@
+6 Hardware maintenance tips.
+Some simple ideas that will help keep your hardware alive and healthy.
+
+    Shutdown, then power off the system before changing any part or plug (exceptions: serial port devices and ethernet interfaces)
+    Use anti-static mat and/or wrist strap
+    Be firm but gentle when seating boards, chips, connectors, etc.
+    Keep it clean, especially air filters & ventilation paths
+    Leave it powered up all the time (exception: video display)
+    Don't drink anything around your machinery
+    Put a power surge suppressor on the power line
+    Avoid vibrations and shocks (e.g., avoid stacking components)

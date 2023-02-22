@@ -1,29 +1,52 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+{% extends 'base.html' %}
 
-        <form method='post' enctype='multipart/form-data'> <!--for images -->
+	{% block content %}
+	<!-- Inner Page Breadcrumb -->
+	<section class="inner_page_breadcrumb">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="breadcrumb_content">
+						<h4 class="breadcrumb_title">Add Profile Add Details</h4>
+						<ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="/">Home</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Add Profile</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our LogIn Register -->
+	<section class="our-log bgc-fa">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-lg-6 offset-lg-3">
+					<div class="login_form inner_page">
+						<form method='post' enctype='multipart/form-data'>
+							<div class="heading">
+								<h3 class="text-center">Upgrade your account</h3>
+								
+							</div>
+								{% csrf_token %}
+								{{form.as_p}}
+							<button type="submit" class="btn btn-log btn-block btn-thm2">Done</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	{% endblock content %}
+
+        {% comment %} <form method='post' enctype='multipart/form-data'> <!--for images -->
             {% csrf_token %}
             {{form.as_p}}
             {{payment_details_form.as_p}}
             <button type='submit'>Submit</button>
         </form>
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+         {% endcomment %}

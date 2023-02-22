@@ -82,9 +82,6 @@
 		                        <ul>
 				                    <li><a href="page-dashboard.html">Dashboard</a></li>
 				                    <li><a href="page-my-properties.html">My Properties</a></li>
-				                    <li><a href="page-message.html">My Message</a></li>
-				                    <li><a href="page-my-review.html">My Review</a></li>
-				                    <li><a href="page-my-favorites.html">My Favorites</a></li>
 				                    <li><a href="page-add-new-property.html">Add Property</a></li>
 				                    <li><a href="page-my-profile.html">My Profile</a></li>
 		                        </ul>
@@ -94,8 +91,32 @@
 		            <li class="last">
 		                <a href="page-contact.html"><span class="title">Contact</span></a>
 		            </li>
-	                <li class="list-inline-item list_s"><a href="{% url 'login' %}" class="btn flaticon-user"> <span class="dn-lg">Login/Register</span></a></li>
-	                <li class="list-inline-item add_listing"><a href="{% url 'add-house' %}"><span class="flaticon-plus"></span><span class="dn-lg"> Add Property</span></a></li>
+
+					{% if request.user.is_authenticated and request.user.is_landlord %}
+
+					<li class="list-inline-item list_s"><a href="{% url 'userprofile' %}"> 
+						<span class="dn-lg">
+							<img class="rounded-circle" src="{% static 'images/team/e1.png' %}" alt="e1.png">
+							<span class="dn-1199">{{request.user.first_name}}</span>
+						</span>
+					</a></li>
+
+					<li class="list-inline-item add_listing"><a href="{% url 'add-house' %}"><span class="flaticon-plus"></span><span class="dn-lg"> Add Property</span></a></li>
+					
+					{% elif request.user.is_authenticated %}
+
+					<li class="list-inline-item list_s"><a href="{% url 'userprofile' %}"> <span class="dn-lg">
+						<img class="rounded-circle" src="{% static 'images/team/e1.png' %}" alt="e1.png">
+						<span class="dn-1199">{{request.user.first_name}}</span>
+					</span></a></li>
+
+					{% else %}
+
+					<li class="list-inline-item list_s"><a href="{% url 'login' %}" class="btn flaticon-user"> <span class="dn-lg">Login/Register</span></a></li>
+					
+					{% endif %}
+	                
+	               
 		        </ul>
 		    </nav>
 		</div>

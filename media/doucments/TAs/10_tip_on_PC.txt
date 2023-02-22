@@ -1,0 +1,115 @@
+ 10 Essential Computer Maintenance Tips
+Tulie Finley-Moise
+|
+August 13, 2019
+Today’s computers come in many different shapes and sizes, and each keeps us connected to our digital world at any given time. Whether you depend on your collection of devices for work or play, keeping them in impeccable, unblemished condition is of the utmost importance. From their cosmetic appeal to their operational functionality, a well-maintained computer looks good, lasts longer, and performs reliably.
+Keeping your PC in tip-top condition lengthens the life of your PC, both internally and externally. A glitchy operating system, overheating CPU, or fast-draining battery are avoidable computer woes that a bit of regular maintenance could defend against. Let’s take a look at these 10 essential maintenance tips, so your PC will see many more years of powerful performance and sleek appeal.
+
+
+1. Protect with padding
+Everyone has been there; drops, bumps, and slips result in unsightly cosmetic dings that leave your computer looking less-than-loved. If you’re like most people who travel with their PC, safeguarding against accidents can feel next to impossible when packing your PC away into a carry-on. An exposed laptop is vulnerable to all of the elements of travel you likely want to protect it from.
+Whether you’re traveling business-class or to a classroom across campus, shielding your PC against the elements starts with a protective case. There are a few different styles of protection that offer differing levels of armor and functionality. These include:
+Skins
+Functioning as a full-body laptop sticker, laptop skins are best for protecting the chassis from light damage and scratches.
+Hardshell snap-on covers
+Polycarbonate, plastic, or rubberized hard shell laptop covers protect your PC while still granting easy access to ports, buttons, lights, and fans.
+Sleeves
+A simple, soft, envelope-style pouch typically made of gentle materials like nylon, polyester, suede, or microfiber, laptop sleeves are lightweight protection.
+Messenger bag
+A shoulder bag specifically designed to accommodate your laptop and necessary peripherals, the dedicated laptop messenger bag offers the most padded protection.
+
+
+2. Organize cords
+The only thing more frustrating than dealing with long, confusing cables is getting them all mixed up and tangled in the process. Keeping your digital world connected is a must, so nixing the cables isn’t a feasible option. Taking the time to declutter and organize the snake-like mass of wires spawning from your power strip and PC ports is a great first step for both desktop and laptop users. Try these wire organization tips:
+A rotating power strip
+Traditional power strips offer a single line or panel of surge inputs. A rotating power strip gives you the freedom to modify the positioning of your many chargers, monitors, and docks.
+Color-coding cables
+Computer cables tend to be two colors; black and white. Organizing your mess of wires may be as simple as color coding them with reds, blues, yellows, greens, and or using labels in distinguishable hues.
+Cable clips
+Wire management is made simple when you attach cable clips to your desk, wall, or floor. These small clips are designed to hold cables of all different sizes.
+Organizer panel
+Functioning as a panel of cable clips, a wire organizer panel accommodates multiple wires. Stick it in place with an adhesive or keep it desk-side when you use a weighted panel.
+Pro tip: Be sure to keep your wires away from any footpaths. Tripping over wires could result in the toppling of your devices, doing more damage in an instant than years of use could ever do.
+
+
+3. Update your operating system
+If you’re looking for basic computer maintenance, keeping your operating system up to date is one of the easiest solutions. Regardless of whether you’re a Windows, Mac, or Linux loyalist, updating your PC when new patches are available ensures your PC stays at the cutting-edge of performance power.
+Windows 10 is known for keeping users in-tune with once-a-day update checks. This automated scan occurs in the background and always notifies you if there are any important software or operating system patches that need to be made. The end goal is to optimize your PC performance, so when Windows suggests you update, you should do it.
+Pro-tip: Some updates take longer than others. Set aside time before bedtime or during a daytime break to let Windows do its thing without interrupting your workflow.
+
+
+4. Unplug to avoid overcharging
+With heightened dependence on wireless devices, optimizing battery power is a top priority for many. There are few things more dreadful than a draining battery when you’ve got hours of work and play left on your day’s schedule. However, it’s better to resist the temptation of plugging in the moment your PC falls under 50% battery life.
+Unnecessary charging can lead to overcharging, which then leads to regenerative capability deterioration. This often looks like a laptop that can’t hold a charge as well as it could in its earlier days.
+Being shackled to the weight of a charger defeats the purpose of a laptop’s wireless portability. To avoid a bad battery fate, unplug your device after it reaches 100% charge, and don’t plug in until power is actually low.
+
+
+5. Purge your system of junk files and programs
+Computers tend to show their age best in the number of unused files living on their hard drives. Useless programs and old junk files likely take up more space than you realize. From old versions of software to retired versions of your resume, your PC is sure to have its fair share of digital debris festering on your desktop or in your start menu. These programs and files can quickly turn into performance hogs if they continue to accumulate.
+Before your computer gets to a point where it’s begging for more storage space, use these PC purge tips to relieve your system.
+
+    Uninstall trialware
+    Run disk cleanup software
+    Empty the recycle bin
+    Delete temporary files
+    Remove cache of offline web pages
+
+
+6. Run regular antivirus scans
+Malware attacks can sneak up on you at any given moment, and in the event one does, having a savvy antivirus living on your PC will protect you against the damage viruses bring. Weekly antivirus scans ensure your computer is always clear of malicious software infections. A basic scan will examine your computer for any glaring dangers or outstanding activity.
+For those who are frequent web-users and download programs and files regularly, consider running a virus scan twice a week. It’s always better to err on the side of safety, especially when your personal data could be at risk.
+Malware infections can compromise the performance of your computer and expose your confidential information to third-party cybercriminals. Depending on the type of malware installed on your system, a virus could also:
+
+    Slow web browser speeds
+    Disrupt network connections
+    Freeze or crash your system
+    Alter computer settings
+    Allow unauthorized access to system resources
+
+By running regular antivirus scans you can rest assured that nothing slips by. Be sure to choose an antivirus scan servicer that also scans all of your downloads, too.
+
+
+7. Clean the keyboard and case
+You’d be surprised to see just how much dust and debris lives underneath your keyboard’s keys. From food crumbs and dog hairs to dust and dirt, and everything else that can fit in between the keys, a number of dirty particles can clog your keyboard. This usually results in sticky or difficult-to-press buttons.
+Clearing out these hard-to-reach parts of your laptop or desktop setup is most easily done with a compressed air canister, available from office supply stores, computer stores, and hardware stores.
+For external keyboards
+Unplug the keyboard from the USB port or power it off if it’s wireless. Tilt the keyboard upside down and shake any loose debris out first. Spray compressed air at an angle and approximately 1-inch away from the keys. Use a damp microfiber cloth to finish the job, removing any excess dust or grime.
+For the laptop user
+Power your laptop off and unplug any USB or power supply inputs. Tilt the laptop upside down and gently tap it to encourage any loose debris to come out. Set the laptop down in its natural position and spray between keys from about 1-inch away. Spray in short bursts moving from one side of the keyboard to the other.
+If you find certain spots tougher to clean than others, use a cotton ball dipped in isopropyl alcohol as a great alternative. Alcohol evaporates more quickly than water which makes it the perfect solution for hardened debris.
+Pro-tip: When cleaning your laptop or desktop, absolutely avoid pouring any type of liquid onto the body. Water and electronic devices do not mix well and could result in extreme damage to your computer.
+
+
+8. Update your passwords
+Believe it or not, updating your passwords is a task as crucial as backing up your data. Verizon’s 2017 Data Breach Investigations Report found that an alarming 81% of hacking-related breaches leveraged either stolen and/or weak passwords [1]. Poor password behavior encompasses everything from using the same password for every account to using simple, guessable passwords like “password” or “123456.”
+When it comes to basic computer maintenance, protecting your digital world against cybercriminals should always be at the forefront of your task list. No security system is perfect, and more today than ever before, consumers are realizing this on a large scale.
+If you’re overdue for a password update, consider using these strong password generation tips:
+
+    Use at least 10 characters
+    Use a combination of uppercase and lowercase letters
+    Include both numbers and special symbols
+    Add emoticons if possible (:O, :(, :D, :), T.T)
+
+A strong password safeguards all of your data against potential third-party hackers which is precisely why it’s such an essential part of computer maintenance.
+
+
+9. Organize your data
+It’s easy to let your computer’s data organization run awry when your work and play lifestyle doesn’t leave much time for calculated file management. Whether it’s old music files from your garage band days or downloaded add-ons for your favorite simulation game, your PC’s many folders can grow crowded.
+If you can’t remember the last time you took a look through your downloads folder, you’re likely overdue for a visit. The same applies to the rest of your default folders (documents, photos, etc.).
+Dealing with a cluttered desktop or crowded computer folders may be a daunting task, but with these tips and tricks, you’ll be well on your way to a functioning system of files and folders.
+Create large, main folders
+Everyone uses their computers for different primary purposes. A freelance writer will likely have completely different main folder assignments than a professional gamer or a business owner. It’s important to narrow down your digital world into easy folder divisions to make your first round of organization a breeze, and your future rounds even easier.
+Create small sub-folders
+Within your larger primary folders, smaller sub-folders make your organization operation even smoother. Being able to categorize files by their functionality or content will help you access them whenever you need them. No search button necessary.
+Empty your downloads folder
+Your downloads folder should function as a temporary cache for recently downloaded files. Get into the habit of placing recent downloads in their proper folders or deleting them once they’ve served their purpose.
+Clear your desktop
+When you power on your computer and saddle up for your day’s work or some light social media browsing, you want to be able to do so without the stress of clutter. Clear your desktop of any files, folders, or programs you don’t need readily available at every power-on.
+Choose thoughtful filenames
+If you’re frequently saving images, PDFs, and other common files, you know how easy it is to type in gibberish for a successful “Save As” operation. Instead of rushing through, take the time to come up with intentional file names so you always know what’s living on your hard drive and where it’s located.
+
+
+10. Back up your data
+Part of owning a modern computer is to prepare for the unexpected. Sudden crashes, untimely glitches, and random hardware failure all have the potential to damage the data living on your PC. Backing up files is one of the most vital computer maintenance procedures PC users can do for themselves. That’s why we’ve ranked it at our final spot. Your computer is replaceable, but without a backup, your information is not.
+Full backups are usually done on storage-heavy external hard drives and on the cloud. By making duplicate copies of everything on your PC (actually having your data in 3 places is safest), all of your valuable data lives both on your computer and inside of the external drive or cloud.
+Check out our Knowledge Base guide for a comprehensive walkthrough on how to perform a full backup on your Windows 10 or Windows 8 PC.

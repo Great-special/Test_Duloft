@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+	{% block content %}
+	<!-- Inner Page Breadcrumb -->
+	<section class="inner_page_breadcrumb">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6">
+					<div class="breadcrumb_content">
+						<h4 class="breadcrumb_title">Edit</h4>
+						<ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="/">Home</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Edit</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our LogIn Register -->
+	<section class="our-log bgc-fa">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-lg-6 offset-lg-3">
+					<div class="login_form inner_page">
+						<form method='post'>
+							<div class="heading">
+								<h3 class="text-center">Edit to your account</h3>
+							</div>
+								{% csrf_token %}
+								{{form.as_p}}
+							<button type="submit" class="btn btn-log btn-block btn-thm2">Done</button>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% endblock content %}

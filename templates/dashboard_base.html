@@ -115,8 +115,8 @@
 				                    <li><a href="page-message.html">My Message</a></li>
 				                    <li><a href="page-my-review.html">My Review</a></li>
 				                    <li><a href="page-my-favorites.html">My Favorites</a></li>
-				                    <li><a href="page-add-new-property.html">Add Property</a></li>
-				                    <li><a href="page-my-profile.html">My Profile</a></li>
+				                    <li><a href="">Add Property</a></li>
+				                    <li><a href="{% url 'userprofile' %}">My Profile</a></li>
 		                        </ul>
 		                    </li>
 		                </ul>
@@ -128,19 +128,16 @@
 						<div class="dropdown">
 	                		<a class="btn dropdown-toggle" href="page-dashboard.html#" data-toggle="dropdown">
                                 <img class="rounded-circle" src="{% static 'images/team/e1.png' %}" alt="e1.png">
-                                 <span class="dn-1199">Ali Tufan</span>
+                                 <span class="dn-1199">{{request.user.first_name}}</span>
                             </a>
 						    <div class="dropdown-menu">
 						    	<div class="user_set_header">
 						    		<img class="float-left" src="{% static 'images/team/e1.png' %}" alt="e1.png">
-							    	<p>Ali Tufan <br><span class="address">alitufan@gmail.com</span></p>
+							    	<p>{{user_detail.get_full_name}} <br><span class="address">{{user_detail.email}}</span></p>
 						    	</div>
 						    	<div class="user_setting_content">
 									<a class="dropdown-item active" href="page-dashboard.html#">My Profile</a>
-									<a class="dropdown-item" href="page-dashboard.html#">Messages</a>
-									<a class="dropdown-item" href="page-dashboard.html#">Purchase history</a>
-									<a class="dropdown-item" href="page-dashboard.html#">Help</a>
-									<a class="dropdown-item" href="page-dashboard.html#">Log out</a>
+									<a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
 						    	</div>
 						    </div>
 						</div>

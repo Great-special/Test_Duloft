@@ -1,0 +1,21 @@
+
+4 types of maintenance strategy, which one to chose?
+Four general types of maintenance philosophies can be identified, namely corrective, preventive, risk-based and condition-based maintenance.
+
+Maintenance is carried out following detection of an anomaly and aimed at restoring normal operating conditions. This approach is based on the firm belief that the costs sustained for downtime and repair in case of fault are lower than the investment required for a maintenance program. This strategy may be cost-effective until catastrophic faults occur. 
+
+Maintenance carried out at predetermined intervals or according to prescribed criteria, aimed at reducing the failure risk or performance degradation of the equipment.
+The maintenance cycles are planned according to the need to take the device out of service. The incidence of operating faults is reduced. 
+
+Maintenance carried out by integrating analysis, measurement and periodic test activities to standard preventive maintenance.
+
+The gathered information is viewed in the context of the environmental, operation and process condition of the equipment in the system. The aim is to perform the asset condition and risk assessment and define the appropriate maintenance program.
+
+All equipment displaying abnormal values is refurbished or replaced. In this way it is possible to extend the useful life and guarantee over time high levels of reliability, safety and efficiency of the plant.
+
+
+Maintenance based on the equipment performance monitoring and the control of the corrective actions taken as a result.
+
+The real actual equipment condition is continuously assessed by the on-line detection of significant working device parameters and their automatic comparison with average values and performance. Maintenance is carried out when certain indicators give the signaling that the equipment is deteriorating and the failure probability is increasing.
+
+This strategy, in the long term, allows reducing drastically the costs associated with maintenance, thereby minimizing the occurrence of serious faults and optimizing the available economic resources management. 

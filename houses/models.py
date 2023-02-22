@@ -11,7 +11,7 @@ BUILDING_TYPES = [
     ('Duplex', 'Duplex'),
     ('1 Story Building Apartment', '1 Story Building Apartment'),
     ('2 Story Building Apartment', '2 Story Building Apartment'),
-    ('2 Story Building Apartment', '3 Story Building Apartment'),
+    ('3 Story Building Apartment', '3 Story Building Apartment'),
     ('2 Story Building Apartment', '4 Story Building Apartment'),
     ('5 Story Building Apartment', '5 Story Building Apartment'),
     ('6 Story Building Apartment', '6 Story Building Apartment'),
@@ -61,10 +61,27 @@ FLOOR_TYPE = [
     ('Seventh Floor', 'Seventh Floor'),
 ]
 
+    # air_conditioning = models.BooleanField(default=False)
+    # tv_cable = models.BooleanField(default=False)
+    # refigerator = models.BooleanField(default=False)
+    # wifi = models.BooleanField(default=False)
+    # dryer = models.BooleanField(default=False)
+    # washer = models.BooleanField(default=False)
+    # microwave = models.BooleanField(default=False)
+    # swimming_pool = models.BooleanField(default=False)
+    # gym = models.BooleanField(default=False)
+    # furnitures = models.BooleanField(default=False)
+class AmenitiesModels(models.Model):
+    feature = models.CharField(max_length=100, null=True, blank=True)
     
+    def __str__(self):
+        return self.feature
+
+
+
 class HouseModel(models.Model):
-    # added = models.DateTimeField(auto_now_add=True)
-    # updated = models.DateTimeField(auto_now=True)
+    added = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
     name = models.CharField('Building Name', max_length=100, blank=True, null=True)
     address = models.CharField('Building Address', max_length=150)
     country = models.ForeignKey(Country, on_delete=models.PROTECT, null=True, blank=True) # default=165
@@ -80,17 +97,16 @@ class HouseModel(models.Model):
     newly_built = models.BooleanField('Newly Built', default=False)
     sale = models.BooleanField('For Sale', default=False)
     exterior_image = models.ImageField('Exterior Image Main', upload_to='BuildingExterior/', blank=True, null=True)
-    # exterior_image_side1 = models.ImageField('Exterior Image Side', upload_to='BuildingExterior/', blank=True, null=True)
-    # exterior_image_side2 = models.ImageField('Exterior Image Side', upload_to='BuildingExterior/', blank=True, null=True)
-    # vid_file = models.FileField(upload_to="BuildingInterior/video/building/", blank=True, null=True)
+    exterior_image_side1 = models.ImageField('Exterior Image Side A', upload_to='BuildingExterior/', blank=True, null=True)
+    exterior_image_side2 = models.ImageField('Exterior Image Side B', upload_to='BuildingExterior/', blank=True, null=True)
+    vid_file = models.FileField(upload_to="BuildingInterior/video/building/", blank=True, null=True)
     c_of_o = models.FileField('Certificate Of Occupancy', upload_to="doucments/CofOs/", null=True, blank=True)
     d_of_a = models.FileField('Deed Of Assignment', upload_to="doucments/DofAs/", null=True, blank=True)
     tenant_agreement = models.FileField('Tenant Agreement', upload_to="doucments/TAs/", null=True, blank=True)
     landlord = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     verified = models.BooleanField(default=False)
-    # featured = models.BooleanField(default=False)
-    
-    
+    featured = models.BooleanField(default=False)
+    features = models.ManyToManyField(AmenitiesModels)
     
     def __str__(self):
         return self.name + ' - ' + self.address
@@ -112,19 +128,18 @@ class FlatModel(models.Model):
     taken = models.BooleanField(default=False)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     accommodation_type = models.CharField('Accommodation Type', max_length=50, choices=ACCOMMODATION_TYPES)
-    # description = models.TextField('Description', max_length=600, blank=True, null=True)
+    description = models.TextField('Description', max_length=600, blank=True, null=True)
     bedroom = models.ImageField(upload_to="BuildingInterior/bedroom")
-    # bedroom_master = models.ImageField(upload_to="BuildingInterior/bedroom")
+    bedroom_master = models.ImageField(upload_to="BuildingInterior/bedroom")
     kitchen = models.ImageField(upload_to="BuildingInterior/kitchen")
     sittingroom = models.ImageField(upload_to="BuildingInterior/livingroom")
     convience = models.ImageField(upload_to="BuildingInterior/convience")
-    # vid_file = models.FileField(upload_to="BuildingInterior/video/flat")
-    
+    vid_file = models.FileField(upload_to="BuildingInterior/video/flat")
+    features = models.ManyToManyField(AmenitiesModels)
+        
     def __str__(self):
         return self.floor + " " + self.side
     
-
-
 
 class SpaceModel(models.Model):
     house = models.ForeignKey(HouseModel, on_delete=models.CASCADE, related_name='space')
@@ -135,10 +150,10 @@ class SpaceModel(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     accommodation_type = models.CharField('Accommodation Type', max_length=50, choices=ACCOMMODATION_TYPES, null=True, blank=True)
     image = models.ImageField(upload_to="BuildingInterior/space", null=True, blank=True)
+    features = models.ManyToManyField(AmenitiesModels)
     
     def __str__(self):
         return self.floor + ' ' + self.spacename
-    
     
     def save(self, *args, **kwargs):
         b_typ = self.house.building_type
@@ -146,5 +161,7 @@ class SpaceModel(models.Model):
         if b_typ in Plaza:
            super().save(*args, **kwargs)
         else:
-            raise ValueError('This Building Can Accept Spaces Try Flat')
-            
+            raise ValueError('This Building Cann\'t Accept Spaces Try Flat')
+        
+        
+        
