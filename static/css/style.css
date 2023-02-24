@@ -1020,12 +1020,12 @@ header.header-nav.menu_style_home_one.home9 ul.ace-responsive-menu li.add_listin
 }
 header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing a{
   font-family: "Nunito";
-  color: #ff5a5f;
+  color: #ffb25a;
   line-height: 1.2;
   top: -20px;
 }
 header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing{
-  background-color: #ff5a5f;
+  background-color: #ffb25a;
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
 }
 header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing a{
@@ -1080,7 +1080,7 @@ header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li a,
 header.header-nav.menu_style_home_one.stricky-fixed a.navbar_brand span,
 header.header-nav.menu_style_home_one.stricky-fixed .sign_up_btn .btn,
 header.header-nav.menu_style_home_one.stricky-fixed #search-button i{
-  color: #484848;
+  color: #ffb25a;
 }
 header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed a.navbar_brand span,
 header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed li a{
@@ -2588,7 +2588,7 @@ input.amount4:focus{
 }
 .home1-advnc-search span.ui-slider-handle.ui-corner-all.ui-state-default:before,
 .sasw_list span.ui-slider-handle.ui-corner-all.ui-state-default:before{
-  background-color: #ff5a5f;
+  background-color: #ffb25a;
   border-radius: 10px;
   content: "";
   height: 11px;
@@ -3705,7 +3705,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   line-height: normal;
   margin-right: 30px;
   position: relative;
-  -ms-text-align-last: auto;
+  text-align-last: auto;
   text-align: left;
   width: 210px;
 }
@@ -7013,13 +7013,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   padding: 80px 0 70px;
 }
 .footer_one {
-  background-color: #24324a;
+  background-color: #e50914;
 }
 .footer_middle_area{
-  background-color: #1d293e;
+  background-color: #e50914;
 }
 .footer_bottom_area {
-  background-color: #484848;
+  background-color: #e50914;
 }
 .copyright-widget p {
   font-size: 14px;

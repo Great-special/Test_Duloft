@@ -8,8 +8,8 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView, D
 
 from cities_light.models import Country, Region, SubRegion
 
-from .models import HouseModel, FlatModel
-from .forms import FlatModelForm, HouseModelForm, LookUpForm, location_searchform
+from .models import HouseModel, FlatModel, SpaceModel
+from .forms import FlatModelForm, HouseModelForm, SpaceModelForm, LookUpForm, location_searchform
 
 
 
@@ -116,6 +116,28 @@ def flat_create_view(request):
     return render(request, template_name, {'form':form})
 
 
+def space_create_view(request):
+    template_name = 'add_flat.html'
+    
+    if request.method == "POST":
+        # Setting the house landlord to the loggedin user
+        form = SpaceModelForm(request.POST, request.FILES)
+        if form.is_valid():
+            space_instance = form.save(commit = False)
+            if request.user.is_landlord:
+                if space_instance.house.landlord == request.user:
+                    space_instance.save()
+                    return redirect('/')
+                else:
+                    return HttpResponseBadRequest("You cannot add a flat to this house")
+            else:
+                return HttpResponseBadRequest("You cannot add a flat")
+    else:
+        form = SpaceModelForm()
+
+    return render(request, template_name, {'form':form})
+
+
 def house_update_view(request, id):
     
     house = HouseModel.objects.get(id = id)
@@ -153,6 +175,24 @@ def flat_update_view(request, id):
     return render( request, template_name, context)
 
 
+def space_update_view(request, id):
+    flat = SpaceModel.objects.get(id = id)
+    form = SpaceModelForm(instance = flat)
+    
+    if request.method == 'POST':
+        form = SpaceModelForm(request.POST, request.FILES, instance = flat)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+        
+    context = {
+        'flat': flat, 
+        'form': form, 
+    }
+    template_name = 'update_flat.html'
+    return render( request, template_name, context)
+
+
 def get_flats_by_building(request, pk):
     flats = FlatModel.objects.filter(house = pk)
     house_id = pk
@@ -165,11 +205,17 @@ def get_flats_by_building(request, pk):
 
 
 
-
 def lookup_accommodation(request, keyword: str):
     # returns the objects where the house.state OR house.city contains the search word
-    queryset = FlatModel.objects.filter(Q(house__state__name__icontains=keyword) 
+    if 'Mall' in keyword or 'shop' in keyword:
+        print('in if ->')
+        queryset = SpaceModel.objects.filter(Q(house__state__name__icontains=keyword) 
                         | Q(accommodation_type__icontains=keyword) |Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
+    else:
+        print('in else ->')
+        queryset = FlatModel.objects.filter(Q(house__state__name__icontains=keyword) 
+                            | Q(accommodation_type__icontains=keyword) |Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
+    print(queryset)
     return render(request, 'search_results.html', {'results':queryset})
 
 
@@ -178,7 +224,7 @@ def lookup_property_by_type(request, keyword: str):
     queryset = HouseModel.objects.filter(building_type__icontains=keyword)
     print(queryset)
     return render(request, 'property_search_results.html', {'results':queryset})  
-    
+
 # def lookup_prices(request):
 #     # returns the objects where the prices of the flats are greater than or equal to the search price
 #     # Or where the prices of the House are greater than or equal to the search price

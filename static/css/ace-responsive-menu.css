@@ -144,7 +144,7 @@ ul {
   display: none;
   float: left;
   width: 100%;
-  background: #333;
+  background: #ff7700;
 }
 .menu-toggle:focus {
   outline: none;
@@ -174,7 +174,7 @@ ul {
 }
 .menu-toggle #menu-btn {
   float: right;
-  background: #202020;
+  background: #fc7703;
   border: 1px solid #0C0C0C;
   padding: 8px;
   border-radius: 5px;
@@ -266,7 +266,7 @@ ul[data-menu-style="vertical"] > li > ul.sub-menu {
 }
 ul[data-menu-style="vertical"] > li > a i {
   padding-right: 10px;
-  color: #FF5737;
+  color: #ff7700;
 }
 ul[data-menu-style="vertical"]> li > ul.sub-menu > li ul.sub-menu {
   position: absolute;

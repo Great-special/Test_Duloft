@@ -48,12 +48,12 @@
   transition: all 0.2s ease-in-out;
 }
 .vertical-wrapper .title-vertical.home3{
-  background-color: #ffffff;
-  color: #0a0a0a;
+  background-color: #ff7700;
+  color: #ffffff;
   text-transform: capitalize;
 }
 .vertical-wrapper .title-vertical.home5{
-  background-color: #0a0a0a;
+  background-color: #ff7700;
   color: #ffffff;
 }
 .vertical-wrapper .title-vertical .show-down{
@@ -199,7 +199,7 @@
   list-style: none;
   font-size: 15px;
   text-align: left;
-  background-color: #fff;
+  background-color: #ff7700;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -215,7 +215,7 @@
   border: 0;
   min-width: 300px;
   height: 100%;
-  background-color: #0a0a0a;
+  background-color: #ff7700;
   visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;

@@ -207,42 +207,25 @@
                         </div>
                     </div>
                     <!--features-->
-                    {% comment %} <div class="col-lg-12">
+                    <div class="col-lg-12">
                         <div class="application_statics mt30">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h4 class="mb10">Features</h4>
                                 </div>
+                                <!--Showing a ManyToManyField in a Template-->
+                                {% if house.features %}
                                 <div class="col-sm-6 col-md-6 col-lg-4">
                                     <ul class="order_list list-inline-item">
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Air Conditioning</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Barbeque</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Dryer</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Gym</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Laundry</a></li>
+                                        {% for feature in house.features.all %}
+                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>{{feature}}</a></li>
+                                        {% endfor %}
                                     </ul>
                                 </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <ul class="order_list list-inline-item">
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Lawn</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Microwave</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Outdoor Shower</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Refrigerator</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Sauna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <ul class="order_list list-inline-item">
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Swimming Pool</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>TV Cable</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Washer</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>WiFi</a></li>
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>Window Coverings</a></li>
-                                    </ul>
-                                </div>
+                                {% endif %}
                             </div>
                         </div>
-                    </div> {% endcomment %}
+                    </div> 
                     <div class="col-lg-12">
                         <div class="application_statics mt30">
                             <h4 class="mb30">Location <small class="float-right">{{house.address}}</small></h4>
