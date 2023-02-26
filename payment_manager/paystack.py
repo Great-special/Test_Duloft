@@ -1,7 +1,8 @@
 import requests
 import json
 import secrets
-from pypaystack import Transaction
+# from pypaystack import Transaction
+from pypaystack2.api import Transaction
 
 
 true = True

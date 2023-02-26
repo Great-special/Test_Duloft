@@ -2,10 +2,11 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.http.response import Http404, HttpResponseBadRequest
 from django.contrib import messages
 from django.conf import settings
+from django.core.exceptions import ObjectDoesNotExist
 from .models import Payment
 from .forms import MakePaymentForm, PaymentForm
 
-from houses.models import HouseModel, FlatModel
+from houses.models import HouseModel, FlatModel, SpaceModel
 
 # Create your views here.
 
@@ -68,44 +69,86 @@ def initiate_payment_maintest(request, house_id, flat_id):
         except :
             full_name = request.user
             
-        # obj = HouseModel.objects.get(id=2)  
-        flat = FlatModel.objects.filter(house__id=house_id).get(id=flat_id) # getting a single flat from a house in the database
-        house = flat.house.name
-        landlord = flat.house.landlord.get_full_name()
-        recipient_name = flat.house.landlord
-        amount = flat.price
-        commission = float(amount) * commission_rate
-        description = f"Payment for an apartment [ {flat} ] in {house} by {full_name} to {landlord}"
-        
-        
-        # Checking if this payment is the first payment by user
-        queryset = Payment.objects.filter(owner=request.user)
-        print(queryset.exists())
-        
-        if queryset.exists():
-            print('Not First')
+        # obj = HouseModel.objects.get(id=2) 
+        try:
+            flat = FlatModel.objects.filter(house__id=house_id).get(id=flat_id) # getting a single flat from a house in the database
+        except ObjectDoesNotExist:
+            space = SpaceModel.objects.filter(house__id=house_id).get(id=flat_id)
             
-            for query in queryset:
-                print(query)
-                if query.verified:
-                    paid = True
-                    break
+            house = space.house.name
+            landlord = space.house.landlord.get_full_name()
+            recipient_name = space.house.landlord
+            amount = space.price
+            commission = float(amount) * commission_rate
+            description = f"Payment for an apartment [ {space} ] in {house} by {full_name} to {landlord}"
             
-            if paid:
-                init_pay = create_payment(amount, description, full_name, 
-                                          request.user.email, request.user, recipient_name, flat)
+            
+            # Checking if this payment is the first payment by user
+            queryset = Payment.objects.filter(owner=request.user)
+            print(queryset.exists())
+            
+            if queryset.exists():
+                print('Not First')
+                
+                for query in queryset:
+                    print(query)
+                    if query.verified:
+                        paid = True
+                        break
+                
+                if paid:
+                    init_pay = create_payment(amount, description, full_name, 
+                                            request.user.email, request.user, recipient_name, space)
+                else:
+                    print('Haven\'t paid before')
+                    init_pay = create_payment(amount, description, full_name, request.user.email, 
+                                            request.user, recipient_name, flat, commission=commission)
             else:
-                print('Haven\'t paid before')
+                print('first')
                 init_pay = create_payment(amount, description, full_name, request.user.email, 
-                                          request.user, recipient_name, flat, commission=commission)
+                                            request.user, recipient_name, flat, commission=commission)
+                
+            context = {'data': init_pay, 'Public_key':settings.PAY_PUBLIC_KEY}
+            print(init_pay.amount, init_pay.description)
+            return render(request, 'make_payment.html', context)
+        
         else:
-            print('first')
-            init_pay = create_payment(amount, description, full_name, request.user.email, 
-                                          request.user, recipient_name, flat, commission=commission)
+            house = flat.house.name
+            landlord = flat.house.landlord.get_full_name()
+            recipient_name = flat.house.landlord
+            amount = flat.price
+            commission = float(amount) * commission_rate
+            description = f"Payment for an apartment [ {flat} ] in {house} by {full_name} to {landlord}"
             
-        context = {'data': init_pay, 'Public_key':settings.PAY_PUBLIC_KEY}
-        print(init_pay.amount, init_pay.description)
-        return render(request, 'make_payment.html', context)
+            
+            # Checking if this payment is the first payment by user
+            queryset = Payment.objects.filter(owner=request.user)
+            print(queryset.exists())
+            
+            if queryset.exists():
+                print('Not First')
+                
+                for query in queryset:
+                    print(query)
+                    if query.verified:
+                        paid = True
+                        break
+                
+                if paid:
+                    init_pay = create_payment(amount, description, full_name, 
+                                            request.user.email, request.user, recipient_name, flat)
+                else:
+                    print('Haven\'t paid before')
+                    init_pay = create_payment(amount, description, full_name, request.user.email, 
+                                            request.user, recipient_name, flat, commission=commission)
+            else:
+                print('first')
+                init_pay = create_payment(amount, description, full_name, request.user.email, 
+                                            request.user, recipient_name, flat, commission=commission)
+                
+            context = {'data': init_pay, 'Public_key':settings.PAY_PUBLIC_KEY}
+            print(init_pay.amount, init_pay.description)
+            return render(request, 'make_payment.html', context)
     else:
         
         return HttpResponseBadRequest('Invalid request land lords cannot pay rent')
