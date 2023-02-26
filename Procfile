@@ -1,1 +1,1 @@
-web:gunicorn Agent_pro.wsgi
+web: gunicorn Agent_pro.wsgi
