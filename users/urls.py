@@ -12,6 +12,7 @@ urlpatterns = [
     path('update-landlord-profile/<str:pk>/', views.update_landlord_profile, name='edit-landlord-profile'),
     path('add-payment-details/', views.landlordpaymentdetail, name='paymentdetail'),
     path('', views.userdetailsView, name='userprofile'),
+    path('my-properties/', views.get_building_for_tenant, name='my-properties'),
     
     path('dashboard/', views.landlordDashboardView, name='landlord-dashboard'),
     path('dashboard/my-properties/', views.get_buildings_by_landlord, name='my-properties-dashboard'),

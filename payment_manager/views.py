@@ -23,7 +23,7 @@ def verify_payment(request, ref:str):
         
     else:
         messages.error(request, 'Payment not verified')
-    return redirect('initiate-payment')
+    return redirect('userprofile')
 
 
 def initiate_payment(request):
@@ -38,7 +38,7 @@ def initiate_payment(request):
     return render(request, 'initiate_payment.html',{'form': form, })
 
 
-def create_payment(amount, description, depositor, email, owner, recipient_name, space_paidfor, commission=0.00,):
+def create_payment(amount, description, depositor, email, owner, recipient_name, space_paidfor, commission=0.00):
     """
         This function creates a payment instance in the data base
     """
@@ -49,7 +49,7 @@ def create_payment(amount, description, depositor, email, owner, recipient_name,
         description=description,
         owner=owner,
         email=email,
-        space_paidfor=flat,
+        space_paidfor=space_paidfor,
         recipient_name=recipient_name
     )
     return init_pay

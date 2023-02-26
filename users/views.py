@@ -10,6 +10,7 @@ from .forms import UserForm, UserUpdateForm, LoginForm, LandLordCreationForm, La
 
 from houses.models import HouseModel, FlatModel, SpaceModel
 
+from payment_manager.models import Payment
 # Paystack = settings.PAYSTACK
 
 # Create your views here.
@@ -67,13 +68,8 @@ def landlordpaymentdetail(request):
             
             
 def userdetailsView(request):
-    try:
-        user_profile = User.objects.get(username=request.user)
-        payment_by_user = Payment.objects.get(owner=request.user)
-        accommodation_paidfor = payment_by_user.space_paidfor.name
-    except:
-        pass
-            
+
+    user_profile = User.objects.get(username=request.user)      
     context = {
         'user_detail': user_profile,
     }
@@ -85,6 +81,20 @@ def get_buildings_by_landlord(request):
         buildings = HouseModel.objects.filter(landlord=request.user)
         return render( request, 'page-my-properties.html', {'properties':buildings})
 
+
+def get_building_for_tenant(request):
+    Paid_Accommodations = []
+    spaces_paid = Payment.objects.filter(owner=request.user)
+    # print(spaces_paid)
+    for space in spaces_paid:
+        # print(space, 'space')
+        if space.verified:
+            Paid_Accommodations.append(space.space_paidfor)
+    # print(Paid_Accommodations, 'PA')
+    context = {
+        'paid_accommodation':Paid_Accommodations,
+    }
+    return render(request, 'page-my-properties.html', context)
 
 def landlordDashboardView(request):
     user_profile = User.objects.get(username=request.user)

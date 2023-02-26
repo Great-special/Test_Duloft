@@ -47,18 +47,18 @@ class Payment(models.Model):
        
     
     def final_amount(self):
-        return float(self.amount) + self.commission 
+        return float(self.amount) + float(self.commission)
     
     
     def validate_amount(self):
-        return (float(self.amount) + self.commission) * 100
+        return (float(self.amount) + float(self.commission)) * 100
     
     def verify_payment(self):
         paystack = PayStack(settings.PAY_SECRET_KEY)
         status, result = paystack.verify_payment(self.ref)
         
         if status:
-            if result['amount'] / 100 == (float(self.amount) + self.commission):
+            if result['amount'] / 100 == (float(self.amount) + float(self.commission)):
                 self.verified = True
             else:
                 self.verified = False
