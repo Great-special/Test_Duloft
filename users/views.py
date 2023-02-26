@@ -67,8 +67,17 @@ def landlordpaymentdetail(request):
             
             
 def userdetailsView(request):
-    user_profile = User.objects.get(username=request.user)
-    return render(request, 'page-my-profile.html', {'user_detail': user_profile})
+    try:
+        user_profile = User.objects.get(username=request.user)
+        payment_by_user = Payment.objects.get(owner=request.user)
+        accommodation_paidfor = payment_by_user.space_paidfor.name
+    except:
+        pass
+            
+    context = {
+        'user_detail': user_profile,
+    }
+    return render(request, 'page-my-profile.html', context)
 
 
 def get_buildings_by_landlord(request):

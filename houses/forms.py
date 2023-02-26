@@ -46,7 +46,8 @@ class HouseModelForm(forms.ModelForm):
             'available_number_accommodation_space',
             'house_price', 'electricity',
             'water', 'newly_built', 'sale', 'exterior_image',
-            'exterior_image_side1', 'exterior_image_side2', 'c_of_o', 'd_of_a', 'tenant_agreement'
+            'exterior_image_side1', 'exterior_image_side2', 'c_of_o', 
+            'd_of_a', 'tenant_agreement', 'features'
         ]
         
         widgets = {
@@ -70,6 +71,7 @@ class HouseModelForm(forms.ModelForm):
             'c_of_o' : forms.FileInput(attrs={'class': 'form-control'}),
             'd_of_a': forms.FileInput(attrs={'class': 'form-control'}),
             'tenant_agreement': forms.FileInput(attrs={'class': 'form-control'}),
+            'features': forms.SelectMultiple(attrs={'class': 'form-control'}),
             
         }
 
@@ -81,10 +83,10 @@ class FlatModelForm(forms.ModelForm):
         fields = [
             'house', 'floor',
             'side', 'accommodation_type',
-            'price',
-            'bedroom',
+            'price', 'description',
+            'bedroom', 'bedroom_master',
             'kitchen', 'sittingroom',
-            'convience'
+            'convience', 'features'
         ]
         
         widgets = {
@@ -93,26 +95,42 @@ class FlatModelForm(forms.ModelForm):
             'side': forms.Select(attrs={'class':'form-control'}),
             'accommodation_type': forms.Select(attrs={'class': 'form-control'}),
             'price': forms.NumberInput(attrs={'class':'form-control'}),
+            'description': forms.Textarea(attrs={'class':'form-control'}),
             'bedroom': forms.FileInput(attrs={'class': 'form-control'}),
+            'bedroom_master': forms.FileInput(attrs={'class': 'form-control'}),
             'kitchen': forms.FileInput(attrs={'class': 'form-control'}),
             'sittingroom': forms.FileInput(attrs={'class': 'form-control'}),
             'convience': forms.FileInput(attrs={'class': 'form-control'}),
+            'features': forms.SelectMultiple(attrs={'class': 'form-control'}),
         }
 
+    def __init__(self, user, *agrs, **kwargs):
+        super(FlatModelForm, self).__init__(*agrs, **kwargs)
+        if user:
+            self.fields['house'].queryset = HouseModel.objects.filter(landlord=user)
+            
 
 
 class SpaceModelForm(forms.ModelForm):
+    
+    def __init__(self, user, *agrs, **kwargs):
+        super(SpaceModelForm, self).__init__(*agrs, **kwargs)
+        if user:
+            self.fields['house'].queryset = HouseModel.objects.filter(landlord=user)
+
     class Meta:
         model = SpaceModel
         exclude = ['taken']   
         
         widgets = {
             'house': forms.Select(attrs={'class': 'form-control'}),
+            'side': forms.Select(attrs={'class': 'form-control'}),
             'floor': forms.Select(attrs={'class':'form-control'}),
             'spacename': forms.TextInput(attrs={'class':'form-control'}),
             'accommodation_type': forms.Select(attrs={'class': 'form-control'}),
             'price': forms.NumberInput(attrs={'class':'form-control'}),
             'image': forms.FileInput(attrs={'class': 'form-control'}),
+            'features' : forms.SelectMultiple(attrs={'class': 'form-control'}),
         }
         
         

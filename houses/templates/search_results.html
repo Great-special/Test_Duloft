@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
-{% load humanize %}
 {% load static %}
+
+{% load humanize %}
 
 {% block content %}
 <section class="our-listing bgc-f7 pb30-991">
@@ -36,7 +37,12 @@
                         <div class="col-md-4 col-lg-4">
                             <div class="feat_property home7">
                                 <div class="thumb">
-                                    <img class="img-whp" src="{{result.house.exterior_image.url}}" alt="fp1.jpg">
+                                    {% if result.sittingroom %}
+                                    <img class="img-whp" src="{{result.sittingroom.url}}" alt="fp1.jpg">
+                                    {% else %}
+                                    <img class="img-whp" src="{{result.image.url}}" alt="fp1.jpg">
+                                    {% endif %}
+                                    
                                     <div class="thmb_cntnt">
                                         <ul class="tag mb0">
                                             <li class="list-inline-item"><a href="page-listing-grid-v3.html#">For Rent</a></li>

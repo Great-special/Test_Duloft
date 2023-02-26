@@ -245,7 +245,7 @@
 		</nav>
 	</div>
 
-
+	{% if request.user.is_landlord %}
     <div class="dashboard_sidebar_menu dn-992">
 	    <ul class="sidebar-menu">
 	   		<li class="header"><img src="{% static 'images/header-logo2.png' %}" alt="header-logo2.png"> FindHouse</li>
@@ -272,7 +272,24 @@
 		    <li><a href="{% url 'logout' %}"><i class="flaticon-logout"></i> <span>Logout</span></a></li>
 	    </ul>
     </div>
-
+	{% else %}
+	<div class="dashboard_sidebar_menu dn-992">
+	    <ul class="sidebar-menu">
+	   		<li class="header"><img src="{% static 'images/header-logo2.png' %}" alt="header-logo2.png"> FindHouse</li>
+	   		<li class="title"><span>Main</span></li>
+	    	<li class="treeview"><a href="{% url 'userprofile' %}"><i class="flaticon-user"></i><span>Profile</span></a></li>
+	   		<li class="title"><span>Manage Listings</span></li>
+	      	<li class="treeview">
+		        <a href=""><i class="flaticon-home"></i> <span>My Properties</span><i class="fa fa-angle-down pull-right"></i></a>
+		        <ul class="treeview-menu">
+		        	<li><a href="{% url 'my-properties-dashboard' %}"><i class="fa fa-circle"></i>My Building</a></li>
+		        </ul>
+	      	</li>
+	   		<li class="title"><span>Manage Account</span></li>
+		    <li><a href="{% url 'logout' %}"><i class="flaticon-logout"></i> <span>Logout</span></a></li>
+	    </ul>
+    </div>
+	{% endif %}
 
     {% block content %}{% endblock content %}
 

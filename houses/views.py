@@ -15,6 +15,8 @@ from .forms import FlatModelForm, HouseModelForm, SpaceModelForm, LookUpForm, lo
 
 def index_view(request):
     properties = HouseModel.objects.all()
+    lastest_pro = properties.order_by('-added')[0:6]
+    featured = properties.filter(featured=True)
     form = LookUpForm()
     
     if request.method == 'POST':
@@ -40,7 +42,7 @@ def index_view(request):
                                        | Q(house__house_price__range = (max_price, min_price)))
                 return render(request, 'search_results.html', {'results':finalset})
             
-    return render(request, 'homepage.html', {'form':form, 'properties':properties})
+    return render(request, 'homepage.html', {'form':form, 'properties':featured, "lastest_pro":lastest_pro})
 
 class HouseModelListView(ListView): #LoginRequiredMixin
     template_name = 'houses.html'
@@ -96,10 +98,11 @@ def house_create_view(request):
 
 def flat_create_view(request):
     template_name = 'add_flat.html'
-    
+    print(request.user, 'BE')
     if request.method == "POST":
         # Setting the house landlord to the loggedin user
-        form = FlatModelForm(request.POST, request.FILES)
+        print(request.user, 'AF')
+        form = FlatModelForm(request.user, request.POST, request.FILES,)
         if form.is_valid():
             flat_instance = form.save(commit = False)
             if request.user.is_landlord:
@@ -111,7 +114,7 @@ def flat_create_view(request):
             else:
                 return HttpResponseBadRequest("You cannot add a flat")
     else:
-        form = FlatModelForm()
+        form = FlatModelForm(request.user)
 
     return render(request, template_name, {'form':form})
 
@@ -121,7 +124,7 @@ def space_create_view(request):
     
     if request.method == "POST":
         # Setting the house landlord to the loggedin user
-        form = SpaceModelForm(request.POST, request.FILES)
+        form = SpaceModelForm(request.user, request.POST, request.FILES)
         if form.is_valid():
             space_instance = form.save(commit = False)
             if request.user.is_landlord:
@@ -133,7 +136,7 @@ def space_create_view(request):
             else:
                 return HttpResponseBadRequest("You cannot add a flat")
     else:
-        form = SpaceModelForm()
+        form = SpaceModelForm(request.user)
 
     return render(request, template_name, {'form':form})
 
@@ -194,10 +197,16 @@ def space_update_view(request, id):
 
 
 def get_flats_by_building(request, pk):
-    flats = FlatModel.objects.filter(house = pk)
+    try:
+        flats = FlatModel.objects.filter(house = pk)
+        spaces = SpaceModel.objects.filter(house = pk)
+    except:
+        pass
+    
     house_id = pk
     context = {
         'flats':flats, 
+        'spaces':spaces,
         'house_id':house_id
     }
     print(flats)

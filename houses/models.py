@@ -106,7 +106,7 @@ class HouseModel(models.Model):
     landlord = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     verified = models.BooleanField(default=False)
     featured = models.BooleanField(default=False)
-    features = models.ManyToManyField(AmenitiesModels)
+    features = models.ManyToManyField(AmenitiesModels,  help_text='You can select more than one by hold the Ctrl key')
     
     def __str__(self):
         return self.name + ' - ' + self.address
@@ -135,7 +135,7 @@ class FlatModel(models.Model):
     sittingroom = models.ImageField(upload_to="BuildingInterior/livingroom")
     convience = models.ImageField(upload_to="BuildingInterior/convience")
     vid_file = models.FileField(upload_to="BuildingInterior/video/flat")
-    features = models.ManyToManyField(AmenitiesModels)
+    features = models.ManyToManyField(AmenitiesModels, help_text='You can select more than one by hold the Ctrl key')
         
     def __str__(self):
         return self.floor + " " + self.side
@@ -150,7 +150,7 @@ class SpaceModel(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     accommodation_type = models.CharField('Accommodation Type', max_length=50, choices=ACCOMMODATION_TYPES, null=True, blank=True)
     image = models.ImageField(upload_to="BuildingInterior/space", null=True, blank=True)
-    features = models.ManyToManyField(AmenitiesModels)
+    features = models.ManyToManyField(AmenitiesModels, help_text='You can select more than one by hold the Ctrl key')
     
     def __str__(self):
         return self.floor + ' ' + self.spacename
