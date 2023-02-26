@@ -26,13 +26,8 @@ gunicorn==20.1.0
 idna==3.4
 iniconfig==1.1.1
 isort==5.10.1
-mccabe==0.7.0
-MetaTrader5==5.0.36
-mpl-finance==0.10.1
 mypy-extensions==0.4.3
-openpyxl==3.0.9
 packaging==22.0
-pandas-ta==0.3.14b0
 pathspec==0.10.2
 Pillow==9.3.0
 platformdirs==2.5.4
