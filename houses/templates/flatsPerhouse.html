@@ -20,21 +20,21 @@
 										<img class="img-fluid w100" src="{{flat.sittingroom.url}}" alt="fp21.jpg">
 										<div class="thmb_cntnt">
 											<ul class="tag mb0">
-												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">For Rent</a></li>
-												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Featured</a></li>
+												<li class="list-inline-item"><a href="#">For Rent</a></li>
+												<li class="list-inline-item"><a href="#">Featured</a></li>
 											</ul>
 										</div>
 									</div>
 									
 									<div class="overlay">
 										<div class="details">
-											<a class="fp_price" href="page-listing-grid-v2.html#">N {{flat.price | intcomma}}<small>/yr</small></a>
+											<a class="fp_price" href="#">N {{flat.price | intcomma}}<small>/yr</small></a>
 											<a href="{% url 'flat-detail' flat.id %}"><h4>{{flat}}</h4></a>
 											<ul class="prop_details mb0">
-												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Beds: {{flat.accommodation_type}}</a></li>
-												<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Available: {% if flat.taken %} No {% else %}  Yes  {% endif %}</a></li>
+												<li class="list-inline-item"><a href="#">Beds: {{flat.accommodation_type}}</a></li>
+												<li class="list-inline-item"><a href="#">Available: {% if flat.taken %} No {% else %}  Yes  {% endif %}</a></li>
 											</ul>
-											<ul class="">
+											<ul class="mb0">
 												<li class="list-inline-item"><button class="btn btn-block btn-thm" type="button"> <a href={% url 'initiate-payment' house_id flat.id %}> Rent! </a> </button></li>
 											</ul>
 										</div>

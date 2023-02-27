@@ -26,7 +26,7 @@
                         <div class="grid_list_search_result">
                             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-5">
                                 <div class="left_area tac-xsd">
-                                    <p>{{results.count}} Search results</p>
+                                    <p>{{results.count}} Search results</p>  
                                 </div>
                             </div>
                         </div>
@@ -34,48 +34,48 @@
                     
                     <div class="row">
                         {% for result in results %}
+                        {% if not result.taken %}
                         <div class="col-md-4 col-lg-4">
                             <div class="feat_property home7">
                                 <div class="thumb">
-                                    {% if result.sittingroom %}
-                                    <img class="img-whp" src="{{result.sittingroom.url}}" alt="fp1.jpg">
+                                    {% if result.sittingroom.url %}
+                                    <img class="img-whp" src="{{result.sittingroom.url}}" alt="fp1.jpg"> 
                                     {% else %}
                                     <img class="img-whp" src="{{result.image.url}}" alt="fp1.jpg">
                                     {% endif %}
-                                    
                                     <div class="thmb_cntnt">
                                         <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">For Rent</a></li>
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">Featured</a></li>
+                                            <li class="list-inline-item"><a href="#">For Rent</a></li>
+                                            <li class="list-inline-item"><a href="#">Featured</a></li>
                                         </ul>
                                         <ul class="icon mb0">
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><span class="flaticon-transfer-1"></span></a></li>
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><span class="flaticon-heart"></span></a></li>
+                                            <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                            <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
                                         </ul>
-                                        <a class="fp_price" href="page-listing-grid-v3.html#">N {{result.price | intcomma}}<small>/yr</small></a>
+                                        {% if result.sittingroom.url %}
+                                        <a class="fp_price" href="{% url 'flat-detail' result.id %}">N {{result.price | intcomma}}<small>/yr</small></a>
+                                        {% else %}
+                                        <a class="fp_price" href="{% url 'space-detail' result.id %}">N {{result.price | intcomma}}<small>/yr</small></a>
+                                        {% endif %}
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div class="tc_content">
+                                        {% if result.sittingroom.url %}
                                         <p class="text-thm"><a href="{% url 'flat-detail' result.id %}">{{result.floor}} - {{result.side}}</a></p>
+                                        {% else %}
+                                        <p class="text-thm"><a href="{% url 'space-detail' result.id %}">{{result.floor}} - {{result.side}}</a></p>
+                                        {% endif %}
                                         <h4><a href="{% url 'house-detail' result.house.id %}">{{result.house.name}}</a></h4>
                                         <p><span class="flaticon-placeholder"></span> <a href="{% url 'house-detail' result.house.id %}">{{result.house.address}}</a></p>
                                         <ul class="prop_details mb0">
-                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Beds: 4</a></li>
-                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Baths: 2</a></li>
-                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Sq Ft: 5280</a></li>
+                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">{{result.accommodation_type}}</a></li>
                                         </ul>
-                                    </div>
-                                    <div class="fp_footer">
-                                        <ul class="fp_meta float-left mb0">
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><img src="images/property/pposter1.png" alt="pposter1.png"></a></li>
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">Ali Tufan</a></li>
-                                        </ul>
-                                        <div class="fp_pdate float-right">4 years ago</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
                         {% endfor %}
 				    </div>
                     

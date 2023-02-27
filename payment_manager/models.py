@@ -6,7 +6,7 @@ from django.conf import settings
 from django.contrib.auth.hashers import make_password
 from users.models import User
 from .paystack import PayStack
-from houses.models import HouseModel, FlatModel
+from houses.models import HouseModel, FlatModel, SpaceModel
 # Create your models here.
 
 
@@ -20,7 +20,8 @@ class Payment(models.Model):
     owner = models.ForeignKey(User, on_delete=models.PROTECT, null=True, blank=True, related_name='payment')
     description = models.TextField(blank=True, null=True)
     email = models.EmailField()
-    space_paidfor = models.ForeignKey(FlatModel, on_delete=models.PROTECT, null=True, blank=True)
+    apartment_paidfor = models.ForeignKey(FlatModel, on_delete=models.PROTECT, null=True, blank=True)
+    others_paidfor = models.ForeignKey(SpaceModel, on_delete=models.PROTECT, null=True, blank=True)
     verified = models.BooleanField(default=False)
     # payment_date = models.DateField(default=timezone.now().date)
     date_created = models.DateTimeField(auto_now_add=True)
@@ -43,6 +44,9 @@ class Payment(models.Model):
                 self.ref = ref
         if not self.depositor:
             self.depositor = request.user.first_name + ' ' + request.user.sur_name
+            
+        if not self.apartment_paidfor and not self.others_paidfor:
+            print('You are not allowed to leave it empty')
         super().save(*args, **kwargs)
        
     

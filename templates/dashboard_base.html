@@ -142,11 +142,13 @@
 						    </div>
 						</div>
 			        </li>
+					{% if request.user.is_authenticated and request.user.is_landlord %}
 	                <li class="list-inline-item add_listing">
                         <a href="{% url 'add-house' %}"><span class="flaticon-plus"></span>
                             <span class="dn-lg"> Add Property</span>
                         </a>
                     </li>
+					{% endif %}
 		        </ul>
 		    </nav>
 		</div>

@@ -18,34 +18,36 @@
 		</div>
 	</section>
 
-	<section class="our-log bgc-fa">
+	<section class="our-log-reg bgc-fa">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-lg-6 offset-lg-3">
-					<div class="login_form inner_page">
-						<form method='post'>
-							<div class="heading">
-								<h3 class="text-center">Register to start learning</h3>
-								<p class="text-center">Have an account? <a class="text-thm" href="{% url 'login' %}">Login</a></p>
-							</div>
+					<div class=class="sign_up_form inner_page">
+						<div class="heading">
+							<h3 class="text-center">Register to start learning</h3>
+							<p class="text-center">Have an account? <a class="text-thm" href="{% url 'login' %}">Login</a></p>
+						</div>
+						<div class="details">
+							<form method='post'>
 								{% csrf_token %}
 								{{form.as_p}}
-							<button type="submit" class="btn btn-log btn-block btn-thm2">Register</button>
-							
-							<div class="divide">
-								<span class="lf_divider">Or</span>
-								<hr>
-							</div>
+								<button type="submit" class="btn btn-log btn-block btn-thm2">Register</button>
+								
+								{% comment %} <div class="divide">
+									<span class="lf_divider">Or</span>
+									<hr>
+								</div>
 
-							<div class="row mt40">
-								<div class="col-lg">
-									<button type="submit" class="btn btn-block color-white bgc-fb mb0"><i class="fa fa-facebook float-left mt5"></i> Facebook</button>
-								</div>
-								<div class="col-lg">
-									<button type="submit" class="btn btn2 btn-block color-white bgc-gogle mb0"><i class="fa fa-google float-left mt5"></i> Google</button>
-								</div>
-							</div>
-						</form>
+								<div class="row mt40">
+									<div class="col-lg">
+										<button type="submit" class="btn btn-block color-white bgc-fb mb0"><i class="fa fa-facebook float-left mt5"></i> Facebook</button>
+									</div>
+									<div class="col-lg">
+										<button type="submit" class="btn btn2 btn-block color-white bgc-gogle mb0"><i class="fa fa-google float-left mt5"></i> Google</button>
+									</div>
+								</div> {% endcomment %}
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

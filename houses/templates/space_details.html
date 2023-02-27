@@ -9,51 +9,26 @@
         <div class="row mb30">
             <div class="col-lg-7 col-xl-8">
                 <div class="single_property_title mt30-767">
-                    <h2>{{flat.house.name}} | {{flat}} Wing</h2>
-                    <p>{{flat.house.address}}</p>
+                    <h2>{{space.house.name}} | {{space}} Wing</h2>
+                    <p>{{space.house.address}}</p>
                 </div>
             </div>
             <div class="col-lg-5 col-xl-4">
                 <div class="single_property_social_share">
                     <div class="price float-left fn-400">
-                        <h2>N {{flat.price | intcomma }}<small>/yr</small></h2>
+                        <h2>N {{space.price | intcomma }}<small>/yr</small></h2>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-7 col-lg-7">
+            <div class="col-sm-12 col-lg-12">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="spls_style_two mb30-520">
-                            <a class="popup-img" href="{{flat.sittingroom.url}}"><img class="img-fluid w100" src="{{flat.sittingroom.url}}" alt="1.jpg"></a>
+                            <a class="popup-img" href="{{space.image.url}}"><img class="img-fluid w100" src="{{space.image.url}}" alt="1.jpg"></a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-5 col-lg-5">
-                <div class="row">
-                    <div class="col-sm-6 col-lg-6">
-                        <div class="spls_style_two mb30">
-                            <a class="popup-img" href="{{flat.bedroom.url}}"><img class="img-fluid w100" src="{{flat.bedroom.url}}" alt="2.jpg"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-6">
-                        <div class="spls_style_two mb30">
-                            <a class="popup-img" href="{{flat.kitchen.url}}"><img class="img-fluid w100" src="{{flat.kitchen.url}}" alt="3.jpg"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-6">
-                        <div class="spls_style_two mb30">
-                            <a class="popup-img" href="{{flat.convience.url}}"><img class="img-fluid w100" src="{{flat.convience.url}}" alt="4.jpg"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-6">
-                        <div class="spls_style_two mb30">
-                            <a class="popup-img" href="images/property/5.jpg"><img class="img-fluid w100" src="images/property/5.jpg" alt="5.jpg"></a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -71,13 +46,13 @@
                         <div class="listing_single_description">
                             <div class="lsd_list">
                                 <ul class="mb0">
-                                    <li class="list-inline-item"><a href="">{{flat.accommodation_type}}</a></li>
+                                    <li class="list-inline-item"><a href="">{{space.accommodation_type}}</a></li>
                                 </ul>
                             </div>
                             <h4 class="mb30">Description</h4>
                             <p class="mb25">
-                                {{flat.house.name}} is located at {{flat.house.address}}. 
-                                {% if flat.house.newly_built and flat.house.water and flat.house.electricity %}
+                                {{space.house.name}} is located at {{space.house.address}}. 
+                                {% if space.house.newly_built and space.house.water and space.house.electricity %}
                                 Newly built house with water and electricity availble. 
                                 {% elif house.water and house.electricity and not house.newly_built %}
                                 With water and electricity availble.
@@ -86,12 +61,12 @@
                             </p>
 
                             <p class="mb25">
-                                This apartment is located at the {{flat.side}} side wing of the {{flat.floor}}.  
+                                This apartment is located at the {{space.side}} side wing of the {{space.floor}}.  
                                 
                             </p>
                         </div>
                         <button type="button" class="btn btn-block btn-thm"> 
-                            <a href={% url 'initiate-payment' flat.house.id flat.id %}>
+                            <a href={% url 'initiate-payment' space.house.id space.id %}>
                                 Rent! 
                             </a>
                         </button>
@@ -105,28 +80,26 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-6">
                                     <ul class="list-inline-item">
-                                        <li><p>Property ID :</p></li> <!-- house id plus flat id -->
+                                        <li><p>Property ID :</p></li> <!-- house id plus space id -->
                                         <li><p>Price Per Year :</p></li>
                                         <li><p>Floor :</p></li>
                                         <li><p>Available :</p></li>
                                     </ul>
                                     <ul class="list-inline-item">
-                                        <li><p><span>DU{{flat.house.id}}L{{flat.id}}</span></p></li>
-                                        <li><p><span>N {{flat.price | intcomma}}</span></p></li>
-                                        <li><p><span>{{flat.floor}}</span></p></li>
-                                        <li><p><span>{% if flat.taken %} No {% else %}  Yes  {% endif %}</span></p></li>
+                                        <li><p><span>DU{{space.house.id}}L{{space.id}}</span></p></li>
+                                        <li><p><span>N {{space.price | intcomma}}</span></p></li>
+                                        <li><p><span>{{space.floor}}</span></p></li>
+                                        <li><p><span>{% if space.taken %} No {% else %}  Yes  {% endif %}</span></p></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-6">
                                     <ul class="list-inline-item">
-                                        <li><p>Bedrooms :</p></li>
-                                        <li><p>Bathrooms :</p></li>
+                                        <li><p>Accommodation :</p></li>
                                         <li><p>Side :</p></li>
                                     </ul>
                                     <ul class="list-inline-item">
-                                        <li><p><span>{{flat.accommodation_type}}</span></p></li>
-                                        <li><p><span>4</span></p></li>
-                                        <li><p><span>{{flat.side}}</span></p></li>
+                                        <li><p><span>{{space.accommodation_type}}</span></p></li>
+                                        <li><p><span>{{space.side}}</span></p></li>
                                     </ul>
                                 </div>
                                
@@ -139,15 +112,15 @@
                             <h4 class="mb30">Property Attachments</h4>
                             <div class="iba_container style2">
                                 <div class="icon_box_area style2">
-                                    <div class="score"><span class="flaticon-document text-thm fz30"></span></div>
+                                    <div class="score"><span class="spaceicon-document text-thm fz30"></span></div>
                                     <div class="details">
-                                        <h5><span class="flaticon-download text-thm pr10"></span> Demo Word Document</h5>
+                                        <h5><span class="spaceicon-download text-thm pr10"></span> Demo Word Document</h5>
                                     </div>
                                 </div>
                                 <div class="icon_box_area style2">
-                                    <div class="score"><span class="flaticon-pdf text-thm fz30"></span></div>
+                                    <div class="score"><span class="spaceicon-pdf text-thm fz30"></span></div>
                                     <div class="details">
-                                        <h5><span class="flaticon-download text-thm pr10"></span> Demo pdf Document</h5>
+                                        <h5><span class="spaceicon-download text-thm pr10"></span> Demo pdf Document</h5>
                                     </div>
                                 </div>
                             </div>
@@ -162,11 +135,11 @@
                                     <h4 class="mb10">Features</h4>
                                 </div>
                                 <!--Showing a ManyToManyField in a Template-->
-                                {% if flat.features %}
+                                {% if space.features %}
                                 <div class="col-sm-6 col-md-6 col-lg-4">
                                     <ul class="order_list list-inline-item">
-                                        {% for feature in flat.features.all %}
-                                        <li><a href="page-listing-single-v3.html#"><span class="flaticon-tick"></span>{{feature}}</a></li>
+                                        {% for feature in space.features.all %}
+                                        <li><a href="page-listing-single-v3.html#"><span class="spaceicon-tick"></span>{{feature}}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </div>
@@ -205,7 +178,7 @@
                                         <div class="thumb">
                                             <img class="pro_img img-fluid w100" src="images/background/7.jpg" alt="7.jpg">
                                             <div class="overlay_icon">
-                                                <a class="video_popup_btn red popup-youtube" href="https://www.youtube.com/watch?v=oqNZOOWF8qM"><span class="flaticon-play"></span></a>
+                                                <a class="video_popup_btn red popup-youtube" href="https://www.youtube.com/watch?v=oqNZOOWF8qM"><span class="spaceicon-play"></span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -215,7 +188,7 @@
                                         <div class="thumb">
                                             <img class="pro_img img-fluid w100" src="images/background/7.jpg" alt="7.jpg">
                                             <div class="overlay_icon">
-                                                <a class="video_popup_btn red popup-youtube" href="https://www.youtube.com/watch?v=oqNZOOWF8qM"><span class="flaticon-play"></span></a>
+                                                <a class="video_popup_btn red popup-youtube" href="https://www.youtube.com/watch?v=oqNZOOWF8qM"><span class="spaceicon-play"></span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -278,14 +251,14 @@
 
 {% endblock content %}
 
-<img class="thumbnail" src="{{flat.sittingroom.url}}" alt="">
-<img class="thumbnail" src="{{flat.bedroom.url}}" alt="">
+<img class="thumbnail" src="{{space.sittingroom.url}}" alt="">
+<img class="thumbnail" src="{{space.bedroom.url}}" alt="">
 
-<h4>Building: {{flat.house}}</h4>
-<h5>Location: {{flat.house.address}}</h5>
-<h5>Floor: {{flat.floor}}</h5>
-<h5>Side: {{flat.side}}</h5>
-<p> Price:  <strong>N {{flat.price |intcomma}}</strong> </p>
-<h5>Available: {% if flat.taken %} No {% else %}  Yes  {% endif %}</h5>
+<h4>Building: {{space.house}}</h4>
+<h5>Location: {{space.house.address}}</h5>
+<h5>Floor: {{space.floor}}</h5>
+<h5>Side: {{space.side}}</h5>
+<p> Price:  <strong>N {{space.price |intcomma}}</strong> </p>
+<h5>Available: {% if space.taken %} No {% else %}  Yes  {% endif %}</h5>
 
-<button type="button"> <a href={% url 'initiate-payment' flat.house.id flat.id %}> Rent! </a> </button>
+<button type="button"> <a href={% url 'initiate-payment' space.house.id space.id %}> Rent! </a> </button>

@@ -31,10 +31,15 @@ def index_view(request):
             queryset = FlatModel.objects.filter(Q(house__state__name__icontains = location) | Q(house__city__name__icontains = location)
                                                 | Q(house__address__icontains = location)).filter(house__building_type = Btype, accommodation_type = Atype)
             print(queryset)
+            if not queryset:
+                queryset = SpaceModel.objects.filter(Q(house__state__name__icontains = location) | Q(house__city__name__icontains = location)
+                                                | Q(house__address__icontains = location)).filter(house__building_type = Btype, accommodation_type = Atype)
+                print(queryset, 'if')
+                
             if max_price >= min_price:
                 finalset = queryset.filter(Q(price__range = (min_price, max_price)) 
                                        | Q(house__house_price__range = (min_price, max_price)))
-                print(finalset)
+                print(finalset, 'finalset')
                 return render(request, 'search_results.html', {'results':finalset})
                 
             else:
@@ -74,6 +79,12 @@ class FlatModelDetailView(DetailView): #LoginRequiredMixin
     context_object_name = "flat"
     queryset = FlatModel.objects.all()
 
+
+class SpaceModelDetailView(DetailView): #LoginRequiredMixin
+    template_name = 'space_details.html'
+    context_object_name = "space"
+    queryset = SpaceModel.objects.all()
+    
 
 def house_create_view(request):
     template_name = 'page-add-new-property.html'
@@ -216,17 +227,27 @@ def get_flats_by_building(request, pk):
 
 def lookup_accommodation(request, keyword: str):
     # returns the objects where the house.state OR house.city contains the search word
-    if 'Mall' in keyword or 'shop' in keyword:
-        print('in if ->')
+    # if 'Mall' in keyword or 'shop' in keyword:
+    #     print('in if ->')
+    #     other_queryset = SpaceModel.objects.filter(Q(house__state__name__icontains=keyword) 
+    #                     | Q(accommodation_type__icontains=keyword) | Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
+    #     print(others_queryset)
+    #     return render(request, 'search_results.html', {'other-results': other_queryset})
+    # else:
+    #     print('in else ->')
+    #     queryset = FlatModel.objects.filter(Q(house__state__name__icontains=keyword) 
+    #                         | Q(accommodation_type__icontains=keyword) |Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
+    #     print(queryset)
+    #     return render(request, 'search_results.html', {'apartment_results': queryset})
+    
+    queryset = FlatModel.objects.filter(Q(house__state__name__icontains=keyword) 
+                        | Q(accommodation_type__icontains=keyword) | Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
+    if not queryset:
         queryset = SpaceModel.objects.filter(Q(house__state__name__icontains=keyword) 
-                        | Q(accommodation_type__icontains=keyword) |Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
-    else:
-        print('in else ->')
-        queryset = FlatModel.objects.filter(Q(house__state__name__icontains=keyword) 
-                            | Q(accommodation_type__icontains=keyword) |Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
-    print(queryset)
-    return render(request, 'search_results.html', {'results':queryset})
-
+                        | Q(accommodation_type__icontains=keyword) | Q(house__address__icontains=keyword) | Q(house__city__name__icontains=keyword))
+        print(queryset, 'if')
+    print(queryset, 'out')    
+    return render(request, 'search_results.html', {'results': queryset})
 
 def lookup_property_by_type(request, keyword: str):
     # returns the objects where the house.state OR house.city contains the search word

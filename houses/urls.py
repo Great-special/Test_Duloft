@@ -18,7 +18,8 @@ urlpatterns = [
     path('accommodation/add/space/', views.space_create_view, name = 'add-space'), 
     path('accommodation/update/space/<int:id>/', views.space_update_view, name = 'edit-space'), 
     path('accommodation/ <int:pk>/', views.HouseModelDetailView.as_view(), name = "house-detail"), 
-    path('accommodation/flat/<int:pk>/', views.FlatModelDetailView.as_view(), name = 'flat-detail'), 
+    path('accommodation/flat/<int:pk>/', views.FlatModelDetailView.as_view(), name = 'flat-detail'),
+    path('accommodation/property/<int:pk>/', views.SpaceModelDetailView.as_view(), name = 'space-detail'),
     path('accommodation/<int:pk>/flats/', views.get_flats_by_building, name = "flats-by-building"),
     
     path('ajax/load-states/', views.load_states, name = 'ajax_load_states'), 

@@ -39,7 +39,7 @@ def initiate_payment(request):
     return render(request, 'initiate_payment.html',{'form': form, })
 
 
-def create_payment(amount, description, depositor, email, owner, recipient_name, space_paidfor, commission=0.00):
+def create_payment(amount, description, depositor, email, owner, recipient_name, apartment_paidfor=None, others_paidfor=None, commission=0.00):
     """
         This function creates a payment instance in the data base
     """
@@ -50,7 +50,8 @@ def create_payment(amount, description, depositor, email, owner, recipient_name,
         description=description,
         owner=owner,
         email=email,
-        space_paidfor=space_paidfor,
+        apartment_paidfor=apartment_paidfor,
+        others_paidfor=others_paidfor,
         recipient_name=recipient_name
     )
     return init_pay
@@ -98,15 +99,15 @@ def initiate_payment_maintest(request, house_id, flat_id):
                 
                 if paid:
                     init_pay = create_payment(amount, description, full_name, 
-                                            request.user.email, request.user, recipient_name, space)
+                                            request.user.email, request.user, recipient_name, others_paidfor=space)
                 else:
                     print('Haven\'t paid before')
                     init_pay = create_payment(amount, description, full_name, request.user.email, 
-                                            request.user, recipient_name, flat, commission=commission)
+                                            request.user, recipient_name, others_paidfor=space, commission=commission)
             else:
                 print('first')
                 init_pay = create_payment(amount, description, full_name, request.user.email, 
-                                            request.user, recipient_name, flat, commission=commission)
+                                            request.user, recipient_name, others_paidfor=space, commission=commission)
                 
             context = {'data': init_pay, 'Public_key':settings.PAY_PUBLIC_KEY}
             print(init_pay.amount, init_pay.description)
@@ -136,7 +137,7 @@ def initiate_payment_maintest(request, house_id, flat_id):
                 
                 if paid:
                     init_pay = create_payment(amount, description, full_name, 
-                                            request.user.email, request.user, recipient_name, flat)
+                                            request.user.email, request.user, recipient_name, flat,)
                 else:
                     print('Haven\'t paid before')
                     init_pay = create_payment(amount, description, full_name, request.user.email, 
@@ -149,9 +150,10 @@ def initiate_payment_maintest(request, house_id, flat_id):
             context = {'data': init_pay, 'Public_key':settings.PAY_PUBLIC_KEY}
             print(init_pay.amount, init_pay.description)
             return render(request, 'make_payment.html', context)
-    else:
-        
+    elif request.user.is_authenticated and request.user.is_landlord:
         return HttpResponseBadRequest('Invalid request land lords cannot pay rent')
+    else:
+        return HttpResponseBadRequest('Invalid request login to pay rent')
         
         
 
