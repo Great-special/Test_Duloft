@@ -81,6 +81,16 @@ def get_buildings_by_landlord(request):
         buildings = HouseModel.objects.filter(landlord=request.user)
         return render( request, 'page-my-properties.html', {'properties':buildings})
 
+def get_apartment_by_landlord(request):
+    if request.user.is_landlord:
+        buildings = FlatModel.objects.filter(house__landlord=request.user)
+        return render( request, 'my-apartment.html', {'properties':buildings})
+
+def get_space_by_landlord(request):
+    if request.user.is_landlord:
+        buildings = SpaceModel.objects.filter(house__landlord=request.user)
+        return render( request, 'my-spaces.html', {'properties':buildings})
+
 
 def get_building_for_tenant(request):
     Paid_Accommodations = []

@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-{% load static %}
 
 {% load humanize %}
 
@@ -9,11 +8,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-                
 				<div class="breadcrumb_content style2 mt30-767 mb30-767">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-						<li class="breadcrumb-item active text-thm" aria-current="page">Simple Listing – Grid View</li>
+						<li class="breadcrumb-item active text-thm" aria-current="page">Results Listing</li>
 					</ol>
 					<h2 class="breadcrumb_title">Results</h2>
 				</div>
@@ -95,7 +93,7 @@
 
   
 
-    <ul>
+    {% comment %} <ul>
         {% for result in results %}
 
         <h3> House Name: <a href="{% url 'house-detail' result.house.id %}">{{result.house.name}}</a></h3>
@@ -105,5 +103,5 @@
         <h5> Price: N {{result.price | intcomma}}</h5>
         {% endfor %}
     </ul>
-
+ {% endcomment %}
 

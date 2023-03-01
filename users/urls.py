@@ -16,4 +16,6 @@ urlpatterns = [
     
     path('dashboard/', views.landlordDashboardView, name='landlord-dashboard'),
     path('dashboard/my-properties/', views.get_buildings_by_landlord, name='my-properties-dashboard'),
+    path('dashboard/my-apartmenties/', views.get_apartment_by_landlord, name='my-apartment-dashboard'),
+    path('dashboard/my-others/', views.get_space_by_landlord, name='my-space-dashboard'),
 ]

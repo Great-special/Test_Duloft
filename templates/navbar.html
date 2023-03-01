@@ -1,7 +1,7 @@
 
 	{% load static %}
     
-		    <!-- Main Header Nav -->
+	<!-- Main Header Nav -->
 	<header class="header-nav menu_style_home_one style2 navbar-scrolltofixed stricky main-menu">
 		<div class="container-fluid p0">
 		    <!-- Ace Responsive Menu -->
@@ -15,12 +15,12 @@
 		                <span class="icon-bar"></span>
 		            </button>
 		        </div>
-		        <a href="index.html#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="{% static 'images/header-logo2.png' %}" alt="header-logo.png">
-		            <img class="logo2 img-fluid" src="{% static 'images/header-logo2.png' %}" alt="header-logo2.png">
-		            <span>
-						FindHouse
-					</span>
+		        <a href="{% url 'index' %}" class="navbar_brand float-left dn-smd">
+		            <img class="logo1 img-fluid" src="{% static 'images/Duloft-logo.png' %}" alt="header-logo.png">
+		            <img class="logo2 img-fluid" src="{% static 'images/Duloft-logo.png' %}" alt="header-logo2.png">
+		            {% comment %} <span>
+						DuLoft
+					</span> {% endcomment %}
 		        </a>
 		        <!-- Responsive Menu Structure-->
 		        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
@@ -77,15 +77,6 @@
 							<li>
 		                        <a href="{% url 'property-lookup' 'Plaza' %}">Plaza</a>
 		                    </li>
-		                    <li>
-		                        <a href="index.html#">User Admin</a>
-		                        <ul>
-				                    <li><a href="page-dashboard.html">Dashboard</a></li>
-				                    <li><a href="page-my-properties.html">My Properties</a></li>
-				                    <li><a href="page-add-new-property.html">Add Property</a></li>
-				                    <li><a href="page-my-profile.html">My Profile</a></li>
-		                        </ul>
-		                    </li>
 		                </ul>
 		            </li>
 		            <li class="last">
@@ -131,8 +122,8 @@
 		<div class="mobile-menu">
 			<div class="header stylehome1">
 				<div class="main_logo_home2 text-center">
-		            <img class="nav_logo_img img-fluid mt20" src="{% static 'images/header-logo2.png' %}" alt="header-logo2.png">
-		            <span class="mt20">FindHouse</span>
+		            <img class="nav_logo_img img-fluid mt5" src="{% static 'images/Duloft-logo.png' %}" alt="header-logo2.png">
+		            {% comment %} <span class="mt20">DuLoft</span> {% endcomment %}
 				</div>
 				<ul class="menu_bar_home2">
 					{% if request.user.is_authenticated%}

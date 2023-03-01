@@ -68,69 +68,29 @@
 										    	</tr>
 											</thead>
 											<tbody>
-												{% if not properties %}
-												{% for property in paid_accommodation %}
-												<tr>
-										    		<th scope="row">
-														<div class="feat_property list favorite_page style2">
-															<div class="thumb">
-																<img class="img-whp" src="{{property.sittingroom.url}}" alt="fp1.jpg">
-																<div class="thmb_cntnt">
-																	<ul class="tag mb0">
-																		<li class="list-inline-item dn"></li>
-																		<li class="list-inline-item"><a href="">For Rent</a></li>
-																	</ul>
-																</div>
-															</div>
-															<div class="details">
-																<div class="tc_content">
-																	<h4>{{property.house.name}} | {{property}}</h4>
-																	<p><span class="flaticon-placeholder"></span>{{property.address}}</p>
-																	{% comment %} <a class="fp_price text-thm" href="page-my-properties.html#"><small>/mo</small></a> {% endcomment %}
-																</div>
-															</div>
-														</div>
-										    		</th>
-										    		<td>30 December, 2020</td>
-										    		<td>
-														{% if property.verified %}
-														<span class="status_tag badge2">Published</span>
-														{% else %}
-														<span class="status_tag badge">Pending</span>
-														{% endif %}
-													</td>
-										    		<td>
-										    			<ul class="view_edit_delete_list mb0">
-										    				<li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Edit"><a href="{% url 'edit-house' property.id %}"><span class="flaticon-edit"></span></a></li>
-										    				<li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Delete"><a href="page-my-properties.html#"><span class="flaticon-garbage"></span></a></li>
-										    			</ul>
-										    		</td>
-										    	</tr>
-												{% endfor %}
-												{% else %}
 												{% for property in properties %}
 												<tr>
 										    		<th scope="row">
 														<div class="feat_property list favorite_page style2">
 															<div class="thumb">
-																<img class="img-whp" src="{{property.exterior_image.url}}" alt="fp1.jpg">
+																<img class="img-whp" src="{{property.image.url}}" alt="fp1.jpg">
 																<div class="thmb_cntnt">
 																	<ul class="tag mb0">
 																		<li class="list-inline-item dn"></li>
-																		<li class="list-inline-item"><a href="page-my-properties.html#">For Rent</a></li>
+																		<li class="list-inline-item color-white">For Rent</li>
 																	</ul>
 																</div>
 															</div>
 															<div class="details">
 																<div class="tc_content">
 																	<h4>{{property.name}}</h4>
-																	<p><span class="flaticon-placeholder"></span>{{property.address}}</p>
+																	<p><span class="flaticon-placeholder"></span>{{property.house.address}}</p>
 																	{% comment %} <a class="fp_price text-thm" href="page-my-properties.html#"><small>/mo</small></a> {% endcomment %}
 																</div>
 															</div>
 														</div>
 										    		</th>
-										    		<td>30 December, 2020</td>
+										    		<td>{{property.house.added}}</td>
 										    		<td>
 														{% if property.verified %}
 														<span class="status_tag badge2">Published</span>
@@ -140,15 +100,12 @@
 													</td>
 										    		<td>
 										    			<ul class="view_edit_delete_list mb0">
-										    				<li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Edit"><a href="{% url 'edit-house' property.id %}"><span class="flaticon-edit"></span></a></li>
+										    				<li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Edit"><a href="{% url 'edit-space' property.id %}"><span class="flaticon-edit"></span></a></li>
 										    				<li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Delete"><a href="page-my-properties.html#"><span class="flaticon-garbage"></span></a></li>
 										    			</ul>
 										    		</td>
 										    	</tr>
 												{% endfor %}
-												{% endif %}
-
-
 											</tbody>
 										</table>
 									</div>

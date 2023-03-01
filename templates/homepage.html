@@ -3,7 +3,6 @@
 {% load humanize %}
 {% load static %}
 
-{% block navbar %}{% include "navbar.html" %}{% endblock navbar %}
 
 
 {% block content %}
@@ -14,8 +13,8 @@
             <div class="col-lg-12">
                 <div class="home_content">
                     <div class="home-text text-center">
-                        <h2 class="fz55">Find Your Dream Home</h2>
-                        <p class="fz18 color-white">With limited charges.</p>
+                        <h2 class="fz72">Find Your Dream Home</h2>
+                        <p class="fz30 color-black">With limited charges.</p>
                     </div>
                     <div class="home_adv_srch_opt">
                         <div class="tab-content home1_adsrchfrm" id="pills-tabContent">
@@ -62,13 +61,13 @@
     <div class="container ovh">
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
-                <div class="main-title text-center mb40">
+                <div class="main-title text-center mt100">
                     <h2>Featured Properties</h2>
                     <p>Handpicked properties by our team.</p>
                 </div>
             </div>
             <div class="col-lg-12">
-                <div class="feature_property_slider">
+                <div class="feature_property_slider mt20">
 
                     {% for property in properties %}
                     <div class="item">

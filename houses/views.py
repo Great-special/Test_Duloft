@@ -97,7 +97,7 @@ def house_create_view(request):
             if request.user.is_landlord:
                 house_instance.landlord = request.user
                 house_instance.save()
-                return redirect('/')
+                return redirect('my-properties-dashboard')
             else:
                 return HttpResponseBadRequest("You cannot add a house")
     else:
@@ -119,7 +119,7 @@ def flat_create_view(request):
             if request.user.is_landlord:
                 if flat_instance.house.landlord == request.user:
                     flat_instance.save()
-                    return redirect('/')
+                    return redirect('my-apartment-dashboard')
                 else:
                     return HttpResponseBadRequest("You cannot add a flat to this house")
             else:
@@ -141,7 +141,7 @@ def space_create_view(request):
             if request.user.is_landlord:
                 if space_instance.house.landlord == request.user:
                     space_instance.save()
-                    return redirect('/')
+                    return redirect('my-space-dashboard')
                 else:
                     return HttpResponseBadRequest("You cannot add a flat to this house")
             else:

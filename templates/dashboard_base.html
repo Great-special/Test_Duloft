@@ -18,8 +18,8 @@
 <!-- Title --> 
 <title>FindHouse - Real Estate</title>
 <!-- Favicon -->
-<link href="{% static 'images/favicon.ico' %}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="{% static 'images/favicon.ico' %}" sizes="128x128" rel="shortcut icon" />
+<link href="{% static 'images/favicon-duloft.png' %}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="{% static 'images/favicon-duloft.png' %}" sizes="128x128" rel="shortcut icon" />
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,24 +34,24 @@
 
 
     	<!-- Main Header Nav -->
-	<header class="header-nav menu_style_home_one style2 menu-fixed main-menu">
+	<header class="header-nav menu_style_home_one style2 navbar-scrolltofixed stricky main-menu" >
 		<div class="container-fluid p0">
 		    <!-- Ace Responsive Menu -->
 		    <nav>
 		        <!-- Menu Toggle btn-->
 		        <div class="menu-toggle"> 
-		            <img class="nav_logo_img img-fluid" src="{% static 'images/header-logo.png' %}" alt="header-logo.png">
+		            <img class="nav_logo_img img-fluid" src="{% static 'images/Duloft-logo.png' %}" alt="header-logo.png">
 		            <button type="button" id="menu-btn">
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
 		            </button>
 		        </div>
-		        <a href="page-dashboard.html#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="{% static 'images/header-logo2.png' %}" alt="header-logo.png">
-		            <img class="logo2 img-fluid" src="{% static 'images/header-logo2.png' %}" alt="header-logo2.png">
-		            <span>FindHouse</span>
-		        </a>
+		        {% comment %} <a href="page-dashboard.html#" class="navbar_brand float-left dn-smd">
+		            <img class="logo1 img-fluid" src="{% static 'images/Duloft-logo.png' %}" alt="header-logo.png">
+		            <img class="logo2 img-fluid" src="{% static 'images/Duloft-logo.png' %}" alt="header-logo2.png">
+		             <span>FindHouse</span> 
+		        </a> {% endcomment %}
 		        <!-- Responsive Menu Structure-->
 		        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
 		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
@@ -159,8 +159,8 @@
 		<div class="mobile-menu">
 			<div class="header stylehome1">
 				<div class="main_logo_home2 text-center">
-					<img class="nav_logo_img img-fluid mt20" src="{% static 'images/header-logo2.png' %}" alt="header-logo2.png">
-					<span class="mt20">FindHouse</span>
+					<img class="nav_logo_img img-fluid mt20" src="{% static 'images/Duloft-logo.png' %}" alt="header-logo2.png">
+					{% comment %} <span class="mt20">FindHouse</span> {% endcomment %}
 				</div>
 				<ul class="menu_bar_home2">
 					{% if request.user.is_authenticated%}
@@ -172,6 +172,7 @@
 				</ul>
 			</div>
 		</div>
+
 		<!-- /.mobile-menu -->
 		<nav id="menu" class="stylehome1">
 			<ul>
@@ -250,7 +251,7 @@
 	{% if request.user.is_landlord %}
     <div class="dashboard_sidebar_menu dn-992">
 	    <ul class="sidebar-menu">
-	   		<li class="header"><img src="{% static 'images/header-logo2.png' %}" alt="header-logo2.png"> FindHouse</li>
+	   		<li class="header"><img src="{% static 'images/Duloft-logo-black.png' %}" alt="header.png"></li>
 	   		<li class="title"><span>Main</span></li>
 	    	<li class="treeview"><a href="{% url 'landlord-dashboard' %}"><i class="flaticon-layers"></i><span> Dashboard</span></a></li>
 	   		<li class="title"><span>Manage Listings</span></li>
@@ -258,8 +259,8 @@
 		        <a href=""><i class="flaticon-home"></i> <span>My Properties</span><i class="fa fa-angle-down pull-right"></i></a>
 		        <ul class="treeview-menu">
 		        	<li><a href="{% url 'my-properties-dashboard' %}"><i class="fa fa-circle"></i>My Building</a></li>
-		        	<li><a href="{% url 'my-properties-dashboard' %}"><i class="fa fa-circle"></i> My Apartment</a></li>
-		        	<li><a href="{% url 'my-properties-dashboard' %}"><i class="fa fa-circle"></i> My Space</a></li>
+		        	<li><a href="{% url 'my-apartment-dashboard' %}"><i class="fa fa-circle"></i> My Apartment</a></li>
+		        	<li><a href="{% url 'my-space-dashboard' %}"><i class="fa fa-circle"></i> My Space</a></li>
 		        </ul>
 	      	</li>
 	     	<li class="treeview">

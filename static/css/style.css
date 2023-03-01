@@ -23,7 +23,7 @@ Tag: advanced custom search, agency, agent, business, clean, corporate, director
 @import url(slider.css);
 @import url(magnific-popup.css);
 @import url(timecounter.css);
-@import url(https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Perpetua:400,400i,600,700&display=swap);
 /* Table of contents */
 
 
@@ -133,7 +133,7 @@ body {
   background-attachment: fixed;
   background-color: #ffffff;
   color: #000000;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   font-size: 16px;
   line-height: 1.642;
   overflow-x: hidden;
@@ -225,7 +225,7 @@ iframe {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   line-height: 1.2;
   color: #484848; }
   h1 small,
@@ -260,10 +260,10 @@ h5, h6,
   font-weight: bold;}
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 38px; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 35px; }
 
 h3, .h3 {
   font-size: 24px; }
@@ -286,8 +286,8 @@ blockquote,
 address {
   margin: 0 0 10px; }
 
-.ff-nunito {
-  font-family: 'Nunito', sans-serif; }
+.ff-Perpetua {
+  font-family: 'Perpetua', sans-serif; }
 
 .ff-fontawesome {
   font-family: FontAwesome !important; }
@@ -352,7 +352,7 @@ address {
 .sign_up_tab li.nav-item .nav-link{
   border: none;
   color: #484848;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
@@ -444,7 +444,7 @@ address {
 }
 .dropdown_content .list_content a p{
   color: #484848;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   margin: 0;
 }
 .dropdown_content .list_content a small{
@@ -714,7 +714,7 @@ address {
 .home4_header_top_contact li a,
 ul.sign_up_btn.home4 li a,
 ul.sign_up_btn.home6 a{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   font-size: 14px;
   line-height: initial;
 }
@@ -740,7 +740,7 @@ ul.sign_up_btn.home6 a{
 }
 .header_top.home7 .header_top_lang_widget_home6 button.btn.dropdown-toggle{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgba(255, 255, 255, 0.502);
   height: auto;
   line-height: 1.2;
@@ -750,7 +750,7 @@ ul.sign_up_btn.home6 a{
 }
 ul.sign_up_btn.home7 a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
 }
 .light_white,
 .light_white:hover{
@@ -767,7 +767,7 @@ ul.sign_up_btn.home7 a{
 }
 .header_search_widget .mailchimp_form input[type="text"].form-control::-webkit-input-placeholder{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -821,7 +821,7 @@ ul.sign_up_btn.home7 a{
 }
 .ht_right_widget ul li a,
 .home3_header_top_contact li a{
-  font-family: "Nunito";
+  font-family: "Perpetua";
 }
 header.header-nav.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.home3 .header_top_lang_widget{
   margin-top: 5px;
@@ -930,7 +930,7 @@ header.header-nav.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.hom
   width: auto;
 }
 .cd-dropdown-content .cd-secondary-dropdown a{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
 }
 li.has-children a{
   line-height: 51px;
@@ -1016,13 +1016,13 @@ header.header-nav.menu_style_home_one.home9 ul.ace-responsive-menu li.add_listin
   color: #ffffff;
 }
 header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing a{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 1.2;
   top: -20px;
 }
 header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing{
-  background-color: #E89C31 !important;
+  background-color: #E50914 !important;
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
 }
 header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li.add_listing a{
@@ -1332,7 +1332,7 @@ header.header-nav.menu_style_home_five .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_six .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_seven .ace-responsive-menu > li > a,
 header.header-nav.menu_style_home_eight .ace-responsive-menu > li > a{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   padding: 38px 16px 30px 10px;
 }
 header.header-nav.menu_style_home_one.style2.home10 .ace-responsive-menu > li > a{
@@ -1365,7 +1365,7 @@ header.header-nav.menu_style_home_one.style2 a.navbar_brand{
 }
 header.header-nav.menu_style_home_one.style2 a.navbar_brand span{
   color: #484848;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 28px;
   font-weight: bold;
   line-height: 1.2;
@@ -1389,7 +1389,7 @@ header.header-nav.menu_style_home_one.style2.home10 .ace-responsive-menu > li > 
 }
 header.header-nav.menu_style_home_one.style2 .ace-responsive-menu li a{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -1428,8 +1428,8 @@ header.header-nav.menu_style_home_one.style3 ul.ace-responsive-menu li.add_listi
 }
 header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.add_listing a{
   font-size: 16px;
-  font-family: "Nunito";
-  color: #E89C31; /* gold */
+  font-family: "Perpetua";
+  color: #E50914; /* red */
   line-height: 1;
 }
 header.header-nav.menu_style_home_one.style2.home10 ul.ace-responsive-menu li.add_listing.home2{
@@ -1474,7 +1474,7 @@ header.header-nav.home2.style_one ul.sign_up_btn li:first-child:before{
 }
 header.header-nav.home2.style_one ul.sign_up_btn li a{
   color: #a4a4a4;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 14px;
   line-height: 1.2;
 }
@@ -1561,7 +1561,7 @@ header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu:nth-
 header.header-nav.menu_style_home_three .ace-responsive-menu li a,
 header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu li a{
   color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1599,7 +1599,7 @@ header.header-nav.menu_style_home_three a.navbar_brand:before{
   transition: all 0.3s ease 0s;
 }
 .sign_up_btn.home3 .btn{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 14px;
   line-height: 1.2;
 }
@@ -1741,7 +1741,7 @@ header.header-nav.menu_style_home_four .ace-responsive-menu > li{
 }
 header.header-nav.menu_style_home_four  .ace-responsive-menu li a{
   color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
 }
 header.header-nav.menu_style_home_four .sign_up_btn .btn{
   background-color: transparent;
@@ -1834,7 +1834,7 @@ header.header-nav.menu_style_home_five .ace-responsive-menu li a{
 }
 header.header-nav.menu_style_home_five .ace-responsive-menu li a{
   padding-top: 27px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   text-transform: capitalize;
 }
 header.header-nav.menu_style_home_five .ace-responsive-menu li ul.sub-menu li a{
@@ -1950,7 +1950,7 @@ header.header-nav.menu_style_home_six .ace-responsive-menu > li{
 }
 header.header-nav.menu_style_home_six  .ace-responsive-menu li a{
   color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
 }
 header.header-nav.menu_style_home_six .sign_up_btn .btn{
   background-color: transparent;
@@ -2047,7 +2047,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li{
 }
 header.header-nav.menu_style_home_seven  .ace-responsive-menu li a{
   color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   padding: 18px 20px 18px 15px;
 }
 header.header-nav.menu_style_home_seven .ace-responsive-menu li ul.sub-menu li a:hover{
@@ -2180,7 +2180,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   position: relative;
 }
 .home_content .home-text.home5 h4{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-style: italic;
   line-height: 1.2;
@@ -2201,7 +2201,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 }
 .icon_home5 p{  
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 0;
@@ -2312,7 +2312,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 .home1-advnc-search ul li{
   display: inline-block;
   line-height: 3;
-  margin-right: 15px !important;
+  margin: 15px !important;
   vertical-align: text-top;
 }
 .home1-advnc-search.home2{
@@ -2372,7 +2372,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   background-color: #ffffff;
   color: #484848;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.2;
 }
 .home1-advnc-search.home3 ul li:first-child input[type="text"].form-control::-webkit-input-placeholder,
@@ -2385,7 +2385,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 .home5_advanced_search_form .form-group input[type="text"].form-control::-webkit-input-placeholder{
   color: #006c70;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.2;
 }
 .home1-advnc-search.home7{
@@ -2523,7 +2523,7 @@ input.amount4{
   box-shadow: none;
   color: #006c70;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   width: 48%;
@@ -2697,7 +2697,7 @@ form.home5_advanced_search_form .search_option_two .dropdown-menu{
 }
 .home1-advnc-search .search_option_two .dropdown-menu button.btn{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -2768,7 +2768,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   height: 50px;
   line-height: 2.5;
   width: 180px;
@@ -2994,7 +2994,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home10-mainslider .banner-style-one .banner-title{
   font-size: 45px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -3040,20 +3040,10 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .home-text h1,
 .home-text h2,
 .home-text h3 {
-  color: #ffffff;
+  color: #000;
   margin-top: 0;
 }
-.home-text.home6 h2{
-  font-family: "Nunito";
-  color: #484848;
-  font-weight: bold;
-  line-height: 1.2;
-}
-.home-text.home6 p{
-  font-family: "Nunito";
-  color: #484848;
-  line-height: 1.2;
-}
+
 .mouse_scroll {
   position: absolute;
   right: -350px;
@@ -3383,14 +3373,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home3_home_content h1{
   font-size: 55px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
 }
 .home3_home_content h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 1.2;
 }
@@ -3456,7 +3446,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   font-size: 45px;
 }
 .home-five .home-text p{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   font-size: 18px;
   line-height: 30px;
   max-width: 495px;
@@ -3504,7 +3494,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   top: 0;
 }
 .home1_bgi1{
-  background-image: url(../images/background/1.jpg);
+  background-image: url(../images/background/6.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -3515,7 +3505,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home1-overlay:before {
   content: "";
-  background-color: rgb(29, 41, 62);
+  background-color: rgba(145, 94, 29, 0.438);
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -3524,24 +3514,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   top: 0;
   width: 100%;
 }
-.home5_bgi5{
-  background-image: url(../images/background/5.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  height: 960px;
-}
-.home5-overlay:before{
-  content: "";
-  background-color: rgb(35, 39, 51);
-  opacity: 0.6;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
+
 .home-six{
   background-color: #ffffff;
   -webkit-background-size: cover;
@@ -3646,7 +3619,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home4_iconbox .icon p{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 3;
   margin-bottom: 0;
@@ -3797,7 +3770,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .img_hvr_box.home7 .overlay .details h4{
   color: #ffffff;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   font-size: 20px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -3894,7 +3867,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .cs_row_one .cs_title{
   font-size: 26px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
 }
@@ -4019,14 +3992,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   margin-top: 30px;
 }
 .cs_row_two .cs_overview .title{
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   font-size: 20px;
   color: #484848;
   line-height: 1.2;
   margin-bottom: 22px;
 }
 .cs_row_two .cs_overview h4{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 18px;
   color: rgb(59, 59, 59);
   line-height: 1.333;
@@ -4084,7 +4057,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .cs_row_three .course_content h4.title{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   float: left;
   line-height: 1.2;
@@ -4099,7 +4072,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .cs_row_three .course_content .details .cc_tab h4.panel-title{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(59, 59, 59);
   line-height: 1.7;
   border-radius: 5px;
@@ -4159,7 +4132,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_four .about_ins_container .aii_title,
 .cs_row_five .student_feedback_container .aii_title{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   margin-bottom: 25px;
   line-height: 1.2;
@@ -4172,7 +4145,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .cs_row_four .about_ins_container .details h4{
   font-size: 20px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   margin-bottom: 0;
   line-height: 1.5;
@@ -4292,7 +4265,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .cs_row_five .student_feedback_container .aii_average_review .av_content h2{
   font-size: 50px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 0.6;
 }
@@ -4311,7 +4284,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .r_course_title{
   font-size: 26px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -4375,7 +4348,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: #E89C31;
   border-radius: 3px;
   color: rgb(254, 254, 254);
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 14px;
   height: 25px;
   line-height: 25px;
@@ -4423,13 +4396,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property.home8 ul.tag li:first-child,
 .properti_city.home6 .thumb .thmb_cntnt ul.tag li:first-child,
 .feat_property.list .dtls_headr ul.tag li:first-child{
-  background-color: rgb(62, 76, 102);
+  background-color: rgb(62, 76, 102, 0.2);
 }
 .feat_property .thumb .thmb_cntnt ul.tag li:last-child,
 .feat_property.home8 ul.tag li:last-child,
 .properti_city.home6 .thumb .thmb_cntnt ul.tag li:last-child,
 .feat_property.list .dtls_headr ul.tag li:last-child{
-  background-color: #E89C31;
+  background-color: #E50914;
   margin-right: 0;
 }
 .feat_property .thumb .thmb_cntnt ul.tag li a,
@@ -4437,7 +4410,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property.home8 ul.tag li a,
 .feat_property.list ul.tag li a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #fefefe;
   line-height: 1.2;
 }
@@ -4486,7 +4459,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property .thumb .thmb_cntnt a.fp_price{
   bottom: 15px;
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   left: 20px;
@@ -4533,7 +4506,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .feat_property.list .dtls_headr a.fp_price{
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -4570,7 +4543,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 3px;
   background-color: rgb(255, 90, 95);
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(254, 254, 254);
   height: 25px;
   line-height: 1.2;
@@ -4581,7 +4554,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 3px;
   background-color: rgb(57, 218, 138);
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(254, 254, 254);
   height: 25px;
   line-height: 20px;
@@ -4592,7 +4565,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 3px;
   background-color: rgb(253, 57, 122);
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(254, 254, 254);
   height: 25px;
   line-height: 20px;
@@ -4632,7 +4605,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   color: #E89C31;
   float: left;
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   margin-top: 0;
@@ -4649,13 +4622,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .feat_property .details .tc_content p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
 .feat_property .details .tc_content h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -4671,7 +4644,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .feat_property .details .tc_content .prop_details li a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -4680,7 +4653,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .feat_property.home2 .details .tc_content h5{
   color: #484848;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.333;
 }
 .feat_property .details .fp_footer {
@@ -4702,7 +4675,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .feat_property .details .fp_footer .fp_meta li a {
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #777777;
   line-height: 1.2;
 }
@@ -4714,7 +4687,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .feat_property .details .fp_footer .fp_pdate{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #777777;
   line-height: 1.2;
   margin-top: 12px;
@@ -4888,14 +4861,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .properti_city.home6 .overlay .details h4{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
 }
 .properti_city.home6 .details a.fp_price{
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 2;
@@ -4972,13 +4945,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .for_blog.feat_property .details .tc_content .bpg_meta li a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(119, 119, 119);
   line-height: 1.2;
 }
 .for_blog.feat_property .details .tc_content p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -5010,12 +4983,12 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   transform: scale(1.1) rotate(-1deg);
 }
 .properti_city .overlay{
-  background: -moz-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.01)), color-stop(100%, rgba(29,41,62,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* ie10+ */
-  background: linear-gradient(180deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* w3c */
+  /*background: -moz-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* ff3.6+ */
+  background: rgba(63, 29, 29, 0.05);
+  /*background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* safari5.1+,chrome10+ */
+ /* background: -o-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* opera 11.10+ */
+  /*background: -ms-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* ie10+ */
+  /* background: linear-gradient(180deg, rgba(63, 29, 29, 0.67) 0%, rgba(29,41,62,1) 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1d293e',GradientType=0 ); /* ie6-9 */
   border-radius: 0px 0px 10px 10px;
   bottom: 0;
@@ -5034,7 +5007,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .properti_city .overlay .details h4{
   color: #ffffff;
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
 }
@@ -5064,7 +5037,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .properti_city.home5 .overlay .details .left h4{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 2.3;
@@ -5090,7 +5063,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 } 
 .properti_city .overlay .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 1.2;
 }
@@ -5154,13 +5127,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   position: relative;
 }
 .modern_apertment .title{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
 }
 .modern_apertment .subtitle{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -5168,7 +5141,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .modern_apertment p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.429;
   margin-bottom: 30px;
@@ -5181,7 +5154,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 35px;
@@ -5193,7 +5166,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .properti_city.home7 .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgba(119, 119, 119, 0.8);
   line-height: 1.2;
 }
@@ -5204,14 +5177,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .search_smart_property h2{
   font-size: 30px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
 }
 .search_smart_property p{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.875;
   margin-bottom: 30px;
@@ -5225,7 +5198,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 8px;
   color: #484848;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   height: 60px;
   line-height: 1.2;
@@ -5298,7 +5271,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   cursor: pointer;
   display: block;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   height: 45px;
   line-height: 2.1;
   outline: none;
@@ -5318,7 +5291,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .single_property_social_share h2 {
   font-size: 30px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
@@ -5362,7 +5335,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .spls_style_two .title{
   color: #FFFFFF;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 26px;
   font-weight: bold;
   left: 0;
@@ -5514,7 +5487,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .lsd_list li a{
   color: #484848;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   line-height: 1.2;
 }
@@ -5573,14 +5546,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .additional_details ul li p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   line-height: 2.857;
   margin-bottom: 0;
 }
 .additional_details ul li p span{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 2.857;
@@ -5627,7 +5600,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .icon_box_area .details h5{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.5;
@@ -5635,14 +5608,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .icon_box_area .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   margin-bottom: 0;
 }
 .walkscore_area .more_info{
   color: rgb(72, 72, 72);
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.714;
   text-decoration: underline;
 }
@@ -5659,7 +5632,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .education_distance h5{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 2;
@@ -5679,7 +5652,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .single_line .para{
   color: rgb(72, 72, 72);
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   float: left;
   line-height: 2.143;
   margin-bottom: 0;
@@ -5702,7 +5675,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .single_line .review span.total_rive_count{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(118, 118, 118);
   line-height: 2.143;
 }
@@ -5783,7 +5756,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .sticky-nav-tabs-container li a{
   background-color: #fff;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
 }
@@ -5839,7 +5812,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .listing_single_property_compare ul li p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   line-height: 1.857;
   margin-bottom: 0;
@@ -5891,13 +5864,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   margin-top: 50px;
 }
 .why_chose_us .details h4{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
 }
 .why_chose_us .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.714;
 }
 .why_chose_us.style2{
@@ -6090,14 +6063,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .our_hotoffer h2{
   font-size: 30px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
 }
 .our_hotoffer p{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -6110,7 +6083,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
   color: #ffffff;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   height: 50px;
   line-height: 1.2;
@@ -6149,7 +6122,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .testimonial_grid .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 1.429;
   margin-bottom: 0;
@@ -6403,7 +6376,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .my_course_content_list .mc_content_list .details .mc_footer ul.mc_review li.fp_pdate{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(199, 85, 51);
   font-weight: bold;
   line-height: 1.2;
@@ -6434,7 +6407,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .my_course_content_list .mc_content_list .details .mc_content .subtitle .title{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(10, 10, 10);
   line-height: 1.333;
 }
@@ -6480,7 +6453,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .my_profile_setting_input label,
 .my_profile_setting_textarea label{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.5;
@@ -6494,7 +6467,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .my_profile_setting_input .form-control::placeholder{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   line-height: 1.2;
 }
@@ -6510,7 +6483,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(255, 90, 95);
   font-weight: bold;
   line-height: 1.2;
@@ -6531,7 +6504,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
@@ -6552,7 +6525,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
@@ -6577,7 +6550,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 8px;
   background-color: rgb(236, 236, 236);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
@@ -6606,7 +6579,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   width: 45px;
 }
 .view_edit_delete_list li a span{
-  color: #E89C31;
+  color: #E50914;
   font-size: 20px;
 }
 .courses_list_heading.style2{
@@ -6657,7 +6630,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .original_price{
   font-size: 13px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(126, 126, 126);
   line-height: 1.2;
 }
@@ -6766,7 +6739,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .hvr_img_box_container .overlay .details h5 {
   color: #484848;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   font-size: 18px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -6818,7 +6791,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .funfact_one .details .timer,
 .funfact_one .details ul li{
   color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   font-size: 30px;
   font-weight: bold;
   margin-right: -2px;
@@ -6891,7 +6864,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   padding-right: 10px;
 }
 .footer_social_widget li a{
-  color: #ffffff;
+  color: #000;
   font-size: 16px;
   font-family: "FontAwesome";
   line-height: 1.2;
@@ -6999,11 +6972,9 @@ input::placeholder{
 }
 .footer_middle_area.home3 .footer_social_widget li:hover a,
 .footer_middle_area.home4 .footer_social_widget li:hover a {
-  color: #ffffff;
+  color: #000;
 }
-.footer_social_widget.home8 li a{
-  color: #ffffff;
-}
+
 .footer_social_widget.home8 li:hover a{
   color: #ffffff;
 }
@@ -7012,25 +6983,22 @@ input::placeholder{
   padding: 80px 0 70px;
 }
 .footer_one {
-  background-color: #E50914;
+  background-color: #E89C31;
 }
 .footer_middle_area{
-  background-color: #E50914;
+  background-color: #E89C31;
 }
 .footer_bottom_area {
   background-color: #484848;
 }
 .copyright-widget p {
   font-size: 14px;
-  font-family: "Nunito";
-  color: #ffffff;
+  font-family: "Perpetua";
+  color: #000;
   line-height: 2.143;
   margin-bottom: 0;
 }
-.copyright-widget.home3 p,
-.copyright-widget.home6 p{
-  color: #ffffff;
-}
+
 .footer_one.home3{
   background-color: #ffffff;
   border-bottom: 1px solid #e8eef2;
@@ -7078,8 +7046,8 @@ input::placeholder{
 /*== Footer Widget ==*/
 .footer_about_widget p{
   font-size: 14px;
-  font-family: "Nunito";
-  color: #ffffff;
+  font-family: "Perpetua";
+  color: #000000;
   line-height: 2.143;
   margin-bottom: 0;
 }
@@ -7111,7 +7079,7 @@ input::placeholder{
 .footer_contact_widget h4,
 .footer_social_widget h4,
 .footer_apps_widget h4{
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -7134,7 +7102,7 @@ input::placeholder{
 .footer_contact_widget.home6 h4,
 .footer_social_widget.home6 h4,
 .footer_apps_widget.home6 h4{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.333;
@@ -7146,8 +7114,8 @@ input::placeholder{
 .footer_qlink_widget li a,
 .footer_contact_widget li a{
   font-size: 14px;
-  font-family: "Nunito";
-  color: #ffffff;
+  font-family: "Perpetua";
+  color: #000000;
   line-height: 2.429;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -7219,7 +7187,7 @@ input::placeholder{
 }
 .logo-widget span{
   color: #ffffff;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   font-size: 22px;
   font-weight: bold;
   padding-left: 15px;
@@ -7245,8 +7213,8 @@ input::placeholder{
 }
 .footer_menu_widget ul li a{
   font-size: 14px;
-  font-family: "Nunito";
-  color: #ffffff;
+  font-family: "Perpetua";
+  color: #000;
   line-height: 2.143;
 }
 .footer_menu_widget ul li a:hover{
@@ -7417,7 +7385,7 @@ input::placeholder{
 }
 .inner_page_breadcrumb .breadcrumb_title {
   font-size: 40px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -7481,14 +7449,14 @@ ul.ab_counting li:last-child{
 }
 .about_counting .details h3{
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   margin-bottom: 0;
 }
 .about_counting .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
 }
 .about_thumb{
@@ -7694,7 +7662,7 @@ ul.ab_counting li:last-child{
 }
 .about_box_home6 .details h3{
   font-size: 26px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   margin-bottom: 20px;
 }
 .about_box_home6 .details p{
@@ -7738,7 +7706,7 @@ ul.ab_counting li:last-child{
 }
 .smp_icon_box .details h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -7926,7 +7894,7 @@ ul.ab_counting li:last-child{
   text-align: center;
 }
 .testimonial_item .details h4{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -7934,12 +7902,12 @@ ul.ab_counting li:last-child{
 }
 .testimonial_item .details .small{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.5;
 }
 .testimonial_item .details p {
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(119, 119, 119);
   font-style: italic;
   line-height: 1.714;
@@ -8094,7 +8062,7 @@ li.slick-slide.slick-active:nth-child(8) img{
 }
 .testimonial_post .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 22px;
@@ -8278,7 +8246,7 @@ li.slick-slide.slick-active:nth-child(8) img{
 .blog_post_home2 .bph2_header .bph2_date_meta span,
 .blog_post.one .thumb .post_date span{
   color: #484848;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
   font-size: 18px;
   font-weight: bold;
   display: table-caption;
@@ -8654,7 +8622,7 @@ ul.mc_parent_list .membership_header .thumb a span{
 ul.mc_parent_list .membership_header .thumb .price{
   bottom: 15px;
   color: #ffffff;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 22px;
   font-weight: bold;
   left: 0;
@@ -8668,7 +8636,7 @@ ul.mc_parent_list .membership_header .details{
 }
 ul.mc_parent_list .membership_header .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #E50914;
   line-height: 1.2;
 }
@@ -8686,7 +8654,7 @@ ul.mc_parent_list ul.mc_child_list.four li{
   border-bottom: 1px solid #ebebeb;
   color: #484848;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 3.333;
 }
 ul.mc_parent_list ul.mc_child_list.two li,
@@ -8712,7 +8680,7 @@ ul.mc_parent_list ul.mc_child_list.four li:last-child{
 }
 ul.mc_parent_list ul.mc_child_list .membership_header h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.333;
   margin: 0;
@@ -8783,7 +8751,7 @@ ul.mc_parent_list ul.mc_child_list .membership_header h4{
 }
 .erro_code h1{
   font-size: 45px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -8794,7 +8762,7 @@ ul.mc_parent_list ul.mc_child_list .membership_header h4{
 }
 .error_page.footer_apps_widget p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
 }
@@ -8815,7 +8783,7 @@ a.btn.btn_error{
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   height: 50px;
   line-height: 35px;
   width: 200px;
@@ -8884,14 +8852,14 @@ a.btn.btn_error{
 }
 .pricing_table .pricing_header h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.444;
 }
 .pricing_table .pricing_content ul li{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 3.571;
 }
@@ -8904,7 +8872,7 @@ a.btn.btn_error{
   border-radius: 8px;
   color: #E89C31;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 30px;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
@@ -8964,7 +8932,7 @@ a.btn.btn_error{
 .login_form .btn-fpswd{
   color: #8b91dd;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 2.214;
 }
 .sign_up_form .divide,
@@ -9046,12 +9014,12 @@ a.btn.btn_error{
 }
 .sign_up_form .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 3;
 }
 .login_form .heading h4 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Perpetua', sans-serif;
 }
 .login_form.inner_page .heading p {
   margin-bottom: 0;
@@ -9073,7 +9041,7 @@ a.btn.btn_error{
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   height: 52px;
   line-height: 1.2;
 }
@@ -9094,7 +9062,7 @@ a.btn.btn_error{
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   color: #ffffff;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 16px;
   font-weight: bold;
   height: 50px;
@@ -9148,7 +9116,7 @@ a.btn.btn_error{
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   color: #ffffff;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   height: 50px;
 }
 /*== Question Widget Faq Page ==*/
@@ -9180,7 +9148,7 @@ a.btn.btn_error{
 .shortcode_widget_progressbar h4,
 .shortcode_form_title h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -9203,7 +9171,7 @@ a.btn.btn_error{
 }
 .faq_according .panel .panel-body h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(59, 59, 59);
   line-height: 1.333;
 }
@@ -9215,7 +9183,7 @@ a.btn.btn_error{
   margin-bottom: 20px;
 }
 .faq_according .panel-heading .panel-title{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 16px;
   font-weight: bold;
   line-height: 3;
@@ -9241,7 +9209,7 @@ a.btn.btn_error{
 }
 .faq_according .accordion .card .card-header .btn-link{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   display: block;
   font-weight: bold;
@@ -9286,14 +9254,14 @@ a.btn.btn_error{
 }
 .faq_according .accordion .card .card-body{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   padding: 10px 0 30px;
 }
 .faq_according .accordion .card .card-body p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
 }
@@ -9310,7 +9278,7 @@ a.btn.btn_error{
 }
 .terms_condition_grid .grids p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
 }
@@ -9330,7 +9298,7 @@ a.btn.btn_error{
 }
 .terms_condition_widget ul li a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 2.857;
   -webkit-transition: all 0.3s ease;
@@ -9386,7 +9354,7 @@ a.btn.btn_error{
 }
 .ui_kit_tab .tab-content .tab-pane p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.857;
   margin-bottom: 0;
@@ -9530,7 +9498,7 @@ a.btn.btn_error{
 .ui_kit_radiobox .radio label {
   cursor: pointer;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   line-height: 25px;
@@ -9657,7 +9625,7 @@ a.btn.btn_error{
 /*== SwithcBox Widget UI Page ==*/
 .ui_kit_whitchbox .custom-control-label {
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   line-height: 2;
@@ -9724,7 +9692,7 @@ a.btn.btn_error{
 }
 .ui_page_heading .blockquote p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-style: italic;
   line-height: 1.714;
@@ -9743,7 +9711,7 @@ a.btn.btn_error{
 }
 .order_list li a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 2.857;
 }
@@ -9759,7 +9727,7 @@ a.btn.btn_error{
 }
 .ui_page_headings h1{
   font-size: 45px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1;
@@ -9767,7 +9735,7 @@ a.btn.btn_error{
 }
 .ui_page_headings h2{
   font-size: 35px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 0.686;
@@ -9775,7 +9743,7 @@ a.btn.btn_error{
 }
 .ui_page_headings h3{
   font-size: 30px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 0.8;
@@ -9783,7 +9751,7 @@ a.btn.btn_error{
 }
 .ui_page_headings h4{
   font-size: 26px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 0.923;
@@ -9791,7 +9759,7 @@ a.btn.btn_error{
 }
 .ui_page_headings h5{
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.091;
@@ -9799,7 +9767,7 @@ a.btn.btn_error{
 }
 .ui_page_headings h6{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.333;
@@ -9816,7 +9784,7 @@ a.btn.btn_error{
 }
 .ui_kit_multi_select_box .bootstrap-select.show-tick .dropdown-menu li a span.text{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 2.5;
 }
@@ -9829,7 +9797,7 @@ a.btn.btn_error{
 }
 .ui_kit_select_search .bootstrap-select .dropdown-menu li a span.text{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 2.5;
 }
@@ -9888,13 +9856,13 @@ a.btn.btn_error{
 }
 .blog_sp_tag a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #fefefe;
   line-height: 1.2;
 }
 .blog_sp_title{
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -9921,7 +9889,7 @@ a.btn.btn_error{
 }
 .main_blog_post_content .mbp_thumb_post .details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
 }
@@ -9954,7 +9922,7 @@ a.btn.btn_error{
   border: 1px solid #ebebeb;
   border-radius: 50%;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #777777;
   line-height: 1.2;
   height: 45px;
@@ -10002,7 +9970,7 @@ a.btn.btn_error{
 .event_counter_plugin_content ul li span {
   display: block;
   font-size: 26px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   line-height: 1.2;
 }
@@ -10049,18 +10017,18 @@ a.btn.btn_error{
 }
 .blog_grid_post .thumb .post_date h2{
   font-size: 50px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   margin-bottom: 0;
 }
 .blog_grid_post .thumb .post_date span{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
 }
 .blog_grid_post .details h3{
   font-size: 26px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -10129,7 +10097,7 @@ a.btn.btn_error{
 }
 .blog_grid_post.style2.event_lists .details h3{
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.091;
 }
@@ -10160,7 +10128,7 @@ a.btn.btn_error{
 }
 .event_participator_tile{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 50px;
@@ -10171,7 +10139,7 @@ a.btn.btn_error{
 }
 .participator_team .details h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.333;
   margin-bottom: 0;
@@ -10200,7 +10168,7 @@ a.btn.btn_error{
 .sidebar_recent_product .title,
 .sidebar_feature_listing .title{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -10218,7 +10186,7 @@ a.btn.btn_error{
 .sidebar_recent_product .media .media-body .post_title,
 .sidebar_feature_listing .media .media-body .post_title{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -10226,14 +10194,14 @@ a.btn.btn_error{
 .sidebar_recent_product .media .media-body a,
 .sidebar_feature_listing .media .media-body a{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(255, 90, 95);
   font-weight: bold;
   line-height: 1.2;
 }
 .sidebar_feature_listing .media .media-body ul li{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   margin-right: 0;
@@ -10278,7 +10246,7 @@ a.btn.btn_error{
 .blog_recent_post_widget .title,
 .blog_category_widget .title{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 0;
@@ -10316,7 +10284,7 @@ a.btn.btn_error{
 }
 .event_details_widget .title{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -10366,7 +10334,7 @@ a.btn.btn_error{
   margin-bottom: 30px;
 }
 .feature_course_widget h4{
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   font-size: 20px;
   color: #484848;
   line-height: 1.2;
@@ -10405,7 +10373,7 @@ a.btn.btn_error{
 }
 .instructor_pricing_widget .price{
   font-size: 30px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -10502,7 +10470,7 @@ a.btn.btn_error{
 }
 .blog_recent_post_widget .media-body .post_title{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #212121;
   line-height: 1.5;
   margin-bottom: 0;
@@ -10522,7 +10490,7 @@ a.btn.btn_error{
 }
 .blog_tag_widget .title {
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -10541,7 +10509,7 @@ a.btn.btn_error{
 }
 .blog_tag_widget .tag_list li a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -10563,14 +10531,14 @@ a.btn.btn_error{
 }
 .mbp_blockquote .blockquote span{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(187, 187, 187);
   font-style: italic;
   line-height: 0.333;
 }
 .mbp_blockquote .blockquote em{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-style: italic;
   line-height: 1.714;
@@ -10594,7 +10562,7 @@ a.btn.btn_error{
 }
 .blog_post_share li:first-child a{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 2.5;
@@ -10615,7 +10583,7 @@ a.btn.btn_error{
 }
 .blog_post_share li p{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(59, 59, 59);
   line-height: 1.333;
 }
@@ -10675,7 +10643,7 @@ a.btn.btn_error{
 .mbp_pagination_tab .pag_next .detls{
   display: inline-block;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.75;
   margin-bottom: 0;
@@ -10683,7 +10651,7 @@ a.btn.btn_error{
 .mbp_pagination_tab .pag_prev .detls h5,
 .mbp_pagination_tab .pag_next .detls h5{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 0;
@@ -10691,7 +10659,7 @@ a.btn.btn_error{
 .mbp_pagination_tab .pag_prev .detls p,
 .mbp_pagination_tab .pag_next .detls p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -10735,7 +10703,7 @@ a.btn.btn_error{
 }
 .mbp_pagination_comments .mbp_first.media .media-body p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -10751,7 +10719,7 @@ a.btn.btn_error{
   display: -o-flex;
   display: flex;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.5;
@@ -10763,14 +10731,14 @@ a.btn.btn_error{
 }
 .mbp_pagination_comments a.write_review{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(255, 90, 95);
   position: absolute;
   right: 30px;
 }
 .mbp_pagination_comments .tr_outoff{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(118, 118, 118);
 }
 /*== Commenting Form Blog Sinlge Page ==*/
@@ -10831,7 +10799,7 @@ a.btn.btn_error{
 }
 .breadcrumb_widgets .title{
   font-size: 22px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: rgb(10, 10, 10);
   line-height: 1.2;
   margin-bottom: 0;
@@ -10860,7 +10828,7 @@ a.btn.btn_error{
 }
 .user_profile .media .media-body h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   padding-left: 30px;
@@ -10923,7 +10891,7 @@ a.btn.btn_error{
 }
 .my_dashboard_review .review_content .review_title{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -10931,7 +10899,7 @@ a.btn.btn_error{
 }
 .my_dashboard_review .review_content .review_date{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(118, 118, 118);
   line-height: 2.143;
 }
@@ -10960,7 +10928,7 @@ a.btn.btn_error{
   background-color: rgb(36, 50, 74);
   border: none;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 2.2;
@@ -10972,7 +10940,7 @@ a.btn.btn_error{
 .property_table .table td,
 .property_table .table th{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: 600;
   line-height: 3;
@@ -10985,7 +10953,7 @@ a.btn.btn_error{
 .savesearched_table td.para,
 .property_table td.para{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
 }
 .pck_chng_btn .btn{
@@ -10996,7 +10964,7 @@ a.btn.btn_error{
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -11137,7 +11105,7 @@ a.btn.btn_error{
   border-bottom: 1px solid #dedede;
   color: #484848;
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.333;
   margin-bottom: 0;
   padding-bottom: 20px;
@@ -11252,7 +11220,7 @@ a.btn.btn_error{
 }
 .user_setting .dropdown-menu .user_set_header p{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -11268,7 +11236,7 @@ a.btn.btn_error{
 .user_setting .dropdown-menu .user_setting_content a {
   color: #484848;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 2.125 !important;
   padding-left: 0;
   -webkit-transition: all 0.3s ease 0s;
@@ -11420,13 +11388,13 @@ a.btn.btn_error{
 }
 .grid_list_search_result .right_area ul li .filter-option-inner-inner{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
 }
 .grid_list_search_result .right_area ul li span.stts,
 .grid_list_search_result .right_area ul li span.shrtby{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
 }
@@ -11532,7 +11500,7 @@ a.btn.btn_error{
 }
 .h1ads_1st_list.half_style input.form-control::placeholder{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -11626,21 +11594,21 @@ a.btn.btn_error{
 }
 .sl_creator .media-body h5{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
 }
 .sl_creator .media-body p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   line-height: 1.5;
   margin-bottom: 0;
 }
 .sl_creator .media-body a{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
@@ -11653,7 +11621,7 @@ a.btn.btn_error{
   border: 1px solid rgb(235, 235, 235);
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -11696,7 +11664,7 @@ a.btn.btn_error{
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   height: 52px;
   line-height: 42px;
   padding-left: 20px;
@@ -11722,7 +11690,7 @@ a.btn.btn_error{
 }
 .sasw_list .panel-heading h4.panel-title{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -11819,7 +11787,7 @@ a.btn.btn_error{
 }
 .portfolio_upload p{
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(72, 72, 72);
   font-weight: bold;
   line-height: 1.2;
@@ -11872,7 +11840,7 @@ a.btn.btn_error{
 }
 .inbox_user_list .wrap .meta h5.name{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -11880,7 +11848,7 @@ a.btn.btn_error{
 }
 .inbox_user_list .wrap .meta p.preview{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(119, 119, 119);
   line-height: 2;
   margin-bottom: 0;
@@ -11980,7 +11948,7 @@ a.btn.btn_error{
 }
 .message_container .user_heading .wrap h5.name {
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(10, 10, 10);
   line-height: 1.2;
   margin-bottom: 0;
@@ -12067,7 +12035,7 @@ a.btn.btn_error{
 }
 .message_container .message_input form input.form-control::placeholder {
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
 }
@@ -12160,13 +12128,13 @@ a.btn.btn_error{
 }
 .ff_one .detais .timer{
   font-size: 36px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
 .ff_one .detais p{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(119, 119, 119);
   margin-bottom: 0;
 }
@@ -12189,7 +12157,7 @@ a.btn.btn_error{
   position: relative;
 }
 .application_statics h4{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -12205,7 +12173,7 @@ a.btn.btn_error{
 .recent_job_activity h4 {
   color: #484848;
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -12231,7 +12199,7 @@ a.btn.btn_error{
 }
 .recent_job_activity .grid ul li p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -12241,7 +12209,7 @@ a.btn.btn_error{
   z-index: 9999;
 }
 .sidebar-menu{
-  background-color: #1d293e;
+  background-color: #E89C31;
   bottom: 0;
   height: auto;
   left: 0;
@@ -12265,11 +12233,11 @@ a.btn.btn_error{
   border-radius: 6px;
 }
 .sidebar-menu::-webkit-scrollbar-track {
-  background-color: #1d293e;
+  background-color: #E89C31;
   border-radius: 6px;
 }
 .sidebar-menu::-webkit-scrollbar-thumb {
-  background-color: #1d293e !important; 
+  background-color: #E89C31 !important; 
   /* manage scrollbar thumb background color here */
   border-radius: 6px;
 }
@@ -12280,10 +12248,10 @@ a.btn.btn_error{
 }
 .sidebar-menu li a{
   border-left: 2px solid transparent;
-  color: rgb(138, 153, 179);
+  color: #000000;
   display: block;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 3.571;
   padding: 0 15px;
 }
@@ -12295,13 +12263,13 @@ a.btn.btn_error{
 }
 .sidebar-menu li:hover a,
 .sidebar-menu li.active a{
-  color: #ffffff;
-  background-color: #172133;
+  color: #000;
+  background-color: #E89C31;
   border-left-color: #E89C31
 }
 .sidebar-menu li .treeview-menu{
   margin: 0;
-  background-color: #172133;
+  background-color: #E89C31;
 }
 .sidebar-menu li .label,
 .sidebar-menu li .badge{
@@ -12309,9 +12277,9 @@ a.btn.btn_error{
   margin-right: 5px;
 }
 .sidebar-menu li.header{
-  background-color: #24324a;
+  background-color: #E89C31;
   color: #ffffff;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 28px;
   font-weight: bold;
   line-height: 1.2;
@@ -12351,10 +12319,10 @@ a.btn.btn_error{
   margin: 0;
 }
 .sidebar-menu .treeview-menu li a{
-  color: rgb(138, 153, 179);
+  color: #000;
   display: block;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 2.5;
   padding-left: 30px;
 }
@@ -12373,9 +12341,10 @@ a.btn.btn_error{
   color: #fff;
 }
 .sidebar-menu .title{
+  /* font-style: "bold"; */
   font-size: 16px;
-  font-family: "Nunito";
-  color: rgb(96, 112, 140);
+  font-family: "Perpetua";
+  color: #000;
   line-height: 1.5;
   margin-top: 30px;
   padding-left: 15px;
@@ -12383,7 +12352,7 @@ a.btn.btn_error{
 /*== sidebar about widget ==*/
 .siderbar_contact_widget h4 {
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   margin-bottom: 15px;
   line-height: 1.2;
@@ -12508,7 +12477,7 @@ a.btn.btn_error{
   bottom: 20px;
   color: #484848;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 2.2;
   height: 50px;
   left: 20px;
@@ -12560,7 +12529,7 @@ a.btn.btn_error{
   background-color: rgb(29, 41, 62);
   cursor: pointer;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 30px;
@@ -12650,7 +12619,7 @@ a.btn.btn_error{
   cursor: pointer;
   display: block;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   height: 50px;
   line-height: 50px;
   margin-top: 0;
@@ -12817,7 +12786,7 @@ a.btn.btn_error{
 }
 .blog_post_home2 .details h4{
   color: #fafafa;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
@@ -12908,7 +12877,7 @@ a.btn.btn_error{
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -12922,7 +12891,7 @@ a.btn.btn_error{
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
@@ -12939,7 +12908,7 @@ a.btn.btn_error{
 }
 .contact_localtion h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -12947,14 +12916,14 @@ a.btn.btn_error{
 }
 .contact_localtion p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 20px;
 }
 .contact_localtion .content_list h5{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.5;
@@ -13003,13 +12972,13 @@ a.btn.btn_error{
 .maxtext h1{
   color: #ffffff;
   font-size: 50px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.2;
   text-transform: uppercase;
 }
 .maxtext p{
   color: #ffffff;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-size: 18px;
   line-height: 1.2;
 }
@@ -13024,7 +12993,7 @@ a.btn.btn_error{
   color: #E50914 !important;
 }
 .text-thm2 {
-  color: #ff787c !important;
+  color: #E50914 !important;
 }
 .text-thm3 {
   color: #006c70 !important;
@@ -13037,6 +13006,9 @@ a.btn.btn_error{
 }
 .text-thm6 {
   color: #ff1053;
+}
+.color-black {
+  color: #000000;
 }
 .color-white {
   color: #ffffff !important;
@@ -13378,8 +13350,8 @@ a.btn.btn_error{
   outline: none;
 }
 .btn-thm {
-  background-color: #E89C31;
-  border: 2px solid #E89C31;
+  background-color: #e50914;
+  border: 2px solid #e50914;
   border-radius: 5px;
   color: #ffffff;
   -webkit-transition: all 0.3s ease;
@@ -13394,9 +13366,9 @@ a.btn.btn_error{
 .btn-thm:hover,
 .btn-thm:active,
 .btn-thm:focus{
-  background-color: #ffffff;
-  border-color: #E89C31;
-  color: #E89C31; }
+  background-color: #fff;
+  border-color: #e50914;
+  color: #e50914; }
 
 .btn-thm.white:hover,
 .btn-thm.white:active,
@@ -13406,8 +13378,8 @@ a.btn.btn_error{
   color: #ffffff;  
 }
 .btn-thm2 {
-  background-color: #ff787c;
-  border-color: #ff787c;
+  background-color: #E89C31;
+  border-color: #E89C31;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s ease;
@@ -13418,8 +13390,8 @@ a.btn.btn_error{
 .btn-thm2:active,
 .btn-thm2:focus {
   background-color: #ffffff;
-  border-color: #ff787c;
-  color: #ff787c; }
+  border-color: #E89C31;
+  color: #E89C31; }
 
 .btn-thm3 {
   background-color: #ff1053;
@@ -14600,7 +14572,7 @@ section {
 }
 .main-title h2 {
   color: #484848;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.2;
   margin-bottom: 10px;
   margin-top: 0;
@@ -14612,7 +14584,7 @@ section {
 }
 .main-title p {
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(119, 119, 119);
   line-height: 1.2;
   margin-bottom: 0;
@@ -15131,7 +15103,7 @@ canvas {
 }
 .selected_filter_widget.style2 .accordion .link{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
 }
@@ -15319,7 +15291,7 @@ canvas {
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   height: 50px;
   left: auto;
@@ -15460,7 +15432,7 @@ canvas {
   border-radius: 3px;
   background-color: #E50914;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #fefefe;
   height: 25px;
   left: 10px;
@@ -15475,14 +15447,14 @@ canvas {
   position: relative;
 }
 .shop_grid .details h4.item-tile{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.444;
   margin-bottom: 15px;
 }
 .shop_grid .details h4.item-tile .price{
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #E50914;
   font-weight: bold;
   float: right;
@@ -15494,7 +15466,7 @@ canvas {
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   height: 45px;
@@ -15511,7 +15483,7 @@ canvas {
 }
 .shop_order_box .main_title{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -15534,7 +15506,7 @@ canvas {
 }
 .shop_order_box .order_list_raw ul li h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.333;
   margin-bottom: 4px;
@@ -15547,14 +15519,14 @@ canvas {
 }
 .shop_order_box .order_details .title{
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 40px;
 }
 .shop_order_box .order_details .title2 {
   font-size: 20px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -15571,7 +15543,7 @@ canvas {
 }
 .shop_order_box .order_details .od_content .tamount{
   font-size: 18px;
-  font-family: "Nunito SemiBold";
+  font-family: "Perpetua SemiBold";
   color: rgb(255, 16, 83);
   line-height: 1.333;
 }
@@ -15587,7 +15559,7 @@ canvas {
 }
 .checkout_form.style2 .heading p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -15603,7 +15575,7 @@ canvas {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -15612,7 +15584,7 @@ canvas {
 }
 .checkout_form .checkout_coupon form label{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.75;
@@ -15622,7 +15594,7 @@ canvas {
   border: 1px solid #ebebeb;
   border-radius: 5px;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -15633,7 +15605,7 @@ canvas {
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   padding: 25px;
@@ -15647,7 +15619,7 @@ canvas {
   -o-box-shadow:0px 1px 4px 0px rgba(62, 76, 102, 0.3);
   box-shadow:0px 1px 4px 0px rgba(62, 76, 102, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   height: 50px;
   line-height: 1.2;
@@ -15671,7 +15643,7 @@ canvas {
   -o-box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   height: 50px;
@@ -15703,7 +15675,7 @@ canvas {
 }
 .checkout_form .checkout_coupon .form2 .ai_title{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -15712,7 +15684,7 @@ canvas {
 }
 .checkout_form .checkout_coupon .form2 p{
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.75;
@@ -15730,7 +15702,7 @@ canvas {
 .order_sidebar_widget .title{
   color: #484848;
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 40px;
@@ -15741,14 +15713,14 @@ canvas {
 .order_sidebar_widget .subtitle p{
   color: #484848;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
 }
 .order_sidebar_widget .subtitle span,
 .order_sidebar_widget .subtitle .totals{
   color: #E50914;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
 }
 .payment_widget{
   border: 1px solid #ebebeb;
@@ -15769,7 +15741,7 @@ canvas {
 }
 .payment_widget .bt_details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   margin-bottom: 0;
@@ -15817,7 +15789,7 @@ canvas {
   border: none;
   color: #484848;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 2.2;
   padding-left: 20px;
@@ -15879,7 +15851,7 @@ canvas {
 }
 .cart_page_form tbody.table_body th .cart_list .cart_title{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.444;
@@ -15893,7 +15865,7 @@ canvas {
   border-radius: 8px;
   background-color: #efefef;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   height: 50px;
@@ -15906,7 +15878,7 @@ canvas {
 }
 .order_key_status li{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(10, 10, 10);
   line-height: 2.222;
 }
@@ -15941,7 +15913,7 @@ canvas {
 }
 .single_product_grid .sps_content .content .shop_single_product_details p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
 }
@@ -15999,7 +15971,7 @@ canvas {
 .shop_single_product_details h4{
   color: #484848;
   font-size: 22px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.182;
   margin-bottom: 15px;
@@ -16009,7 +15981,7 @@ canvas {
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -16019,7 +15991,7 @@ canvas {
 }
 .shop_single_product_details .sspd_price{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #E50914;
   font-weight: bold;
   line-height: 1.2;
@@ -16035,7 +16007,7 @@ canvas {
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   border-radius: 8px;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
   color: #ffffff;
@@ -16055,7 +16027,7 @@ canvas {
 }
 .shop_single_product_details .sspd_social_icon li:first-child{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: rgb(59, 59, 59);
   line-height: 1.333;
   padding-right: 10px;
@@ -16074,7 +16046,7 @@ canvas {
 }
 .product_single_content .mbp_pagination_comments .mbp_first.media .media-body p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.857;
   margin-bottom: 0;
@@ -16101,7 +16073,7 @@ canvas {
 .cs_rwo_tabs.csv2 .nav-tabs .nav-link{
   border: 1px solid transparent;
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   height: 64px;
   line-height: 2.5;
@@ -16174,7 +16146,7 @@ ul.total_reivew_view {
 }
 ul.total_reivew_view li.sub_titles{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -16182,13 +16154,13 @@ ul.total_reivew_view li.sub_titles{
 }
 ul.total_reivew_view li.avrg_review{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #767676;
   line-height: 2.143;
 }
 ul.total_reivew_view li.write_review{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #E50914;
   line-height: 2.57;
   position: absolute;
@@ -16215,7 +16187,7 @@ ul.total_reivew_view .star_list li:last-child a{
 .shop_single_tab_content .nav-tabs .nav-link{
   border: none;
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -16238,7 +16210,7 @@ ul.total_reivew_view .star_list li:last-child a{
 .mbp_comment_form.style2 h4,
 .bsp_reveiw_wrt h4{
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
@@ -16250,7 +16222,7 @@ ul.total_reivew_view .star_list li:last-child a{
 .mbp_comment_form.style2 .sspd_review .review_rating_para,
 .review_star li p{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.714;
   padding-left: 10px;
@@ -16282,7 +16254,7 @@ ul.total_reivew_view .star_list li:last-child a{
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
   height: 52px;
@@ -16296,7 +16268,7 @@ ul.total_reivew_view .star_list li:last-child a{
   border-radius: 8px;
   color: #484848;
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   line-height: 1.2;
   margin-bottom: 20px;
   padding: 20px;
@@ -16311,7 +16283,7 @@ ul.total_reivew_view .star_list li:last-child a{
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   color: #ffffff;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   height: 50px;
   line-height: 35px;
@@ -16346,7 +16318,7 @@ ul.total_reivew_view .star_list li:last-child a{
 }
 .become_instructor_container .titles{
   color: #484848;
-  font-family: nunito;
+  font-family: Perpetua;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.3;
@@ -16411,20 +16383,20 @@ button.gm-ui-hover-effect:focus {
 }
 .gm-style-iw-d h5{
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #E50914;
   line-height: 1.2;
 }
 .gm-style-iw-d h4 {
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   font-weight: bold;
   line-height: 1.2;
 }
 .gm-style-iw-d p {
   font-size: 14px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   color: #484848;
   line-height: 1.2;
 }
@@ -16436,7 +16408,7 @@ button.gm-ui-hover-effect:focus {
 #slider-range-value2{
   color: #006c70;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Perpetua";
   font-weight: bold;
   line-height: 1.2;
 }
