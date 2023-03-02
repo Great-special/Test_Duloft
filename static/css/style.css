@@ -171,7 +171,7 @@ img {
 
 p {
   font-size: 14px;
-  color: #484848;
+  color: #000000;
   font-weight: 400;}
 
 ul,
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Perpetua', sans-serif;
   line-height: 1.2;
-  color: #484848; }
+  color: #000000; }
   h1 small,
   h1 .small, h2 small,
   h2 .small, h3 small,
@@ -244,11 +244,11 @@ h1, h2, h3, h4, h5, h6,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
-    color: #484848;
+    color: #000000;
     font-weight: 400; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
   .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
-    color: #484848;
+    color: #000000;
     font-weight: 400; }
 
 h1, h2, h3, h4
@@ -351,7 +351,7 @@ address {
 }
 .sign_up_tab li.nav-item .nav-link{
   border: none;
-  color: #484848;
+  color: #000000;
   font-family: 'Perpetua', sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -443,7 +443,7 @@ address {
   margin-right: 20px;
 }
 .dropdown_content .list_content a p{
-  color: #484848;
+  color: #000000;
   font-family: 'Perpetua', sans-serif;
   margin: 0;
 }
@@ -536,7 +536,7 @@ address {
   right: 15px;
   width: 25px;
   top: 15px;
-  color: #484848;
+  color: #000000;
   -webkit-transition: all .2s ease-out;
   -moz-transition: all .2s ease-out;
   -ms-transition: all .2s ease-out;
@@ -677,12 +677,12 @@ address {
 }
 #search-button i,
 #search-button2 i{
-  color: #484848;
+  color: #000000;
   font-size: 22px;
 }
 .search_overlay.home5 #search-button i,
 .search_overlay.home5 #search-button2 i{
-  color: #484848;
+  color: #000000;
 }
 /*== Header Top Style ==*/
 .header_top.home2{
@@ -768,14 +768,14 @@ ul.sign_up_btn.home7 a{
 .header_search_widget .mailchimp_form input[type="text"].form-control::-webkit-input-placeholder{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .header_search_widget .mailchimp_form button{
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  color: #484848;
+  color: #000000;
   font-size: 22px;
   height: 45px;
   margin-left: -70px;
@@ -783,7 +783,7 @@ ul.sign_up_btn.home7 a{
 }
 .header_search_widget .mailchimp_form button:active,
 .header_search_widget .mailchimp_form button:focus{
-  color: #484848 !important;
+  color: #000000 !important;
   border: none;
   box-shadow: none !important;
   outline: none;
@@ -830,14 +830,14 @@ header.header-nav.menu_style_home_three.navbar-scrolltofixed .ht_left_widget.hom
 .ht_left_widget.home3 .no-touch .cd-dropdown-trigger.dropdown-is-active:hover,
 .ht_left_widget.home3 .no-touch .cd-dropdown-trigger:hover{
   background-color: #ffffff !important;
-  color: #484848;
+  color: #000000;
 }
 .ht_left_widget.home3 .cd-dropdown-trigger{
   text-transform: capitalize;
 }
 .ht_left_widget.home3 .cd-dropdown-trigger::before,
 .ht_left_widget.home3 .cd-dropdown-trigger::after{
-  background-color: #484848;
+  background-color: #000000;
 }
 .ht_right_widget a.btn.cart_btn span{
   background-color: #ffffff;
@@ -1077,7 +1077,7 @@ header.header-nav.menu_style_home_one.stricky-fixed .ace-responsive-menu li a,
 header.header-nav.menu_style_home_one.stricky-fixed a.navbar_brand span,
 header.header-nav.menu_style_home_one.stricky-fixed .sign_up_btn .btn,
 header.header-nav.menu_style_home_one.stricky-fixed #search-button i{
-  color: #484848;
+  color: #000000;
 }
 header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed a.navbar_brand span,
 header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed li a{
@@ -1301,7 +1301,7 @@ header.header-nav.menu_style_home_six .ace-responsive-menu li ul.sub-menu li a,
 header.header-nav.menu_style_home_seven .ace-responsive-menu li ul.sub-menu li a,
 header.header-nav.menu_style_home_eight .ace-responsive-menu li ul.sub-menu li a{
   border-bottom: 1px solid #dedede;
-  color: #484848;
+  color: #000000;
   font-size: 16px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1364,7 +1364,7 @@ header.header-nav.menu_style_home_one.style2 a.navbar_brand{
   margin-top: 20px;
 }
 header.header-nav.menu_style_home_one.style2 a.navbar_brand span{
-  color: #484848;
+  color: #000000;
   font-family: "Perpetua";
   font-size: 28px;
   font-weight: bold;
@@ -1390,7 +1390,7 @@ header.header-nav.menu_style_home_one.style2.home10 .ace-responsive-menu > li > 
 header.header-nav.menu_style_home_one.style2 .ace-responsive-menu li a{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 header.header-nav.menu_style_home_one.style2 ul.ace-responsive-menu li.list_s{
@@ -1706,7 +1706,7 @@ header.header-nav.menu_style_home_four a.navbar_brand{
   margin-top: 10px;
 }
 header.header-nav.menu_style_home_four.stricky-fixed .cart_btnes.home4 a.btn.cart_btn{
-  color: #484848;
+  color: #000000;
 }
 header.header-nav.menu_style_home_four a.navbar_brand span{
   color: #ffffff;
@@ -1723,7 +1723,7 @@ header.header-nav.menu_style_home_four.stricky-fixed{
   padding: 10px 0;
 }
 header.header-nav.menu_style_home_four.stricky-fixed a.navbar_brand span{
-  color: #484848;
+  color: #000000;
 }
 header.header-nav.menu_style_home_four a.navbar_brand:before{
   background-color: transparent !important;
@@ -1733,7 +1733,7 @@ header.header-nav.menu_style_home_four .ace-responsive-menu > li > a{
 }
 header.header-nav.menu_style_home_four .ace-responsive-menu li ul.sub-menu,
 header.header-nav.menu_style_home_four .ace-responsive-menu li ul.sub-menu li a{
-  color: #484848;
+  color: #000000;
   background-color: #ffffff;
 }
 header.header-nav.menu_style_home_four .ace-responsive-menu > li{
@@ -1757,7 +1757,7 @@ header.header-nav.menu_style_home_four .sign_up_btn .btn:hover,
   color: #ffffff;
 }
 header.header-nav.menu_style_home_four.stricky-fixed .ace-responsive-menu li a{
-  color: #484848;
+  color: #000000;
 }
 /*== Menu Style For Home V5 ==*/
 header.header-nav.menu_style_home_five{
@@ -1830,7 +1830,7 @@ header.header-nav.menu_style_home_five .ace-responsive-menu li ul.cart a.btn.car
 }
 header.header-nav.menu_style_home_five a.navbar_brand span,
 header.header-nav.menu_style_home_five .ace-responsive-menu li a{
-  color: #484848;
+  color: #000000;
 }
 header.header-nav.menu_style_home_five .ace-responsive-menu li a{
   padding-top: 27px;
@@ -1856,7 +1856,7 @@ header.header-nav.menu_style_home_five .header_search_widget .mailchimp_form but
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  color: #484848;
+  color: #000000;
   font-size: 24px;
   height: 45px;
   margin-left: -65px;
@@ -1872,7 +1872,7 @@ header.header-nav.menu_style_home_five .sign_up_btn{
   margin-bottom: 0;
 }
 header.header-nav.menu_style_home_five .sign_up_btn .btn{
-  color: #484848;
+  color: #000000;
   margin-top: 10px;
 }
 .ht_left_widget.home5 .cd-dropdown-trigger::before,
@@ -1896,7 +1896,7 @@ header.header-nav.menu_style_home_five .header_search_widget .mailchimp_form .fo
   outline: none;
 }
 header.header-nav.menu_style_home_five .ht_left_widget.home5 .cd-dropdown-trigger{
-  background-color: #484848;
+  background-color: #000000;
   color: #ffffff;
 }
 .home5_shop_reg_widget li:first-child{
@@ -1915,10 +1915,10 @@ header.header-nav.menu_style_home_six a.navbar_brand{
   margin-top: 10px;
 }
 header.header-nav.menu_style_home_six.stricky-fixed .cart_btnes.home4 a.btn.cart_btn{
-  color: #484848;
+  color: #000000;
 }
 header.header-nav.menu_style_home_six a.navbar_brand span{
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   font-size: 22px;
   margin-top: 10px;
@@ -1932,7 +1932,7 @@ header.header-nav.menu_style_home_six.stricky-fixed{
   padding: 10px 0;
 }
 header.header-nav.menu_style_home_six.stricky-fixed a.navbar_brand span{
-  color: #484848;
+  color: #000000;
 }
 header.header-nav.menu_style_home_six a.navbar_brand:before{
   background-color: transparent !important;
@@ -1942,7 +1942,7 @@ header.header-nav.menu_style_home_six .ace-responsive-menu > li > a{
 }
 header.header-nav.menu_style_home_six .ace-responsive-menu li ul.sub-menu,
 header.header-nav.menu_style_home_six .ace-responsive-menu li ul.sub-menu li a{
-  color: #484848;
+  color: #000000;
   background-color: #ffffff;
 }
 header.header-nav.menu_style_home_six .ace-responsive-menu > li{
@@ -1969,10 +1969,10 @@ header.header-nav.menu_style_home_six .ace-responsive-menu > li.last{
   margin-right: 40px;
 }
 header.header-nav.menu_style_home_six.stricky-fixed .ace-responsive-menu li a{
-  color: #484848;
+  color: #000000;
 }
 .menu6_search.home6 #search-button i{
-  color: #484848;
+  color: #000000;
 }
 .home7_search.home7 #search-button i{
   color: #ffffff;
@@ -2032,14 +2032,14 @@ header.header-nav.menu_style_home_seven a.navbar_brand .logo1.home7{
   margin-top: -50px;
 }
 header.header-nav.menu_style_home_seven.stricky-fixed .cart_btnes.home4 a.btn.cart_btn{
-  color: #484848;
+  color: #000000;
 }
 header.header-nav.menu_style_home_seven .ace-responsive-menu > li > a{
   color: #ffffff;
 }
 header.header-nav.menu_style_home_seven .ace-responsive-menu li ul.sub-menu,
 header.header-nav.menu_style_home_seven .ace-responsive-menu li ul.sub-menu li a{
-  color: #484848;
+  color: #000000;
   background-color: #ffffff;
 }
 header.header-nav.menu_style_home_seven .ace-responsive-menu > li{
@@ -2071,7 +2071,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 }
 /*== Mobile Menu Css ==*/
 .stylehome1 .mm-navbar{
-  color: #484848;
+  color: #000000;
   height: 86px;
   line-height: 4;
 }
@@ -2092,12 +2092,12 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 }
 .stylehome1 a.mm-listitem__text,
 .stylehome1 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text{
-  color: #484848;
+  color: #000000;
 }
 .stylehome1 a.mm-listitem__text:hover,
 .stylehome1 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text:hover{
   background-color: #e5e5e5;
-  color: #484848;
+  color: #000000;
 }
 .stylehome1.home3 a.mm-listitem__text,
 .stylehome1.home3 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text{
@@ -2106,7 +2106,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 .stylehome1.home3 a.mm-listitem__text:hover,
 .stylehome1.home3 a.mm-btn.mm-btn_next.mm-listitem__btn.mm-listitem__text:hover{
   background-color: #e5e5e5;
-  color: #484848;
+  color: #000000;
 }
 .stylehome1.home4 .mm-navbar,
 .stylehome1.home4 .mm-panel{
@@ -2348,7 +2348,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   border: 1px solid #ebebeb;
   border-radius: 8px;
   font-size: 14px;
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   height: 50px;
   width: 215px;
@@ -2370,7 +2370,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
 }
 .home1-advnc-search ul li:first-child input[type="text"].form-control::-webkit-input-placeholder{
   background-color: #ffffff;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Perpetua";
   line-height: 1.2;
@@ -2651,7 +2651,7 @@ input.amount4:focus{
 }
 .home1-advnc-search .search_option_two .dropdown.bootstrap-select .dropdown-toggle .filter-option{
   font-size: 14px;
-  color: #484848;  
+  color: #000000;  
 }
 .home1-advnc-search .search_option_two .dropdown.bootstrap-select>.dropdown-toggle:focus, 
 .home1-advnc-search .search_option_two .dropdown.bootstrap-select>.dropdown-toggle:active{
@@ -2698,7 +2698,7 @@ form.home5_advanced_search_form .search_option_two .dropdown-menu{
 .home1-advnc-search .search_option_two .dropdown-menu button.btn{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .home1-advnc-search .search_option_two .dropdown-menu.show:before{
@@ -2721,7 +2721,7 @@ form.home5_advanced_search_form .search_option_two .dropdown-menu{
   color: #E89C31
 }
 .home1-advnc-search .bootstrap-select .dropdown-menu li a{
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   line-height: 2;
   width: 250px;
@@ -2766,7 +2766,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-radius: 8px;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Perpetua";
   height: 50px;
@@ -2780,7 +2780,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
-  color: #484848;
+  color: #000000;
   height: 50px;
   line-height: 2.5;
   margin: 0;
@@ -2891,7 +2891,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 /* MegaDropDown Content Style/Css Code */
 .mega-dropdown .dropbtn {
-  color: #484848;
+  color: #000000;
   border: none;
   font-size: 14px;  
   margin: 0;
@@ -3442,7 +3442,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   padding: 230px 0 210px;
 }
 .home-five .home-text h2{
-  color: #484848;
+  color: #000000;
   font-size: 45px;
 }
 .home-five .home-text p{
@@ -3452,9 +3452,9 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   max-width: 495px;
 }
 .home-five .home-text a.btn {
-  border: 2px solid #484848;
+  border: 2px solid #000000;
   border-radius: 27px;
-  color: #484848;
+  color: #000000;
   font-size: 18px;
   margin-top: 15px;
   padding: 10px 50px;
@@ -3505,7 +3505,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home1-overlay:before {
   content: "";
-  background-color: rgba(145, 95, 29, 0.45);
+  background-color: rgba(231, 134, 7, 0.50);
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -3842,7 +3842,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_one.csv3 .cs_watch_list li a{
   font-size: 15px;
   font-family: "Open Sans";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .cs_row_one .cs_instructor .cs_watch_list li:first-child a{
@@ -3868,7 +3868,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_one .cs_title{
   font-size: 26px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .cs_row_one .cs_review_seller{
@@ -3994,7 +3994,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_two .cs_overview .title{
   font-family: "Perpetua SemiBold";
   font-size: 20px;
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 22px;
 }
@@ -4058,7 +4058,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_three .course_content h4.title{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   float: left;
   line-height: 1.2;
 }
@@ -4133,7 +4133,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_five .student_feedback_container .aii_title{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   margin-bottom: 25px;
   line-height: 1.2;
 }
@@ -4146,7 +4146,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_four .about_ins_container .details h4{
   font-size: 20px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   margin-bottom: 0;
   line-height: 1.5;
 }
@@ -4266,7 +4266,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .cs_row_five .student_feedback_container .aii_average_review .av_content h2{
   font-size: 50px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 0.6;
 }
 .cs_row_five .student_feedback_container .aii_average_review .av_content .aii_rive_list li{
@@ -4285,7 +4285,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .r_course_title{
   font-size: 26px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 30px;
 }
@@ -4440,7 +4440,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   width: 35px;
 }
 .feat_property.home8 .icon li a{
-  color: #484848;
+  color: #000000;
 }
 .feat_property.home8 .details .tc_content{
   display: inline-block;
@@ -4507,7 +4507,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property.list .dtls_headr a.fp_price{
   font-size: 22px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   position: absolute;
@@ -4623,13 +4623,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property .details .tc_content p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .feat_property .details .tc_content h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -4645,14 +4645,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property .details .tc_content .prop_details li a{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .feat_property .details .tc_content .prop_details li:last-child{
   margin-right: 0;
 }
 .feat_property.home2 .details .tc_content h5{
-  color: #484848;
+  color: #000000;
   font-family: "Perpetua";
   line-height: 1.333;
 }
@@ -4946,13 +4946,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .for_blog.feat_property .details .tc_content .bpg_meta li a{
   font-size: 14px;
   font-family: "Perpetua";
-  color: rgb(119, 119, 119);
+  color: #000000;
   line-height: 1.2;
 }
 .for_blog.feat_property .details .tc_content p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 0;
 }
@@ -5033,7 +5033,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .properti_city.home5 .overlay .details .left h4{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 2.3;
   margin: 0;
@@ -5123,13 +5123,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .modern_apertment .title{
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
 .modern_apertment .subtitle{
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -5137,7 +5137,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .modern_apertment p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.429;
   margin-bottom: 30px;
 }
@@ -5173,14 +5173,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .search_smart_property h2{
   font-size: 30px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
 .search_smart_property p{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.875;
   margin-bottom: 30px;
 }
@@ -5191,7 +5191,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -o-box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
   box-shadow:0px 0px 50px 0px rgba(32, 32, 32, 0.15);
   border-radius: 8px;
-  color: #484848;
+  color: #000000;
   font-size: 16px;
   font-family: "Perpetua";
   font-weight: bold;
@@ -5323,7 +5323,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: #ffffff;
 }
 .spss.style2 ul li a{
-  color: #484848;
+  color: #000000;
 }
 .spls_style_two{
   position: relative;
@@ -5357,7 +5357,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   outline: none;
 }
 .faq_according .accordion .card.floor_plan .card-header.active .btn-link{
-  color: #484848;
+  color: #000000;
 }
 .faq_according .accordion .card.floor_plan .card-header.active{
   border: 1px solid #ebebeb;
@@ -5480,7 +5480,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   text-align: center;
 }
 .lsd_list li a{
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Perpetua";
   color: rgb(72, 72, 72);
@@ -5803,7 +5803,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   width: 50px;
 }
 .listing_single_property_compare ul li .icon span{
-  color: #484848;
+  color: #000000;
 }
 .listing_single_property_compare ul li p{
   font-size: 14px;
@@ -5860,7 +5860,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .why_chose_us .details h4{
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
 }
 .why_chose_us .details p{
@@ -6127,7 +6127,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .testimonial_grid.style2 .details h4,
 .testimonial_grid.style2 .details p{
-  color: #484848;
+  color: #000000;
 }
 .testimonial_grid.style2 .thumb{
   position: relative;
@@ -6733,7 +6733,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   z-index: 9;
 }
 .hvr_img_box_container .overlay .details h5 {
-  color: #484848;
+  color: #000000;
   font-family: "Perpetua SemiBold";
   font-size: 18px;
   margin-bottom: 20px;
@@ -6957,7 +6957,7 @@ input::placeholder{
   -moz-box-shadow:0px 0px 50px 0px rgba(19, 19, 28, 0.12);
   -o-box-shadow:0px 0px 50px 0px rgba(19, 19, 28, 0.12);
   box-shadow:0px 0px 50px 0px rgba(19, 19, 28, 0.12);
-  color: #484848;
+  color: #000000;
 }
 .footer_middle_area.home3 .footer_social_widget p {
   color: #ffffff;
@@ -6984,7 +6984,7 @@ input::placeholder{
   background-color: #E89C31;
 }
 .footer_bottom_area {
-  background-color: #484848;
+  background-color: #000000;
 }
 .copyright-widget p {
   font-size: 14px;
@@ -7058,7 +7058,7 @@ input::placeholder{
   color: #777777;
 }
 .footer_social_widget.home6 li a{
-  color: #484848;
+  color: #000000;
 }
 .footer_about_widget.home3 p{
   color: #777777;
@@ -7083,7 +7083,7 @@ input::placeholder{
 .footer_contact_widget.home3 h4,
 .footer_social_widget.home3 h4,
 .footer_apps_widget.home3 h4{
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -7098,12 +7098,12 @@ input::placeholder{
 .footer_social_widget.home6 h4,
 .footer_apps_widget.home6 h4{
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.333;
 }
 .footer_qlink_widget.home6 li:hover a{
-  color: #484848;
+  color: #000000;
 }
 .footer_about_widget li a,
 .footer_qlink_widget li a,
@@ -7125,7 +7125,7 @@ input::placeholder{
 }
 .footer_apps_widget .app_grid .apple_btn,
 .footer_apps_widget .app_grid .play_store_btn{
-  background-color: #484848;
+  background-color: #000000;
   border: none;
   border-radius: 4px;
   height: 75px;
@@ -7268,7 +7268,7 @@ input::placeholder{
 .footer_apps_widget .mailchimp_form button{
   background-color: transparent;
   border: transparent;
-  color: #484848;
+  color: #000000;
   height: 45px;
   margin-left: -62px;
   width: 45px;
@@ -7409,7 +7409,7 @@ input::placeholder{
 }
 /*== About Page About Content ==*/
 .about_content p.large {
-  color: #484848;
+  color: #000000;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
@@ -7417,7 +7417,7 @@ input::placeholder{
 }
 .about_content p{
   font-size: 14px;
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 40px;
 }
@@ -7445,14 +7445,14 @@ ul.ab_counting li:last-child{
 .about_counting .details h3{
   font-size: 22px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   margin-bottom: 0;
 }
 .about_counting .details p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
 }
 .about_thumb{
   position: relative;
@@ -7890,7 +7890,7 @@ ul.ab_counting li:last-child{
 }
 .testimonial_item .details h4{
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
@@ -7903,7 +7903,7 @@ ul.ab_counting li:last-child{
 .testimonial_item .details p {
   font-size: 14px;
   font-family: "Perpetua";
-  color: rgb(119, 119, 119);
+  color: #000000;
   font-style: italic;
   line-height: 1.714;
   margin-bottom: 0;
@@ -8058,7 +8058,7 @@ li.slick-slide.slick-active:nth-child(8) img{
 .testimonial_post .details p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 22px;
 }
@@ -8240,7 +8240,7 @@ li.slick-slide.slick-active:nth-child(8) img{
 }
 .blog_post_home2 .bph2_header .bph2_date_meta span,
 .blog_post.one .thumb .post_date span{
-  color: #484848;
+  color: #000000;
   font-family: 'Perpetua', sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -8416,7 +8416,7 @@ li.slick-slide.slick-active:nth-child(8) img{
   text-align: right;
 }
 .blog_post_home6_media_objects .title a{
-  color: #484848;
+  color: #000000;
   font-size: 15px;
 }
 .blog_post_home6_date{
@@ -8647,7 +8647,7 @@ ul.mc_parent_list ul.mc_child_list.two li,
 ul.mc_parent_list ul.mc_child_list.three li,
 ul.mc_parent_list ul.mc_child_list.four li{
   border-bottom: 1px solid #ebebeb;
-  color: #484848;
+  color: #000000;
   font-size: 16px;
   font-family: "Perpetua";
   line-height: 3.333;
@@ -8676,7 +8676,7 @@ ul.mc_parent_list ul.mc_child_list.four li:last-child{
 ul.mc_parent_list ul.mc_child_list .membership_header h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.333;
   margin: 0;
 }
@@ -8747,7 +8747,7 @@ ul.mc_parent_list ul.mc_child_list .membership_header h4{
 .erro_code h1{
   font-size: 45px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -8758,7 +8758,7 @@ ul.mc_parent_list ul.mc_child_list .membership_header h4{
 .error_page.footer_apps_widget p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
 }
 .error_page.footer_apps_widget .form-inline {
@@ -8848,14 +8848,14 @@ a.btn.btn_error{
 .pricing_table .pricing_header h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.444;
 }
 .pricing_table .pricing_content ul li{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 3.571;
 }
 .pricing_table .pricing_footer{
@@ -9010,7 +9010,7 @@ a.btn.btn_error{
 .sign_up_form .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 3;
 }
 .login_form .heading h4 {
@@ -9034,7 +9034,7 @@ a.btn.btn_error{
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-radius: 8px;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Perpetua";
   height: 52px;
@@ -9045,7 +9045,7 @@ a.btn.btn_error{
   width: 17px;
 }
 .login_form .form-check-label{
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   padding-left: 8px;
 }
@@ -9095,7 +9095,7 @@ a.btn.btn_error{
   box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.09);
 }
 .sign_up_form .form-check-label{
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   padding-left: 7px;
 }
@@ -9144,7 +9144,7 @@ a.btn.btn_error{
 .shortcode_form_title h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -9205,7 +9205,7 @@ a.btn.btn_error{
 .faq_according .accordion .card .card-header .btn-link{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   display: block;
   font-weight: bold;
   padding: 0;
@@ -9220,7 +9220,7 @@ a.btn.btn_error{
 }
 .faq_according .accordion .card .card-header::before {
   font-family: 'FontAwesome';
-  color: #484848;
+  color: #000000;
   content: "\f107";
   float: right;
   font-weight: lighter;
@@ -9250,14 +9250,14 @@ a.btn.btn_error{
 .faq_according .accordion .card .card-body{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   padding: 10px 0 30px;
 }
 .faq_according .accordion .card .card-body p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
 }
 /*== Terms & Condition Page ==*/
@@ -9274,7 +9274,7 @@ a.btn.btn_error{
 .terms_condition_grid .grids p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
 }
 .terms_condition_widget{
@@ -9294,7 +9294,7 @@ a.btn.btn_error{
 .terms_condition_widget ul li a{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 2.857;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -9306,10 +9306,10 @@ a.btn.btn_error{
   color: #E89C31
 }
 .terms_condition_widget ul li:hover a span{
-  color: #484848;
+  color: #000000;
 }
 .terms_condition_widget ul li a span{
-  color: #484848;
+  color: #000000;
 }
 
 /*== Tab Widget UI Page ==*/
@@ -9350,7 +9350,7 @@ a.btn.btn_error{
 .ui_kit_tab .tab-content .tab-pane p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.857;
   margin-bottom: 0;
 }
@@ -9464,7 +9464,7 @@ a.btn.btn_error{
   z-index: 999;
 }
 .ui_kit_select_search .dropdown-item {
-  color: #484848;
+  color: #000000;
 }
 .ui_kit_select_search .dropdown-item:hover {
   background-color: transparent;
@@ -9494,7 +9494,7 @@ a.btn.btn_error{
   cursor: pointer;
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   line-height: 25px;
   margin: 0px 0 10px;
@@ -9621,7 +9621,7 @@ a.btn.btn_error{
 .ui_kit_whitchbox .custom-control-label {
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   line-height: 2;
   margin: 0 0 10px;
@@ -9688,7 +9688,7 @@ a.btn.btn_error{
 .ui_page_heading .blockquote p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-style: italic;
   line-height: 1.714;
 }
@@ -9707,7 +9707,7 @@ a.btn.btn_error{
 .order_list li a{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 2.857;
 }
 .list-style-type-bullet li{
@@ -9723,7 +9723,7 @@ a.btn.btn_error{
 .ui_page_headings h1{
   font-size: 45px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 35px;
@@ -9731,7 +9731,7 @@ a.btn.btn_error{
 .ui_page_headings h2{
   font-size: 35px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 0.686;
   margin-bottom: 35px;
@@ -9739,7 +9739,7 @@ a.btn.btn_error{
 .ui_page_headings h3{
   font-size: 30px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 0.8;
   margin-bottom: 35px;
@@ -9747,7 +9747,7 @@ a.btn.btn_error{
 .ui_page_headings h4{
   font-size: 26px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 0.923;
   margin-bottom: 35px;
@@ -9755,7 +9755,7 @@ a.btn.btn_error{
 .ui_page_headings h5{
   font-size: 22px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.091;
   margin-bottom: 35px;
@@ -9763,7 +9763,7 @@ a.btn.btn_error{
 .ui_page_headings h6{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.333;
   margin-bottom: 35px;
@@ -9780,7 +9780,7 @@ a.btn.btn_error{
 .ui_kit_multi_select_box .bootstrap-select.show-tick .dropdown-menu li a span.text{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 2.5;
 }
 .ui_kit_select_search .dropdown-menu.show{
@@ -9793,7 +9793,7 @@ a.btn.btn_error{
 .ui_kit_select_search .bootstrap-select .dropdown-menu li a span.text{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 2.5;
 }
 .ui_kit_select_box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
@@ -9858,7 +9858,7 @@ a.btn.btn_error{
 .blog_sp_title{
   font-size: 22px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -9885,7 +9885,7 @@ a.btn.btn_error{
 .main_blog_post_content .mbp_thumb_post .details p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
 }
 .main_blog_post_content .mbp_thumb_post .details ul.post_meta{
@@ -10024,7 +10024,7 @@ a.btn.btn_error{
 .blog_grid_post .details h3{
   font-size: 26px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 15px;
 }
@@ -10093,7 +10093,7 @@ a.btn.btn_error{
 .blog_grid_post.style2.event_lists .details h3{
   font-size: 22px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.091;
 }
 .blog_grid_post.style2.event_lists .details p{
@@ -10124,7 +10124,7 @@ a.btn.btn_error{
 .event_participator_tile{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 50px;
 }
@@ -10135,7 +10135,7 @@ a.btn.btn_error{
 .participator_team .details h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.333;
   margin-bottom: 0;
   margin-top: 20px;
@@ -10164,7 +10164,7 @@ a.btn.btn_error{
 .sidebar_feature_listing .title{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -10182,7 +10182,7 @@ a.btn.btn_error{
 .sidebar_feature_listing .media .media-body .post_title{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -10197,7 +10197,7 @@ a.btn.btn_error{
 .sidebar_feature_listing .media .media-body ul li{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-right: 0;
 }
@@ -10242,7 +10242,7 @@ a.btn.btn_error{
 .blog_category_widget .title{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 0;
 }
@@ -10259,7 +10259,7 @@ a.btn.btn_error{
   border: none;
   font-size: 15px;
   font-family: "Open Sans";
-  color: #484848;
+  color: #000000;
   padding: 10px 0;
 }
 .blog_category_widget ul li.list-group-item span{
@@ -10280,7 +10280,7 @@ a.btn.btn_error{
 .event_details_widget .title{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 25px;
 }
@@ -10331,13 +10331,13 @@ a.btn.btn_error{
 .feature_course_widget h4{
   font-family: "Perpetua SemiBold";
   font-size: 20px;
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   padding-left: 30px;
 }
 .feature_course_widget ul li{
   border: 1px solid rgb(235, 235, 235);
-  color: #484848;
+  color: #000000;
   font-family: "Open Sans";
   font-size: 15px;
   line-height: 2.667;
@@ -10369,7 +10369,7 @@ a.btn.btn_error{
 .instructor_pricing_widget .price{
   font-size: 30px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -10398,7 +10398,7 @@ a.btn.btn_error{
   line-height: 2.667;
 }
 .instructor_pricing_widget .price_quere_list li a span{
-  color: #484848;
+  color: #000000;
   font-size: 18px;
   padding-right: 5px;
 }
@@ -10486,7 +10486,7 @@ a.btn.btn_error{
 .blog_tag_widget .title {
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -10505,7 +10505,7 @@ a.btn.btn_error{
 .blog_tag_widget .tag_list li a{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 /*== BlokQuote Blog Sinlge Page ==*/
@@ -10534,7 +10534,7 @@ a.btn.btn_error{
 .mbp_blockquote .blockquote em{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-style: italic;
   line-height: 1.714;
 }
@@ -10558,7 +10558,7 @@ a.btn.btn_error{
 .blog_post_share li:first-child a{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 2.5;
 }
@@ -10570,7 +10570,7 @@ a.btn.btn_error{
 }
 .blog_post_share li a{
   font-size: 14px;
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .blog_post_share li:hover a{
@@ -10639,7 +10639,7 @@ a.btn.btn_error{
   display: inline-block;
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.75;
   margin-bottom: 0;
 }
@@ -10655,7 +10655,7 @@ a.btn.btn_error{
 .mbp_pagination_tab .pag_next .detls p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 0;
 }
@@ -10699,7 +10699,7 @@ a.btn.btn_error{
 .mbp_pagination_comments .mbp_first.media .media-body p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 0;
 }
@@ -10715,7 +10715,7 @@ a.btn.btn_error{
   display: flex;
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 0;
@@ -10824,7 +10824,7 @@ a.btn.btn_error{
 .user_profile .media .media-body h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   padding-left: 30px;
 }
@@ -10887,7 +10887,7 @@ a.btn.btn_error{
 .my_dashboard_review .review_content .review_title{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
@@ -10936,7 +10936,7 @@ a.btn.btn_error{
 .property_table .table th{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: 600;
   line-height: 3;
   padding-left: 30px;
@@ -10949,7 +10949,7 @@ a.btn.btn_error{
 .property_table td.para{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
 }
 .pck_chng_btn .btn{
   border-radius: 8px;
@@ -11098,7 +11098,7 @@ a.btn.btn_error{
 }
 .header_user_notif .user_notif .so_heading p{
   border-bottom: 1px solid #dedede;
-  color: #484848;
+  color: #000000;
   font-size: 18px;
   font-family: "Perpetua";
   line-height: 1.333;
@@ -11216,7 +11216,7 @@ a.btn.btn_error{
 .user_setting .dropdown-menu .user_set_header p{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .user_setting .dropdown-menu .user_set_header p span{
@@ -11229,7 +11229,7 @@ a.btn.btn_error{
   padding: 15px 0 0;
 }
 .user_setting .dropdown-menu .user_setting_content a {
-  color: #484848;
+  color: #000000;
   font-size: 16px;
   font-family: "Perpetua";
   line-height: 2.125 !important;
@@ -11268,12 +11268,12 @@ a.btn.btn_error{
   border: 1px solid rgb(235, 235, 235);
   border-left: none;
   border-radius: 0 8px 8px 0;
-  color: #484848;
+  color: #000000;
   height: 52px;
   width: 70px;
 }
 .candidate_revew_search_box button:hover{
-  color: #484848;
+  color: #000000;
 }
 .candidate_revew_search_box input.form-control:focus,
 .candidate_revew_search_box button:focus{
@@ -11305,7 +11305,7 @@ a.btn.btn_error{
 .grid_list_search_result .dropdown-item.active,
 .grid_list_search_result .dropdown-item:active{
   background-color: #f7f7f7;
-  color: #484848;
+  color: #000000;
 }
 .grid_list_search_result{
   background-color: #ffffff;
@@ -11384,13 +11384,13 @@ a.btn.btn_error{
 .grid_list_search_result .right_area ul li .filter-option-inner-inner{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
 }
 .grid_list_search_result .right_area ul li span.stts,
 .grid_list_search_result .right_area ul li span.shrtby{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
 }
 .grid_list_search_result .right_area .bootstrap-select.show-tick .dropdown-menu li a span.text{
@@ -11496,7 +11496,7 @@ a.btn.btn_error{
 .h1ads_1st_list.half_style input.form-control::placeholder{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .h1ads_1st_list.half_style li:last-child{
@@ -11560,7 +11560,7 @@ a.btn.btn_error{
   cursor: pointer;
 }
 .listing_list_style ul li a{
-  color: #484848;
+  color: #000000;
 }
 .sidebar_listing_list{
   border: 1px solid rgb(235, 235, 235);
@@ -11617,7 +11617,7 @@ a.btn.btn_error{
   border-radius: 8px;
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   height: 52px;
   padding-left: 20px;
@@ -11641,7 +11641,7 @@ a.btn.btn_error{
 .sasw_list .max_area .form-control::placeholder,
 .sasw_list .search_area input::placeholder,
 .sasw_list .search_area textarea::placeholder{
-  color: #484848;
+  color: #000000;
 }
 .sasw_list .search_area input:focus,
 .sasw_list button.btn.dropdown-toggle{
@@ -11657,7 +11657,7 @@ a.btn.btn_error{
 .sasw_list button.btn.dropdown-toggle{
   border: 1px solid rgb(235, 235, 235);
   border-radius: 8px;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Perpetua";
   height: 52px;
@@ -11686,7 +11686,7 @@ a.btn.btn_error{
 .sasw_list .panel-heading h4.panel-title{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 25px;
 }
@@ -11836,7 +11836,7 @@ a.btn.btn_error{
 .inbox_user_list .wrap .meta h5.name{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0;
@@ -11844,7 +11844,7 @@ a.btn.btn_error{
 .inbox_user_list .wrap .meta p.preview{
   font-size: 14px;
   font-family: "Perpetua";
-  color: rgb(119, 119, 119);
+  color: #000000;
   line-height: 2;
   margin-bottom: 0;
 }
@@ -11991,7 +11991,7 @@ a.btn.btn_error{
   background-color: #f7f7f7;
   border: 1px solid #f7f7f7;
   border-radius: 3px;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Open Sans";
   margin-bottom: 0;
@@ -12008,7 +12008,7 @@ a.btn.btn_error{
 .inbox_chatting_box .chatting_content li.media.reply .media-body p {
   border-radius: 3px;
   background-color: #eef1ff;
-  color: #484848;
+  color: #000000;
   max-width: 320px;
   padding: 10px 15px;
 }
@@ -12031,7 +12031,7 @@ a.btn.btn_error{
 .message_container .message_input form input.form-control::placeholder {
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
 }
 .message_container .message_input form input.form-control:focus {
@@ -12124,13 +12124,13 @@ a.btn.btn_error{
 .ff_one .detais .timer{
   font-size: 36px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .ff_one .detais p{
   font-size: 16px;
   font-family: "Perpetua";
-  color: rgb(119, 119, 119);
+  color: #000000;
   margin-bottom: 0;
 }
 .ff_one.style2 .icon{
@@ -12153,7 +12153,7 @@ a.btn.btn_error{
 }
 .application_statics h4{
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -12166,7 +12166,7 @@ a.btn.btn_error{
   padding: 30px;
 }
 .recent_job_activity h4 {
-  color: #484848;
+  color: #000000;
   font-size: 18px;
   font-family: "Perpetua";
   font-weight: bold;
@@ -12195,7 +12195,7 @@ a.btn.btn_error{
 .recent_job_activity .grid ul li p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 0;
 }
@@ -12348,7 +12348,7 @@ a.btn.btn_error{
 .siderbar_contact_widget h4 {
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   margin-bottom: 15px;
   line-height: 1.2;
 }
@@ -12470,7 +12470,7 @@ a.btn.btn_error{
   -o-box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.09);
   box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.09);
   bottom: 20px;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Perpetua";
   line-height: 2.2;
@@ -12756,7 +12756,7 @@ a.btn.btn_error{
 }
 .blog_post_home2 .bph2_header .bph2_date_meta:hover,
 .blog_post_home2 .bph2_header .bph2_date_meta:hover span{
-  background-color: #484848;
+  background-color: #000000;
   color: #ffffff;
 }
 .blog_post_home2.one .details{
@@ -12766,7 +12766,7 @@ a.btn.btn_error{
   position: relative;
 }
 .blog_post_home2.one .details h4{
-  color: #484848;
+  color: #000000;
 }
 .blog_post_home2.one .details p{
   margin-bottom: 0;
@@ -12860,7 +12860,7 @@ a.btn.btn_error{
   border: 1px solid #ebebeb;
   border-radius: 8px;
   background-color: #ffffff;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   height: 50px;
   line-height: 1.2;
@@ -12873,7 +12873,7 @@ a.btn.btn_error{
   border-radius: 8px;
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 25px;
   padding: 20px;
@@ -12904,7 +12904,7 @@ a.btn.btn_error{
 .contact_localtion h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -12912,14 +12912,14 @@ a.btn.btn_error{
 .contact_localtion p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 20px;
 }
 .contact_localtion .content_list h5{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.5;
   margin-bottom: 0;
@@ -12944,7 +12944,7 @@ a.btn.btn_error{
 }
 .contact_form_social_area li a{
   font-size: 14px;
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 
@@ -13027,13 +13027,13 @@ a.btn.btn_error{
   color: #c75533;
 }
 .color-dark {
-  color: #484848;
+  color: #000000;
 }
 .color-black {
   color: #000;
 }
 .color-black2 {
-  color: #484848;
+  color: #000000;
 }
 .color-black11 {
   color: #111111 !important;
@@ -13349,8 +13349,6 @@ a.btn.btn_error{
   border: 2px solid #e50914;
   border-radius: 5px;
   color: #ffffff;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;}
 
 .btn-thm.rounded {
@@ -14566,7 +14564,7 @@ section {
   margin-bottom: 50px;
 }
 .main-title h2 {
-  color: #484848;
+  color: #000000;
   font-family: "Perpetua";
   line-height: 1.2;
   margin-bottom: 10px;
@@ -14580,12 +14578,12 @@ section {
 .main-title p {
   font-size: 16px;
   font-family: "Perpetua";
-  color: rgb(119, 119, 119);
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 0;
 }
 .main-title p a{
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -15099,7 +15097,7 @@ canvas {
 .selected_filter_widget.style2 .accordion .link{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .tags-bar {
@@ -15159,7 +15157,7 @@ canvas {
 }
 #accordion .panel-heading a.collapsed:hover,
 #accordion .panel-heading a.collapsed:focus {
-  color: #484848;
+  color: #000000;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -15167,13 +15165,13 @@ canvas {
 }
 #accordion .panel-heading a.collapsed:hover::before,
 #accordion .panel-heading a.collapsed:focus::before {
-  color: #484848;
+  color: #000000;
 }
 #accordion .panel-heading {
   padding: 0;
 }
 #accordion .panel-heading a:not(.collapsed) {
-  color: #484848;
+  color: #000000;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -15182,7 +15180,7 @@ canvas {
 /* arrow fontawesome icon to the right */
 #accordion .panel-heading .accordion-toggle::before {
   font-family: 'FontAwesome';
-  color: #484848;
+  color: #000000;
   content: "\f107";
   float: right;
   font-weight: lighter;
@@ -15443,7 +15441,7 @@ canvas {
 }
 .shop_grid .details h4.item-tile{
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.444;
   margin-bottom: 15px;
@@ -15479,7 +15477,7 @@ canvas {
 .shop_order_box .main_title{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 20px;
   text-align: center;
@@ -15502,7 +15500,7 @@ canvas {
 .shop_order_box .order_list_raw ul li h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.333;
   margin-bottom: 4px;
 }
@@ -15515,14 +15513,14 @@ canvas {
 .shop_order_box .order_details .title{
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 40px;
 }
 .shop_order_box .order_details .title2 {
   font-size: 20px;
   font-family: "Perpetua SemiBold";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -15555,7 +15553,7 @@ canvas {
 .checkout_form.style2 .heading p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   margin-bottom: 15px;
 }
@@ -15571,7 +15569,7 @@ canvas {
   border-radius: 8px;
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   height: 52px;
   margin-right: 24px;
@@ -15580,7 +15578,7 @@ canvas {
 .checkout_form .checkout_coupon form label{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.75;
 }
@@ -15590,7 +15588,7 @@ canvas {
   border-radius: 5px;
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   height: 52px;
   margin-right: 24px;
@@ -15601,7 +15599,7 @@ canvas {
   border-radius: 8px;
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   padding: 25px;
 }
@@ -15671,7 +15669,7 @@ canvas {
 .checkout_form .checkout_coupon .form2 .ai_title{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -15680,7 +15678,7 @@ canvas {
 .checkout_form .checkout_coupon .form2 p{
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.75;
 }
@@ -15695,7 +15693,7 @@ canvas {
   padding: 30px;
 }
 .order_sidebar_widget .title{
-  color: #484848;
+  color: #000000;
   font-size: 18px;
   font-family: "Perpetua";
   font-weight: bold;
@@ -15706,7 +15704,7 @@ canvas {
   margin-bottom: 27px;
 }
 .order_sidebar_widget .subtitle p{
-  color: #484848;
+  color: #000000;
   font-size: 16px;
   font-family: "Perpetua";
   font-weight: bold;
@@ -15737,7 +15735,7 @@ canvas {
 .payment_widget .bt_details p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   margin-bottom: 0;
 }
@@ -15782,7 +15780,7 @@ canvas {
 .cart_page_form tr.carttable_row th.cartm_title{
   background-color: #f7f7f7;
   border: none;
-  color: #484848;
+  color: #000000;
   font-size: 16px;
   font-family: "Perpetua";
   font-weight: bold;
@@ -15847,7 +15845,7 @@ canvas {
 .cart_page_form tbody.table_body th .cart_list .cart_title{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.444;
 }
@@ -15861,7 +15859,7 @@ canvas {
   background-color: #efefef;
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   height: 50px;
   line-height: 1.2;
@@ -15909,7 +15907,7 @@ canvas {
 .single_product_grid .sps_content .content .shop_single_product_details p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
 }
 .single_product_slider.owl-theme .owl-nav{
@@ -15956,7 +15954,7 @@ canvas {
   width: 50px;
 }
 .single_product .product_popup span{
-  color: #484848;
+  color: #000000;
   font-size: 25px;
   line-height: 2;
 }
@@ -15964,7 +15962,7 @@ canvas {
   height: 312px;
 }
 .shop_single_product_details h4{
-  color: #484848;
+  color: #000000;
   font-size: 22px;
   font-family: "Perpetua";
   font-weight: bold;
@@ -15977,7 +15975,7 @@ canvas {
   border-radius: 8px;
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   height: 50px;
@@ -16042,7 +16040,7 @@ canvas {
 .product_single_content .mbp_pagination_comments .mbp_first.media .media-body p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.857;
   margin-bottom: 0;
 }
@@ -16069,7 +16067,7 @@ canvas {
   border: 1px solid transparent;
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   height: 64px;
   line-height: 2.5;
   text-align: center;
@@ -16142,7 +16140,7 @@ ul.total_reivew_view {
 ul.total_reivew_view li.sub_titles{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-right: 10px;
@@ -16183,7 +16181,7 @@ ul.total_reivew_view .star_list li:last-child a{
   border: none;
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   padding: .5rem 0;
@@ -16206,7 +16204,7 @@ ul.total_reivew_view .star_list li:last-child a{
 .bsp_reveiw_wrt h4{
   font-size: 18px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 25px;
@@ -16218,7 +16216,7 @@ ul.total_reivew_view .star_list li:last-child a{
 .review_star li p{
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.714;
   padding-left: 10px;
 }
@@ -16250,7 +16248,7 @@ ul.total_reivew_view .star_list li:last-child a{
   border-radius: 8px;
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
   height: 52px;
   margin-bottom: 20px;
@@ -16261,7 +16259,7 @@ ul.total_reivew_view .star_list li:last-child a{
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-radius: 8px;
-  color: #484848;
+  color: #000000;
   font-size: 14px;
   font-family: "Perpetua";
   line-height: 1.2;
@@ -16312,7 +16310,7 @@ ul.total_reivew_view .star_list li:last-child a{
   position: relative;
 }
 .become_instructor_container .titles{
-  color: #484848;
+  color: #000000;
   font-family: Perpetua;
   font-size: 24px;
   font-weight: 600;
@@ -16385,14 +16383,14 @@ button.gm-ui-hover-effect:focus {
 .gm-style-iw-d h4 {
   font-size: 16px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
 }
 .gm-style-iw-d p {
   font-size: 14px;
   font-family: "Perpetua";
-  color: #484848;
+  color: #000000;
   line-height: 1.2;
 }
 .gm-style-iw-d p span{

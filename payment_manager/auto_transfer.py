@@ -123,6 +123,8 @@ def autoTransfer():
     # get_transfer_details()
     # response_b = Paystack.bulkbankTransfer(TRANSFER_DETAILS)
     # print(response_b)
+    # after the transfers haven been verferied create a TransactionsDetails object and store the transaction details
+    # using the reference_id or ref to store each transaction to it payment counterpart.
     pass
 
     

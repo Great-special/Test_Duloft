@@ -87,8 +87,8 @@
 
 					<li class="list-inline-item list_s"><a href="{% url 'userprofile' %}"> 
 						<span class="dn-lg">
-							<img class="rounded-circle" src="{% static 'images/team/e1.png' %}" alt="e1.png">
-							<span class="dn-1199">{{request.user.first_name}}</span>
+							{% comment %} <img class="rounded-circle" src="{{request.user.landLord.profile_photo.url}}" alt="e1.png"> {% endcomment %}
+							<span class="dn-1199">Hi, {{request.user.first_name}}</span>
 						</span>
 					</a></li>
 
@@ -101,8 +101,7 @@
 					{% elif request.user.is_authenticated %}
 
 					<li class="list-inline-item list_s"><a href="{% url 'userprofile' %}"> <span class="dn-lg">
-						<img class="rounded-circle" src="{% static 'images/team/e1.png' %}" alt="e1.png">
-						<span class="dn-1199">{{request.user.first_name}}</span>
+						<span class="dn-1199">Hi, {{request.user.first_name}}</span>
 					</span></a></li>
 
 					{% else %}

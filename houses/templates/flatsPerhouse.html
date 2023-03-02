@@ -37,7 +37,7 @@
 											<li class="list-inline-item"><a href="#">Available: {% if flat.taken %} No {% else %}  Yes  {% endif %}</a></li>
 										</ul>
 										<ul class="mb0">
-											<li class="list-inline-item"><button class="btn btn-block btn-thm" type="button"> <a href={% url 'initiate-payment' house_id flat.id %}> Rent! </a> </button></li>
+											<li class="list-inline-item"><a class="btn btn-block btn-thm" href={% url 'initiate-payment' house_id flat.id %}> Rent! </a></li>
 										</ul>
 									</div>
 								</div>
@@ -67,11 +67,11 @@
 										<a class="fp_price" href="page-listing-grid-v2.html#">N {{space.price | intcomma}}<small>/yr</small></a>
 										<a href="{% url 'space-detail' space.id %}"><h4>{{space}}</h4></a>
 										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Beds: {{space.accommodation_type}}</a></li>
-											<li class="list-inline-item"><a href="page-listing-grid-v2.html#">Available: {% if space.taken %} No {% else %}  Yes  {% endif %}</a></li>
+											<li class="list-inline-item">Beds: {{space.accommodation_type}}</li>
+											<li class="list-inline-item">Available: {% if space.taken %} No {% else %}  Yes  {% endif %}</li>
 										</ul>
 										<ul class="">
-											<li class="list-inline-item"><button class="btn btn-block btn-thm" type="button"> <a href={% url 'initiate-payment' house_id space.id %}> Rent! </a> </button></li>
+											<li class="list-inline-item"><a class="btn btn-block btn-thm" href={% url 'initiate-payment' house_id space.id %}> Rent! </a></li>
 										</ul>
 									</div>
 								</div>

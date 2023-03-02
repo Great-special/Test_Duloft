@@ -126,9 +126,11 @@
 		            </li>
 	                <li class="user_setting">
 						<div class="dropdown">
-	                		<a class="btn dropdown-toggle" href="page-dashboard.html#" data-toggle="dropdown">
-                                <img class="rounded-circle" src="{% static 'images/team/e1.png' %}" alt="e1.png">
-                                 <span class="dn-1199">{{request.user.first_name}}</span>
+	                		<a class="btn dropdown-toggle" href="" data-toggle="dropdown">
+								{% comment %} {% if request.user.is_landlord %}
+								<img class="rounded-circle" src="{{request.user.landLord.profile_photo.url}}" alt="e1.png">
+								{% endif %} {% endcomment %}
+                                <span class="dn-1199">Hi, {{request.user.first_name}}</span>
                             </a>
 						    <div class="dropdown-menu">
 						    	<div class="user_set_header">

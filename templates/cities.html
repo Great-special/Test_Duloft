@@ -11,10 +11,12 @@
             </div>
         </div>
         <div class="row">
-            {% for property in lastest_pro %}
+            {% for property in lastest_pro %}    
             <div class="col-lg-4 col-xl-4">
                 <div class="properti_city">
-                    <div class="thumb"><img class="img-fluid w100" src="{{property.exterior_image.url}}" alt="pc5.jpg"></div>
+                    <a href="{% url 'house-detail' property.id %}">
+                        <div class="thumb"><img class="img-fluid w100" src="{{property.exterior_image.url}}" alt="pc5.jpg"></div>
+                    </a>
                     <div class="overlay">
                         <div class="details">
                             <a href="{% url 'house-detail' property.id %}"><h4>{{property}}</h4></a>

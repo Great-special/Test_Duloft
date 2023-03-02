@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from django.conf import settings
+from django.core.exceptions import ObjectDoesNotExist
 
 # from payment_manager.paystack import PayStack
 
@@ -113,9 +114,15 @@ def landlordDashboardView(request):
     pending = user_profile.recipient.all()
     received = user_profile.transactiondetail_set.all()
     referrals = user_profile.referrals.all()
-    paymentdetail = user_profile.paymentdetail
-    
-    
+    try:
+        paymentdetail = user_profile.paymentdetail
+    except ObjectDoesNotExist:
+        paymentdetail = None
+    """
+        Using the reference_id to sort the pending payments and received transactions
+        onces a transactions has been completed move it to received by removing it from the pending
+        list.
+    """
     context = {
         'user_detail': user_profile,
         'buildings': buildings,
