@@ -34,7 +34,7 @@
                         {% for result in results %}
                         {% if not result.taken %}
                         <div class="col-md-4 col-lg-4">
-                            <div class="feat_property home7">
+                            <div class="feat_property">
                                 <div class="thumb">
                                     {% if result.sittingroom.url %}
                                     <img class="img-whp" src="{{result.sittingroom.url}}" alt="fp1.jpg"> 
@@ -67,7 +67,7 @@
                                         <h4><a href="{% url 'house-detail' result.house.id %}">{{result.house.name}}</a></h4>
                                         <p><span class="flaticon-placeholder"></span> <a href="{% url 'house-detail' result.house.id %}">{{result.house.address}}</a></p>
                                         <ul class="prop_details mb0">
-                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">{{result.accommodation_type}}</a></li>
+                                            <li class="list-inline-item"><a class="text-thm2" href="#">{{result.accommodation_type}}</a></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -996,7 +996,7 @@ header.header-nav a.navbar_brand .logo2{
   display: none;
 }
 header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing{
-  background-color: #E89C31;
+  background-color: #fff;
   border-radius: 25px;
   height: 50px;  
   position: relative;
@@ -1017,7 +1017,7 @@ header.header-nav.menu_style_home_one.home9 ul.ace-responsive-menu li.add_listin
 }
 header.header-nav.menu_style_home_one ul.ace-responsive-menu li.add_listing a{
   font-family: "Perpetua";
-  color: #ffffff;
+  color: #E50914;
   line-height: 1.2;
   top: -20px;
 }
@@ -1084,7 +1084,7 @@ header.header-nav.menu_style_home_one.dashbord_pages.stricky-fixed li a{
   color: #E89C31;
 }
 header.header-nav.menu_style_home_one .ace-responsive-menu li a{
-  color: #ffffff;
+  color: #000;
 }
 header.header-nav.menu_style_home_one .ace-responsive-menu li ul.sub-menu,
 header.header-nav.menu_style_home_three .ace-responsive-menu li ul.sub-menu,
@@ -3505,7 +3505,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home1-overlay:before {
   content: "";
-  background-color: rgba(145, 94, 29, 0.438);
+  background-color: rgba(145, 95, 29, 0.45);
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -4983,19 +4983,14 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   transform: scale(1.1) rotate(-1deg);
 }
 .properti_city .overlay{
-  /*background: -moz-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* ff3.6+ */
-  background: rgba(63, 29, 29, 0.05);
-  /*background: -webkit-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* safari5.1+,chrome10+ */
- /* background: -o-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* opera 11.10+ */
-  /*background: -ms-linear-gradient(270deg, rgba(255,255,255,0.01) 0%, rgba(29,41,62,1) 100%); /* ie10+ */
-  /* background: linear-gradient(180deg, rgba(63, 29, 29, 0.67) 0%, rgba(29,41,62,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1d293e',GradientType=0 ); /* ie6-9 */
-  border-radius: 0px 0px 10px 10px;
-  bottom: 0;
-  height: 244px;
-  left: 0;
+  /* background: rgba(145, 95, 29, 0.15); */
+  background-color: rgba(145, 95, 29, 0.2);
   position: absolute;
+  bottom: 0;
+  left: 0;
   right: 0;
+  top: 0;
+  width: 100%;
   text-align: center;
 }
 .properti_city .overlay .details{

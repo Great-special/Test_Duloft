@@ -34,31 +34,42 @@
                     <div class="row">
                         {% for result in results %}
                         <div class="col-md-4 col-lg-4">
-                            <div class="feat_property home7">
-                                <div class="thumb">
-                                    <img class="img-whp" src="{{result.exterior_image.url}}" alt="fp1.jpg">
-                                    <div class="thmb_cntnt">
-                                        <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">For Rent</a></li>
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#">Featured</a></li>
-                                        </ul>
-                                        <ul class="icon mb0">
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><span class="flaticon-transfer-1"></span></a></li>
-                                            <li class="list-inline-item"><a href="page-listing-grid-v3.html#"><span class="flaticon-heart"></span></a></li>
-                                        </ul>
-                                        <a class="fp_price" href="page-listing-grid-v3.html#">N {{result.house_price | intcomma}}<small>/yr</small></a>
+                            <div class="item">
+                                <div class="feat_property">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="{{result.exterior_image.url}}" alt="fp1.jpg">
+                                        <div class="thmb_cntnt">
+                                            <ul class="tag mb0">
+                                                {% if result.sale %}
+                                                <li class="list-inline-item"><a href="index.html#">For Sale</a></li>
+                                                {% else %}
+                                                <li class="list-inline-item"><a href="index.html#">For Rent</a></li>
+                                                {% endif %}
+                                                <li class="list-inline-item"><a>Featured</a></li>
+                                                
+                                            </ul>
+                                            {% comment %} <ul class="icon mb0">
+                                                <li class="list-inline-item"><a href="index.html#"><span class="flaticon-transfer-1"></span></a></li>
+                                                <li class="list-inline-item"><a href="index.html#"><span class="flaticon-heart"></span></a></li>
+                                            </ul> {% endcomment %}
+                                            <a class="fp_price" href="{% url 'house-detail' result.id %}">N {{result.house_price |intcomma}}<small>/yr</small></a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="details">
-                                    <div class="tc_content">
-                                        <p class="text-thm"><a href="{% url 'flat-detail' result.id %}">{{result.floor}} - {{result.side}}</a></p>
-                                        <h4><a href="{% url 'house-detail' result.id %}">{{result.name}}</a></h4>
-                                        <p><span class="flaticon-placeholder"></span> <a href="{% url 'house-detail' result.id %}">{{result.address}}</a></p>
-                                        <ul class="prop_details mb0">
-                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Beds: 4</a></li>
-                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Baths: 2</a></li>
-                                            <li class="list-inline-item"><a class="text-thm3" href="page-listing-grid-v3.html#">Sq Ft: 5280</a></li>
-                                        </ul>
+                                    <div class="details">
+                                        <div class="tc_content">
+                                            <p class="text-thm">{{result.building_type}}</p>
+                                            <h4> 
+                                                <a  href="{% url 'house-detail' result.id %}">
+                                                    {{result.name}}
+                                                </a>
+                                            </h4>
+                                            <p><span class="flaticon-placeholder"></span><a href="{% url 'house-detail' result.id %}">{{result.address}}</a></p>
+                                            {% comment %} <ul class="prop_details mb0">
+                                                <li class="list-inline-item"><a href="index.html#">Beds: 4</a></li>
+                                                <li class="list-inline-item"><a href="index.html#">Baths: 2</a></li>
+                                                <li class="list-inline-item"><a href="index.html#">Sq Ft: 5280</a></li>
+                                            </ul> {% endcomment %}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
