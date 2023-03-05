@@ -39,7 +39,8 @@ def initiate_payment(request):
     return render(request, 'initiate_payment.html',{'form': form, })
 
 
-def create_payment(amount, description, depositor, email, owner, recipient_name, apartment_paidfor=None, space_paidfor=None, commission=0.00):
+def create_payment(amount, description, depositor, email, owner, recipient_name, 
+                   apartment_paidfor=None, space_paidfor=None, commission=0.00):
     """
         This function creates a payment instance in the data base
     """
