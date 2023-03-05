@@ -78,6 +78,10 @@ class AmenitiesModels(models.Model):
         return self.feature
 
 
+"""
+    Use a uuid for every item in the database and track the item paid for by it.
+    Meaning that the flat, space and building models should have a unique id
+"""
 
 class HouseModel(models.Model):
     added = models.DateTimeField(auto_now_add=True)

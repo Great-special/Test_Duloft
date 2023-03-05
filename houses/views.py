@@ -143,9 +143,9 @@ def space_create_view(request):
                     space_instance.save()
                     return redirect('my-space-dashboard')
                 else:
-                    return HttpResponseBadRequest("You cannot add a flat to this house")
+                    return HttpResponseBadRequest("You cannot add a space to this house")
             else:
-                return HttpResponseBadRequest("You cannot add a flat")
+                return HttpResponseBadRequest("You cannot add a space")
     else:
         form = SpaceModelForm(request.user)
 

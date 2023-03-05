@@ -65,11 +65,9 @@
                                 
                             </p>
                         </div>
-                        <button type="button" class="btn btn-block btn-thm"> 
-                            <a href={% url 'initiate-payment' space.house.id space.id %}>
-                                Rent! 
-                            </a>
-                        </button>
+                        <a class="btn btn-block btn-thm" href="{% url 'initiate-payment' space.house.id space.id %}">
+                            Rent! 
+                        </a>
                     </div>
 
                     <div class="col-lg-12">
@@ -123,12 +121,6 @@
                                                 </span>
                                             </h5>
                                         </a>
-                                    </div>
-                                </div>
-                                <div class="icon_box_area style2">
-                                    <div class="score"><span class="spaceicon-pdf text-thm fz30"></span></div>
-                                    <div class="details">
-                                        <h5><span class="spaceicon-download text-thm pr10"></span> Demo pdf Document</h5>
                                     </div>
                                 </div>
                             </div>

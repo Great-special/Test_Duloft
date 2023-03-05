@@ -96,11 +96,15 @@ def get_space_by_landlord(request):
 def get_building_for_tenant(request):
     Paid_Accommodations = []
     spaces_paid = Payment.objects.filter(owner=request.user)
-    # print(spaces_paid)
+    print(spaces_paid)
     for space in spaces_paid:
-        # print(space, 'space')
+        print(space, 'space')
         if space.verified:
-            Paid_Accommodations.append(space.space_paidfor)
+            print(space, 'verified')
+            try:
+                Paid_Accommodations.append(space.apartment_paidfor)
+            except:
+                Paid_Accommodations.append(space)
     # print(Paid_Accommodations, 'PA')
     context = {
         'paid_accommodation':Paid_Accommodations,

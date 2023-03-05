@@ -20,8 +20,12 @@ class Payment(models.Model):
     owner = models.ForeignKey(User, on_delete=models.PROTECT, null=True, blank=True, related_name='payment')
     description = models.TextField(blank=True, null=True)
     email = models.EmailField()
+    """
+        Use a uuid for every item in the database and track the item paid for by it.
+        Meaning that the flat, space and building models should have a unique id
+    """
     apartment_paidfor = models.ForeignKey(FlatModel, on_delete=models.PROTECT, null=True, blank=True)
-    others_paidfor = models.ForeignKey(SpaceModel, on_delete=models.PROTECT, null=True, blank=True)
+    space_paidfor = models.ForeignKey(SpaceModel, on_delete=models.PROTECT, null=True, blank=True)
     verified = models.BooleanField(default=False)
     # payment_date = models.DateField(default=timezone.now().date)
     date_created = models.DateTimeField(auto_now_add=True)
