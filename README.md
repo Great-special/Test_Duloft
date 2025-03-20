@@ -14,7 +14,7 @@ A simple and efficient Property Management System built with Django. This system
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Great-special/Test_Duloft.git
+   git clone https://github.com/Great-special/property-management-system.git
    cd property-management-system
    ```
 
